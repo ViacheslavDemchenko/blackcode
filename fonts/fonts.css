@@ -1,0 +1,104 @@
+/* FONTS */
+
+/* Gilroy */
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.eot');
+  src: url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.svg#Gilroy-Bold') format('svg'),
+       url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.ttf') format('truetype'),
+       url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.woff') format('woff'),
+       url('../fonts/gilroy/gilroy-bold/Gilroy-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.eot');
+  src: url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.svg#Gilroy-Medium') format('svg'),
+       url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.ttf') format('truetype'),
+       url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.woff') format('woff'),
+       url('../fonts/gilroy/gilroy-medium/Gilroy-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.eot');
+  src: url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.svg#Gilroy-Regular') format('svg'),
+       url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.ttf') format('truetype'),
+       url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.woff') format('woff'),
+       url('../fonts/gilroy/gilroy-regular/Gilroy-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Qanelas */
+
+@font-face {
+  font-family: 'Qanelas-Bold';
+  src: url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.eot');
+  src: url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.svg#Qanelas-Bold') format('svg'),
+       url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.ttf') format('truetype'),
+       url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.woff') format('woff'),
+       url('../fonts/qanelas/qanelas-bold/Qanelas-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qanelas-Light';
+  src: url('../fonts/qanelas/qanelas-light/Qanelas-Light.eot');
+  src: url('../fonts/qanelas/qanelas-light/Qanelas-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/qanelas/qanelas-light/Qanelas-Light.svg#Qanelas-Light') format('svg'),
+       url('../fonts/qanelas/qanelas-light/Qanelas-Light.ttf') format('truetype'),
+       url('../fonts/qanelas/qanelas-light/Qanelas-Light.woff') format('woff'),
+       url('../fonts/qanelas/qanelas-light/Qanelas-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qanelas-Medium';
+  src: url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.eot');
+  src: url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.svg#Qanelas-Medium') format('svg'),
+       url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.ttf') format('truetype'),
+       url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.woff') format('woff'),
+       url('../fonts/qanelas/qanelas-medium/Qanelas-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qanelas-Regular';
+  src: url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.eot');
+  src: url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.svg#Qanelas-Regular') format('svg'),
+       url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.ttf') format('truetype'),
+       url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.woff') format('woff'),
+       url('../fonts/qanelas/qanelas-regular/Qanelas-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Rolleston Title - Light Italic */
+
+@font-face {
+  font-family: 'Rollestontitlelightitalic';
+  src: url('../fonts/rolleston-title/Rollestontitlelightitalic.eot');
+  src: url('../fonts/rolleston-title/Rollestontitlelightitalic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/rolleston-title/RollestonTitle-LightItalic.svg#RollestonTitle-LightItalic') format('svg'),
+       url('../fonts/rolleston-title/RollestonTitle-LightItalic.ttf') format('truetype'),
+       url('../fonts/rolleston-title/RollestonTitle-LightItalic.woff') format('woff'),
+       url('../fonts/rolleston-title/Rollestontitlelightitalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
