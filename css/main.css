@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* BASE STYLES */
 
 /* GLOBAL */
@@ -40,7 +42,7 @@ body {
 .container {
   width: 100%;
   min-width: 20rem;
-  max-width: 101.6875rem;
+  max-width: 100rem;
   margin: auto;
   height: 100%;
   padding: 0 0.9375rem;
@@ -658,18 +660,94 @@ template {
 /* SECTIONS */
 
 .header {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-  background: url(../img/backgrounds/first-section_2.jpeg);
+  max-height: 100vh;
+  background: url(../img/backgrounds/hbg.jpg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.header::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 0.0625rem;
+  height: 95%;
+  bottom: 0;
+  left: 6.8125rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(40%, rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 40%);
+}
+
+.section-advantages {
+  min-height: 100vh;
+  background: #171717;
+}
+
+.section-advantages::before {
+  position: absolute;
+  content: "Преимущества";
+  z-index: 2;
+  top: 49%;
+  left: 0.625rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.advantages-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0 2.375rem 0 6.25rem;
+  min-height: 100vh;
+}
+
+.advantages-wrap::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 0.0625rem;
+  height: 100%;
+  top: 0;
+  left: -9.875rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.advantages-wrap::after {
+  position: absolute;
+  content: "";
+  z-index: 3;
+  top: 50%;
+  left: -10.0625rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0.375rem;
+  height: 3.0625rem;
+  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+  border-radius: 0.1875rem;
+  background: #5756fb;
+}
+
+/* Style for "element" */
+
 /* BLOCKS */
 
 .section {
+  position: relative;
   width: 100%;
 }
 
@@ -1234,4 +1312,267 @@ template {
   font-size: 1.25rem;
   line-height: 1.375rem;
   color: #ffffff;
+}
+
+.advantages__slider {
+  position: relative;
+  width: 43.46%;
+  max-width: 38.4375rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.advantages__slider::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 11.25rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to top, black 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.advantages__slide-content {
+  width: 97%;
+  padding: 1.4375rem 0 0 5.5625rem;
+}
+
+.advantages__slide__title {
+  margin-bottom: 1.25rem;
+  font-family: "Gilroy-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: #5756fb;
+}
+
+.advantages__slide__text {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.035rem;
+  color: #161616;
+}
+
+.advantages__slide__text--blue {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #2e2dff;
+}
+
+.advantages__slide {
+  position: relative;
+  width: 38.5rem;
+  height: 25rem;
+  padding: 0.3125rem;
+  overflow: hidden;
+}
+
+.advantages__slide:nth-child(1) {
+  background: url(../img/advantages-cards/advantages-card_1.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(1)::before {
+  position: absolute;
+  content: "1";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10.625rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.advantages__slide:nth-child(2) {
+  background: url(../img/advantages-cards/advantages-card_2.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(2)::before {
+  position: absolute;
+  content: "2";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(3) {
+  background: url(../img/advantages-cards/advantages-card_3.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(3)::before {
+  position: absolute;
+  content: "3";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(4) {
+  background: url(../img/advantages-cards/advantages-card_4.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(4)::before {
+  position: absolute;
+  content: "4";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__laptop {
+  width: 56.54%;
+  max-width: 50rem;
+  height: 100vh;
+  background: url(../img/advantages-cards/advantages-laptop-bg.png), -webkit-gradient(linear, left bottom, left top, from(rgba(22, 22, 22, 0.8)), color-stop(51%, rgba(87, 86, 251, 0.8)), to(rgba(22, 22, 22, 0.8)));
+  background: url(../img/advantages-cards/advantages-laptop-bg.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 51%, rgba(22, 22, 22, 0.8) 100%);
+  background-position: 100% 100%, 2px 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 0.1875rem;
+}
+
+.advantages__laptop-content {
+  padding: 8.75rem 0.9375rem 2.5rem 2.5rem;
+}
+
+.advantages__laptop__img {
+  overflow: hidden;
+}
+
+.advantages__laptop__img img {
+  position: relative;
+  left: -5rem;
+}
+
+.advantages__laptop__pretitle {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #d0eafe;
+}
+
+.advantages__laptop__pretitle--brown {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+}
+
+.advantages__laptop__title {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.375rem;
+  line-height: 2.8125rem;
+  color: #ffffff;
+}
+
+.advantages__laptop__title--brown {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+  font-size: 3.375rem;
+}
+
+.advantages__laptop__title--small {
+  margin-bottom: 2.625rem;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.advantages__player {
+  margin-left: 16.25rem;
+}
+
+.player__title {
+  margin-bottom: 0.5625rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+
+.player__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Qanelas-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+  border-bottom: 0.125rem dashed #e79526;
+}
+
+.player__link::before {
+  position: absolute;
+  content: "";
+  z-index: 20;
+  bottom: 0;
+  left: -9.375rem;
+  width: 7.75rem;
+  height: 7.75rem;
+  background: url(../img/advantages-cards/play-icon.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
