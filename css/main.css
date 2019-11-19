@@ -1890,7 +1890,6 @@ template {
 }
 
 .services-wrap {
-  width: 78%;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
@@ -1909,6 +1908,7 @@ template {
   z-index: 5;
   bottom: 0;
   left: 0;
+  max-width: 60rem;
 }
 
 .service-man-wrap img {
