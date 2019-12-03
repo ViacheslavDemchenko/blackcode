@@ -1,58 +1,65 @@
-// const lamp = document.querySelector('.lamp');
-// const lampLightBig = document.querySelector('.lamp-light');
-// const lampLightSmall = document.querySelector('.lamp-light-small');
-// const lampLightMain = document.querySelector('.lamp-light-main');
-// const headerMan = document.querySelector('.header-man__img');
+(function() {
+    const hamburger = document.getElementById('menu__button');
+    const menu = document.querySelector('.nav-list');
+    const menuLinks = document.querySelectorAll('.nav__link');
+    const body = document.getElementsByTagName('body')[0];
+    const logoText = document.querySelector('.logo__link');
+    const social = document.querySelector('.social-list');
+    const mobileBtn = document.querySelector('.mobile-menu__btn');
+    let screenWidth = window.screen.availWidth;
 
 
-// lamp.addEventListener('mouseover', lampSwitchOn);
-// lamp.addEventListener('mouseleave', lampSwitchOff);
+    hamburger.addEventListener('click', mobileMenu);
 
+    function mobileMenu() {
 
-// function lampSwitchOn() {
-//     lampLightMain.classList.remove('lamp-light-main--off');
-//     lampLightBig.classList.remove('lamp-light--off');
-//     lampLightSmall.classList.remove('lamp-light-small--off');
-//     headerMan.classList.remove('header-man__img--hide');
-    
-//     headerMan.classList.add('header-man__img--show');
-//     lampLightMain.classList.add('lamp-light-main--on');
-//     lampLightBig.classList.add('lamp-light--on');
-//     lampLightSmall.classList.add('lamp-light-small--on');
-// }
+        window.addEventListener('resize', () => {
+            screenWidth = window.screen.availWidth;
+            if (screenWidth > 1024) {
+                menuLinks.forEach(link => {
+                    link.style.opacity = '1';
+                });
+                hamburger.classList.remove('active');
+                menu.classList.remove('nav-list--open');
+                body.classList.remove('no-scroll');
+            } else {
+                menuLinks.forEach(link => {
+                    link.style.opacity = '0';
+                });
+            }
+        });
 
-// function lampSwitchOff() {
-//     lampLightMain.classList.remove('lamp-light-main--on');
-//     lampLightBig.classList.remove('lamp-light--on');
-//     lampLightSmall.classList.remove('lamp-light-small--on');
-//     headerMan.classList.remove('header-man__img--show');
+        if(!hamburger.classList.contains('active')) {
+            showMenuLinks();
+            hamburger.classList.add('active');
+            menu.classList.add('nav-list--open');
+            body.classList.add('no-scroll');
+            logoText.classList.add('logo__link--mobile-open');
+            mobileBtn.classList.add('mobile-menu__btn--animate');
+            social.classList.add('social-list--animate');
+        } else {
+            menuLinks.forEach(link => {
+                link.style.opacity = '0';
+            });
+            hamburger.classList.remove('active');
+            menu.classList.remove('nav-list--open');
+            body.classList.remove('no-scroll');
+            logoText.classList.remove('logo__link--mobile-open');
+            mobileBtn.classList.remove('mobile-menu__btn--animate');
+            social.classList.remove('social-list--animate');
+        }
 
-//     headerMan.classList.add('header-man__img--hide');
-//     lampLightMain.classList.add('lamp-light-main--off');
-//     lampLightBig.classList.add('lamp-light--off');
-//     lampLightSmall.classList.add('lamp-light-small--off');
-// }
-
-// lamp.addEventListener('mouseover', () => {
-//     console.log(lamp);
-
-//     lampLightMain.classList.remove('lamp-light-main--off');
-//     lampLightBig.classList.remove('lamp-light--off');
-//     lampLightSmall.classList.remove('lamp-light-small--off');
-
-//     lampLightMain.classList.add('lamp-light-main--on');
-//     lampLightBig.classList.add('lamp-light--on');
-//     lampLightSmall.classList.add('lamp-light-small--on');
-// });
-
-// lamp.addEventListener('mouseleave', () => {
-//     console.log(lamp);
-
-//     lampLightMain.classList.remove('lamp-light-main--on');
-//     lampLightBig.classList.remove('lamp-light--on');
-//     lampLightSmall.classList.remove('lamp-light-small--on');
-
-//     lampLightMain.classList.add('lamp-light-main--off');
-//     lampLightBig.classList.add('lamp-light--off');
-//     lampLightSmall.classList.add('lamp-light-small--off');
-// });
+        function showMenuLinks() {  
+            setTimeout( () => {
+                function menuLinksShow() {
+                    for (let i = 0; i < menuLinks.length; i++) {
+                        setTimeout( () => {
+                            menuLinks[i].style.opacity = '1';
+                        }, 150*i);
+                    }
+                }
+                menuLinksShow(); 
+            }, 500);
+        }
+    }
+})();
