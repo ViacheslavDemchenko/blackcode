@@ -4093,13 +4093,13 @@ fieldset input {
   }
 
   .phone-icon {
-    top: 1.25rem;
-    left: 7.5625rem;
+    top: 1.5rem;
+    left: 7.25rem;
   }
 
   .computer-icon {
-    top: 1.875rem;
-    left: 7.4375rem;
+    top: 2rem;
+    left: 7.3125rem;
   }
 }
 
@@ -4118,7 +4118,17 @@ fieldset input {
   }
 }
 
-@media (min-width: 72.1875rem) {
+@media (min-width: 73.125em) {
+  .lamp {
+    right: 35%;
+  }
+
+  .lamp-light {
+    right: 32.7%;
+  }
+}
+
+@media (min-width: 73.75rem) {
   .header__btn {
     width: 17.4375rem;
     height: 4.9375rem;
@@ -4134,16 +4144,6 @@ fieldset input {
     max-width: 100%;
     flex-basis: 100%;
     padding: 0 !important;
-  }
-}
-
-@media (min-width: 73.125em) {
-  .lamp {
-    right: 35%;
-  }
-
-  .lamp-light {
-    right: 32.7%;
   }
 }
 
@@ -4318,6 +4318,15 @@ fieldset input {
   .header__text {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+
+  .phone-icon {
+    top: 7.75rem;
+  }
+
+  .computer-icon {
+    top: 1.875rem;
+    left: 7.3125rem;
   }
 }
 
