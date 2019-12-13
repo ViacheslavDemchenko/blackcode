@@ -866,6 +866,7 @@ template {
   background-position: 62% -208px, 21% -124%;
   background-repeat: no-repeat, no-repeat;
   background-size: 616px 666px, 906px 698px;
+  overflow: hidden;
 }
 
 .section-portfolio {
@@ -933,6 +934,7 @@ template {
 }
 
 .section-form {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -943,39 +945,13 @@ template {
   flex: 0 1 auto;
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
-  height: 52.4375rem;
+  max-height: 62rem;
+  padding-bottom: 13.125rem;
   overflow: hidden;
   background: #171717;
-}
-
-.section-form::before {
-  position: absolute;
-  content: "Обратная связь";
-  z-index: 25;
-  top: 49%;
-  left: 0.625rem;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.section-form::after {
-  position: absolute;
-  content: "";
-  z-index: 20;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../img/form/overlay.png);
-  background-position: center;
+  margin: 0;
+  background-image: url(../img/mobile/form/form-bg@1x.jpg);
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1639,6 +1615,19 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.brief-btn {
+  display: none;
+}
+
+.arrow-white__icon {
+  position: absolute;
+  top: 0.5625rem;
+  right: 0.625rem;
+  width: 2.125rem;
+  height: 1.25rem;
+  fill: #ffffff;
 }
 
 @-webkit-keyframes bounceInLeft {
@@ -3057,119 +3046,30 @@ template {
   background-size: cover;
 }
 
-.form-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-box-flex: 0;
-  flex: 0 1 auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  margin-right: 11.6875rem;
-}
-
-.form-wrap::after {
-  position: absolute;
-  content: "";
-  z-index: 25;
-  top: calc(50% - 25px);
-  left: -3.8125rem;
-  -webkit-transform: translateY(calc(-50% - 25px));
-  transform: translateY(calc(-50% - 25px));
-  width: 0.375rem;
-  height: 3.0625rem;
-  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-  border-radius: 0.1875rem;
-  background: #5756fb;
-}
-
-.form-wrap::before {
-  position: absolute;
-  content: "";
-  z-index: 25;
-  width: 0.0625rem;
-  height: 100%;
-  top: 0;
-  left: -3.625rem;
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .form-lefttcol {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
   -webkit-box-align: end;
   align-items: flex-end;
-  width: 55%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-basis: 60%;
+  max-width: 60%;
   height: 100vh;
-  background-image: url(../img/form/form-bg-2.jpg);
-  background-position: -240px -30px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.form-lefttcol__img-wrap {
+.form-lefttcol img {
   position: relative;
-  padding-top: 9.25rem;
-  width: 75rem;
-  max-width: 75rem;
-  height: 76.25rem;
-  max-height: 76.25rem;
-  overflow: hidden;
-}
-
-.form-lefttcol__img-wrap::before {
-  position: absolute;
-  content: "";
-  z-index: 5;
-  top: 12.5rem;
-  right: -11.25rem;
-  width: 100%;
-  max-width: 54.6875rem;
-  height: 63.1875rem;
-  max-height: 63.1875rem;
-  background-image: url(../img/form/smoke-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.form-lefttcol__img-wrap::after {
-  position: absolute;
-  content: "";
-  z-index: 15;
-  bottom: -26.875rem;
-  left: 12.5rem;
-  width: 100%;
-  max-width: 59.625rem;
-  height: 57rem;
-  max-height: 57rem;
-  background-image: url(../img/form/smoke-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.form-lefttcol__img-wrap img {
-  position: absolute;
-  z-index: 10;
-  bottom: 7.8125rem;
-  right: 7.5rem;
+  bottom: 0rem;
+  max-width: 53.6875rem;
+  max-height: 40.4375rem;
 }
 
 .form-rightcol {
-  position: relative;
-  z-index: 30;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -3177,59 +3077,8 @@ template {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  max-width: 39rem;
-  width: 45%;
-  padding: 12.625rem 0.3125rem 0.3125rem 0.3125rem;
-  background: #1a1a1a;
-}
-
-.form-rightcol::before {
-  position: absolute;
-  content: "";
-  z-index: 0;
-  bottom: 8.125rem;
-  right: -22.875rem;
-  width: 23.125rem;
-  height: 22.875rem;
-  background-image: url(../img/form/brief.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.form-rightcol .brief-btn {
-  position: absolute;
-  text-align: left;
-  bottom: 9.375rem;
-  right: -10.625rem;
-  padding-left: 1.25rem;
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  width: 9.1875rem;
-  height: 2.1875rem;
-  border: none;
-  outline: none;
-  border-radius: 0.1875rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#9191fe), color-stop(83%, #5a59fb), to(#5a59fb));
-  background-image: linear-gradient(to right, #9191fe 0%, #5a59fb 83%, #5a59fb 100%);
-}
-
-.form-rightcol .brief-btn::before {
-  position: absolute;
-  content: "";
-  z-index: 35;
-  top: 0.875rem;
-  right: 0.9375rem;
-  width: 1.5rem;
-  height: 0.5625rem;
-  background-image: url(../img/form/arrow.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: auto;
+  margin-top: 2.5rem;
 }
 
 .inputs-wrap {
@@ -3244,18 +3093,16 @@ template {
   justify-content: center;
 }
 
-.form-content {
-  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
-  text-align: center;
+.form {
+  max-width: 18.125rem;
 }
 
 .form__pretitle {
+  margin-bottom: 1.5625rem;
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 3.375rem;
 }
 
 .form__pretitle--yellow {
@@ -3272,35 +3119,86 @@ template {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
-  font-size: 3.125rem;
-  line-height: 3.375rem;
 }
 
 .form__submit {
-  width: 15.375rem;
-  height: 4.375rem;
+  max-width: 13.125rem;
+  height: 3.75rem;
+  margin-bottom: 1.25rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #372508;
   box-shadow: 0 0.375rem 0.0625rem #b5811e;
   border-radius: 2.1875rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#f4d48e), color-stop(77%, #eaa93b), color-stop(97%, #e68f21), to(#e68f21));
   background-image: linear-gradient(to right, #f4d48e 0%, #eaa93b 77%, #e68f21 97%, #e68f21 100%);
 }
 
+.form__subtitle {
+  max-width: 10.625rem;
+  margin: 5rem 0 0 0.625rem;
+  align-self: flex-start;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+
+.form__subtitle--yellow {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  color: #eaa627;
+}
+
 fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 fieldset input {
-  margin: 1.25rem 0 0.625rem 0;
+  margin: 0.625rem 0;
   display: inline-block;
-  width: 26.5rem;
+  width: 18.125rem;
+  max-width: 100%;
   height: 3.4375rem;
+  padding: 0.625rem 0.625rem 0.625rem 1.25rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 2.625rem;
+  color: #303030;
   border-radius: 0.3125rem;
   border: 0.125rem solid #2451af;
   background-color: #f8f8f8;
 }
 
+fieldset input:focus {
+  background-color: #d3e1ff;
+}
+
+fieldset input::-webkit-input-placeholder,
+fieldset input::-moz-placeholder,
+fieldset input::-moz-placeholder,
+fieldset input::-ms-input-placeholder {
+  font-family: "Qanelas-Light";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 2.625rem;
+  color: rgba(163, 163, 163, 0.2);
+}
+
 .policy-text {
-  width: 51%;
+  max-width: 13.75rem;
   text-align: center;
   font-family: "Qanelas-Medium";
   font-weight: normal;
@@ -3453,6 +3351,12 @@ fieldset input {
   .section-price-calc {
     padding: 4.375rem 0;
     background-position: 116% -197px, 35% -221%;
+  }
+
+  .section-form {
+    max-height: 68.75rem;
+    padding-bottom: 18.4375rem;
+    padding-bottom: 26.5rem;
   }
 
   .header-top {
@@ -3654,6 +3558,57 @@ fieldset input {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
+
+  .form-rightcol {
+    margin: auto;
+    margin-top: 3.75rem;
+  }
+
+  .form {
+    max-width: 22.8125rem;
+  }
+
+  .form__pretitle {
+    font-size: 1.125rem;
+    line-height: 3.375rem;
+  }
+
+  .form__title {
+    max-width: 15.9375rem;
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .form__submit {
+    margin-top: 0;
+    margin-top: 0.625rem;
+    max-width: 13.125rem;
+    height: 3.75rem;
+  }
+
+  .form__subtitle {
+    max-width: 11.875rem;
+    margin-top: 6.875rem;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+
+  fieldset input {
+    margin: 1.25rem 0 0.625rem 0;
+    width: 22.8125rem;
+    max-width: 100%;
+  }
+
+  .policy-text {
+    max-width: 19.375rem;
+  }
+}
+
+@media (min-width: 50rem) and (min-width: 64rem) {
+  .header::after,
+  .header::before {
+    display: none;
+  }
 }
 
 @media (min-width: 50rem) {
@@ -3728,6 +3683,12 @@ fieldset input {
     background-position: -296px -335px, -278px 136px;
     background-repeat: no-repeat, no-repeat;
     background-size: 1025px 1111px, 1510px 1162px;
+  }
+
+  .section-form {
+    max-height: 75.75rem;
+    padding-bottom: 18.4375rem;
+    background-image: url(../img/tablet/form/form-bg@1x.jpg);
   }
 
   .header-top {
@@ -4040,12 +4001,44 @@ fieldset input {
     font-size: 1.5rem;
     line-height: 1.875rem;
   }
-}
 
-@media (min-width: 50rem) and (min-width: 64rem) {
-  .header::after,
-  .header::before {
-    display: none;
+  .form-rightcol {
+    margin: auto;
+    margin-top: 3.75rem;
+  }
+
+  .form {
+    max-width: 33.4375rem;
+  }
+
+  .form__pretitle {
+    margin-bottom: 2.5rem;
+    font-size: 1.375rem;
+    line-height: 3.375rem;
+  }
+
+  .form__title {
+    max-width: 26.25rem;
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
+  .form__subtitle {
+    max-width: 13.125rem;
+    margin: 9.375rem 0 0 3.125rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  fieldset input {
+    width: 33.4375rem;
+    max-width: 100%;
+  }
+
+  .policy-text {
+    max-width: 22.1875rem;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -4070,6 +4063,15 @@ fieldset input {
 
   .line-center-bottom {
     display: none;
+  }
+
+  .section-form {
+    height: 100vh;
+    max-height: 52.375rem;
+    background-image: url(../img/desktop/form/form-bg1@x.png);
+    background-position: 24% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .nav {
@@ -4301,6 +4303,27 @@ fieldset input {
     height: 1.125rem;
   }
 
+  .brief-btn {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 10%;
+    border: none;
+    outline: none;
+    display: inline-block;
+    width: 9.1875rem;
+    height: 2.1875rem;
+    padding-right: 2.5rem;
+    font-family: "Qanelas-Regular";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    border-radius: 0.1875rem;
+    background-image: -webkit-gradient(linear, left top, right top, from(#bdbddf), color-stop(83%, #5a59fb));
+    background-image: linear-gradient(to right, #bdbddf 0%, #5a59fb 83%);
+  }
+
   .advantages {
     display: -webkit-box;
     display: flex;
@@ -4416,6 +4439,81 @@ fieldset input {
   .form-right__text--blue {
     margin-bottom: 2rem;
   }
+
+  .price-calc-card {
+    max-width: 68.5rem;
+    padding: 4.0625rem 5.0625rem 7.5625rem 5.0625rem;
+  }
+
+  .form-rightcol {
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    flex-basis: 40%;
+    width: 40%;
+    max-width: 39.375rem;
+    padding: 6.25rem 0.3125rem 0.3125rem 0.3125rem;
+    margin: 0;
+    height: 100vh;
+    background: #1a1a1a;
+  }
+
+  .form {
+    max-width: 25rem;
+  }
+
+  .form-content {
+    text-align: center;
+  }
+
+  .form__pretitle {
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+  }
+
+  .form__title {
+    margin-bottom: 1.25rem;
+    font-size: 2.1875rem;
+    line-height: 2.4375rem;
+  }
+
+  .form__submit {
+    max-width: 15.375rem;
+    height: 4.375rem;
+  }
+
+  .form__subtitle {
+    display: none;
+  }
+
+  fieldset input {
+    width: 26.5rem;
+    max-width: 80%;
+  }
+
+  .policy-text {
+    max-width: 19.375rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 64rem) and (min-width: 90rem) {
+  .price-calc-card::after {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    bottom: -8.75rem;
+    left: -7.5rem;
+    width: 27.125rem;
+    max-width: 27.125rem;
+    height: 29.75rem;
+    max-height: 29.75rem;
+    background-image: url(../img/price-calc/calculator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 70.9375rem) {
@@ -4433,14 +4531,6 @@ fieldset input {
   }
 }
 
-@media (min-width: 73.125rem) {
-  .nav-list {
-    max-width: 100%;
-    flex-basis: 100%;
-    padding: 0 !important;
-  }
-}
-
 @media (min-width: 73.125em) {
   .lamp {
     right: 35%;
@@ -4451,24 +4541,18 @@ fieldset input {
   }
 }
 
+@media (min-width: 73.125rem) {
+  .nav-list {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding: 0 !important;
+  }
+}
+
 @media (min-width: 73.75rem) {
   .header__btn {
     width: 17.4375rem;
     height: 4.9375rem;
-  }
-}
-
-@media (min-width: 77.5rem) {
-  .social__icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .logo {
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
   }
 }
 
@@ -4483,6 +4567,20 @@ fieldset input {
 
   .lamp-light-main {
     right: -272%;
+  }
+}
+
+@media (min-width: 77.5rem) {
+  .social__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
   }
 }
 
@@ -4510,15 +4608,10 @@ fieldset input {
   }
 }
 
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
-  }
-}
-
-@media (min-width: 89.0625em) {
-  .header__title--small {
-    font-size: 3.75rem;
+@media (min-width: 89.0625rem) {
+  .header__title {
+    font-size: 5.3125rem;
+    line-height: 4.375rem;
   }
 }
 
@@ -4556,10 +4649,15 @@ fieldset input {
   }
 }
 
-@media (min-width: 89.0625rem) {
-  .header__title {
-    font-size: 5.3125rem;
-    line-height: 4.375rem;
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
+  }
+}
+
+@media (min-width: 89.0625em) {
+  .header__title--small {
+    font-size: 3.75rem;
   }
 }
 
@@ -4570,6 +4668,12 @@ fieldset input {
     background-position: 0% 12%, 101% 74%;
     background-repeat: no-repeat, no-repeat;
     background-size: 872px 593px, 872px 593px;
+  }
+
+  .section-form {
+    background-image: url(../img/form/brief.png), url(../img/desktop/form/form-bg1@x.png);
+    background-position: 100% 100%, center;
+    background-size: 317px 320px, cover;
   }
 
   .nav__item:nth-child(3) {
@@ -4617,27 +4721,6 @@ fieldset input {
     text-align: left;
   }
 
-  .price-calc-card {
-    max-width: 68.5rem;
-    padding: 4.0625rem 5.0625rem 7.5625rem 5.0625rem;
-  }
-
-  .price-calc-card::after {
-    position: absolute;
-    content: "";
-    z-index: 5;
-    bottom: -8.75rem;
-    left: -7.5rem;
-    width: 27.125rem;
-    max-width: 27.125rem;
-    height: 29.75rem;
-    max-height: 29.75rem;
-    background-image: url(../img/price-calc/calculator.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .price-calc-card::before {
     bottom: -3.9375rem;
     right: 7.3125rem;
@@ -4675,6 +4758,35 @@ fieldset input {
     margin-bottom: 1.5625rem;
     font-size: 1.5rem;
     line-height: 1.5625rem;
+  }
+
+  .form-lefttcol {
+    flex-basis: 33%;
+    max-width: 33%;
+  }
+
+  .form-rightcol {
+    right: 21%;
+    flex-basis: 40%;
+    width: 40%;
+    padding: 9.375rem 0.3125rem 0.3125rem 0.3125rem;
+  }
+
+  .form {
+    max-width: 39.375rem;
+  }
+}
+
+@media (min-width: 92.5rem) {
+  .section-form {
+    background-position: 98% 100%, center;
+  }
+}
+
+@media (min-width: 93.75rem) {
+  .form-lefttcol {
+    flex-basis: 45%;
+    max-width: 45%;
   }
 }
 
@@ -4893,6 +5005,43 @@ fieldset input {
   .form-right__text {
     font-size: 1.5rem;
     line-height: 1.5rem;
+  }
+
+  .form__pretitle {
+    font-size: 1.5rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width: 101.25rem) {
+  .section-form {
+    background-position: 97% 100%, center;
+  }
+
+  .brief-btn {
+    right: 11%;
+  }
+}
+
+@media (min-width: 106.25rem) {
+  .section-form {
+    background-position: 95% 100%, center;
+  }
+}
+
+@media (min-width: 109.75rem) {
+  .form__title {
+    width: 100%;
+    max-width: 39.375rem;
+    font-size: 3.125rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width: 113.125rem) {
+  .section-form {
+    background-size: 370px 366px, cover;
+    background-position: 97% 100%, center;
   }
 }
 
