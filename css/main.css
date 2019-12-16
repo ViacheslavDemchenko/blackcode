@@ -809,11 +809,11 @@ template {
   -webkit-box-pack: center;
   justify-content: center;
   height: 62.875rem;
-  padding: 9.0625rem 0 3.125rem 0;
+  padding: 6.25rem 0 3.125rem 0;
   margin: 0;
   background-color: #000000;
   background-image: url(../img/desktop/services/services-bg-3@1x.png);
-  background-position: top left;
+  background-position: 20% 100%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
 }
@@ -1937,12 +1937,24 @@ template {
   height: 2.1875rem;
 }
 
+.advantages__slider-wrap {
+  overflow: hidden;
+}
+
 .advantages__slider {
   position: relative;
-  width: 43.46%;
+  width: 100%;
   max-width: 38.4375rem;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.advantages__slider::-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent;
 }
 
 .advantages__slider__shadow-bottom::after {
@@ -2094,8 +2106,7 @@ template {
 }
 
 .advantages__laptop {
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   width: 56.54%;
   max-width: 50rem;
   height: 100vh;
@@ -2424,13 +2435,14 @@ template {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 65%;
+  max-width: 65%;
   padding-bottom: 0rem;
 }
 
 .leftcol-content {
-  margin-left: 10rem;
+  margin-left: 1.25rem;
+  max-width: 30.1875rem;
 }
 
 .leftcol__pretitle {
@@ -2438,8 +2450,6 @@ template {
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
   font-weight: 400;
   color: #e0e0ff;
 }
@@ -2448,8 +2458,6 @@ template {
   font-family: "Rollestontitlelightitalic";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
   font-weight: 300;
   color: #eaa627;
 }
@@ -2459,20 +2467,20 @@ template {
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
-  font-size: 2.8125rem;
-  line-height: 2.8125rem;
+  font-size: 2.1875rem;
+  line-height: 2.1875rem;
   color: #ffffff;
 }
 
 .dialog-block {
   position: absolute;
   top: 10.625rem;
-  left: 25rem;
+  left: 23%;
 }
 
 .dialog {
   position: relative;
-  max-width: 28.39vw;
+  max-width: 45%;
   min-height: 10rem;
   margin: 0.875rem 0 0 0rem;
   padding: 1.875rem 0.9375rem 1.875rem 0.9375rem;
@@ -2484,7 +2492,7 @@ template {
   position: absolute;
   content: "";
   left: 3.75rem;
-  bottom: -2.5rem;
+  bottom: -2.4375rem;
   border: 2.5rem solid transparent;
   border-bottom: 0 solid transparent;
   border-right: 5rem solid #ffffff;
@@ -2526,9 +2534,9 @@ template {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
-  flex-basis: 50%;
-  max-width: 50%;
-  padding: 0 0rem 0rem 0;
+  flex-basis: 35%;
+  max-width: 35%;
+  padding-right: 4.0625rem;
 }
 
 .services-card {
@@ -2553,10 +2561,9 @@ template {
 
 .services-card--lg {
   position: relative;
-  max-width: 20rem;
-  min-height: 23.8125rem;
+  max-width: 22.25rem;
+  min-height: 26.0625rem;
   margin-bottom: 2.125rem;
-  padding: 0.75rem;
   background-image: url(../img/services/mac.jpg);
   background-position: 100% -1%;
 }
@@ -2573,18 +2580,6 @@ template {
   border-radius: 50%;
 }
 
-.services-card--lg::before {
-  position: absolute;
-  content: "1";
-  z-index: 1;
-  top: 5rem;
-  left: -1.875rem;
-  color: red;
-  font-size: 15.625rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-}
-
 .services-card--lg__icon {
   position: absolute;
   z-index: 5;
@@ -2597,6 +2592,7 @@ template {
 
 .services-card--lg .card-options {
   padding: 0 0 0 1.875rem;
+  margin-bottom: 1.125rem;
 }
 
 .small-cards-wrap {
@@ -2616,8 +2612,8 @@ template {
 
 .services-card--sm {
   position: relative;
-  max-width: 16.5rem;
-  min-height: 19.625rem;
+  max-width: 18.8125rem;
+  min-height: 24.0625rem;
   padding: 0.75rem 0.75rem 1.375rem 0.75rem;
   background-color: #ffffff;
 }
@@ -2635,26 +2631,12 @@ template {
 }
 
 .services-card--sm:nth-child(1) {
-  margin-right: 2.375rem;
-  background-image: url(../img/services/keyboard.png);
-  background-position: 100% -1%;
+  display: none;
 }
 
 .services-card--sm:nth-child(1) .card-options {
   margin-bottom: 1.125rem;
   padding: 0 0.3125rem 0 1.875rem;
-}
-
-.services-card--sm:nth-child(1)::before {
-  position: absolute;
-  content: "2";
-  top: 5rem;
-  left: -1.875rem;
-  color: red;
-  font-size: 9.375rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  opacity: 0.4;
 }
 
 .services-card--sm:nth-child(2) {
@@ -2666,18 +2648,6 @@ template {
 .services-card--sm:nth-child(2) .card-options {
   margin-bottom: 1.125rem;
   padding: 0 0.3125rem 0 1.875rem;
-}
-
-.services-card--sm:nth-child(2)::before {
-  position: absolute;
-  content: "3";
-  top: 5rem;
-  left: -1.875rem;
-  color: red;
-  font-size: 9.375rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  opacity: 0.4;
 }
 
 .services-card--sm__icon {
@@ -2698,6 +2668,7 @@ template {
 
 .card__title {
   margin-top: 8.75rem;
+  text-align: center;
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
@@ -4408,6 +4379,12 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 2rem;
   }
 
+  .services-card--lg {
+    padding: 0.75rem 0.75rem 1.375rem 0.75rem;
+    max-width: 18.8125rem;
+    min-height: 21.9375rem;
+  }
+
   .price-calc-card {
     max-width: 68.5rem;
     padding: 4.0625rem 5.0625rem 7.5625rem 5.0625rem;
@@ -4499,13 +4476,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 73.125em) {
-  .lamp {
-    right: 35%;
-  }
-
-  .lamp-light {
-    right: 32.7%;
+@media (min-width: 73.75rem) {
+  .header__btn {
+    width: 17.4375rem;
+    height: 4.9375rem;
   }
 }
 
@@ -4517,10 +4491,13 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
+@media (min-width: 73.125em) {
+  .lamp {
+    right: 35%;
+  }
+
+  .lamp-light {
+    right: 32.7%;
   }
 }
 
@@ -4576,6 +4553,12 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
+  }
+}
+
 @media (min-width: 89.0625rem) {
   .header__title {
     font-size: 5.3125rem;
@@ -4617,12 +4600,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
-  }
-}
-
 @media (min-width: 89.0625em) {
   .header__title--small {
     font-size: 3.75rem;
@@ -4630,6 +4607,11 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 90rem) {
+  .section-services {
+    padding: 9.0625rem 0 3.125rem 0;
+    background-position: top left;
+  }
+
   .section-price-calc {
     padding: 1.875rem 0;
     background-image: url(../img/desktop/price-calc/wave-left1@x.png), url(../img/desktop/price-calc/wave-right1@x.png);
@@ -4689,6 +4671,58 @@ fieldset input::-ms-input-placeholder {
     text-align: left;
   }
 
+  .services-leftcol {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .leftcol-content {
+    max-width: 100%;
+    margin-left: 10rem;
+  }
+
+  .leftcol__pretitle {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+
+  .leftcol__pretitle--yellow {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+
+  .leftcol__title {
+    font-size: 2.8125rem;
+    line-height: 2.8125rem;
+  }
+
+  .dialog-block {
+    left: 25rem;
+  }
+
+  .dialog {
+    max-width: 28.39vw;
+    margin: 0.875rem 0 0 0rem;
+  }
+
+  .services-rightcol {
+    padding-right: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .services-card--lg {
+    padding: 0.75rem;
+  }
+
+  .services-card--sm:nth-child(1) {
+    display: -webkit-box;
+    display: flex;
+    margin-right: 2.375rem;
+    background-image: url(../img/services/keyboard.png);
+    background-position: 100% -1%;
+  }
+
   .price-calc-card::before {
     bottom: -3.9375rem;
     right: 7.3125rem;
@@ -4742,6 +4776,12 @@ fieldset input::-ms-input-placeholder {
 
   .form {
     max-width: 39.375rem;
+  }
+}
+
+@media (min-width: 90.5625rem) {
+  .small-cards-wrap {
+    width: 40.125rem;
   }
 }
 
@@ -4985,8 +5025,13 @@ fieldset input::-ms-input-placeholder {
   }
 
   .leftcol__pretitle {
-    font-size: 1.375rem;
-    line-height: 1.375rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .leftcol__pretitle--yellow {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   .leftcol__title {
@@ -5003,18 +5048,8 @@ fieldset input::-ms-input-placeholder {
     padding: 0 6.25rem 1.875rem 0;
   }
 
-  .services-card--lg {
-    max-width: 22.25rem;
-    min-height: 26.0625rem;
-  }
-
   .services-card--lg .card-options {
     padding: 0 2.25rem 0 1.875rem;
-  }
-
-  .services-card--sm {
-    max-width: 18.75rem;
-    min-height: 21.875rem;
   }
 
   .services-card--sm:nth-child(1) .card-options {

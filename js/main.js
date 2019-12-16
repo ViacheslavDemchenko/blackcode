@@ -1,4 +1,37 @@
 (function() {
+
+    const sectionAdvantages = document.querySelector('.section-advantages');
+    const advantagesSlider = document.querySelector('.advantages__slider');
+
+    
+    let coord = sectionAdvantages.getBoundingClientRect().top;
+    console.log(coord);
+
+    // sectionAdvantages.addEventListener('mousewheel', sliderShow);
+
+    // function sliderShow() {
+    //     advantagesSlider.style.top += '10px';
+    // }
+
+    function disableScrolling() {
+        var x=window.scrollX;
+        var y=window.scrollY;
+        window.onscroll=function(){window.scrollTo(x, y);};
+    }
+
+    function enableScrolling() {
+        window.onscroll=function(){};
+    }
+
+    if(coord <= 0) {
+        console.log('yes');
+        // disableScrolling();
+    } else {
+        console.log('no');
+    }
+
+})();
+(function() {
     const hamburger = document.getElementById('menu__button');
     const menu = document.querySelector('.nav-list');
     const menuLinks = document.querySelectorAll('.nav__link');
