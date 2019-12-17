@@ -50,7 +50,7 @@
     let screenWidth = window.screen.availWidth;
 
 
-    hamburger.addEventListener('click', mobileMenu);
+    // hamburger.addEventListener('click', mobileMenu);
 
     function mobileMenu() {
 
