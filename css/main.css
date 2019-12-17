@@ -784,6 +784,35 @@ template {
   background: #5756fb;
 }
 
+.advantages__slider,
+.advantages__laptop {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.advantages__slide,
+.advantages__laptop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.advantages__slide {
+  height: 400px;
+  background-color: lightgray;
+  background-image: url(https://3.bp.blogspot.com/-FUOSuBucarc/XEz-XlUQgXI/AAAAAAAAHis/hQjomTjplZ8_NeRU_weB2uFqwohp-HM1wCHMYCw/s1600/free-computer-wallpapers-for-download-in-hd-for-desktops-and-laptops.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__laptop {
+  height: 800px;
+  background-color: darkgray;
+  background-image: url(https://3.bp.blogspot.com/-4KGx9OZWtE4/XEz-XV8KQuI/AAAAAAAAHio/rCnsBjlhoYA4ggL-m-3mBj2ZBDWg9_YaACHMYCw/s1600/download-the-all-new-iphone-xr-bubble-wallpapers-here-ultralinx.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section-feedback {
   position: relative;
   height: 100%;
@@ -1937,278 +1966,35 @@ template {
   height: 2.1875rem;
 }
 
-.advantages__slider-wrap {
-  overflow: hidden;
-}
-
 .advantages__slider {
-  position: relative;
-  width: 100%;
-  max-width: 38.4375rem;
-  height: 100vh;
-  overflow: auto;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-  scrollbar-width: none;
-}
-
-.advantages__slider::-webkit-scrollbar {
-  width: 0 !important;
-  background: transparent;
-}
-
-.advantages__slider__shadow-bottom::after {
-  position: absolute;
-  content: "";
-  z-index: 10;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 11.25rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(to top, black 0%, rgba(255, 255, 255, 0.5) 100%);
-}
-
-.advantages__slider__shadow-top::before {
-  position: absolute;
-  content: "";
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10.625rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
-}
-
-.advantages__slide-content {
-  width: 97%;
-  padding: 1.4375rem 0 0 5.5625rem;
-}
-
-.advantages__slide__title {
-  margin-bottom: 1.25rem;
-  font-family: "Gilroy-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.375rem;
-  color: #5756fb;
-}
-
-.advantages__slide__text {
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.75rem;
-  line-height: 1.875rem;
-  letter-spacing: -0.035rem;
-  color: #161616;
-}
-
-.advantages__slide__text--blue {
-  font-family: "Qanelas-Bold";
-  font-weight: normal;
-  font-style: normal;
-  color: #2e2dff;
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 .advantages__slide {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  height: 400px;
+  background-color: lightgray;
+  background-image: url(https://3.bp.blogspot.com/-FUOSuBucarc/XEz-XlUQgXI/AAAAAAAAHis/hQjomTjplZ8_NeRU_weB2uFqwohp-HM1wCHMYCw/s1600/free-computer-wallpapers-for-download-in-hd-for-desktops-and-laptops.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.position-relative {
   position: relative;
-  width: 38.5rem;
-  height: 25rem;
-  padding: 0.3125rem;
-  overflow: hidden;
-}
-
-.advantages__slide:nth-child(1) {
-  background: url(../img/advantages-cards/advantages-card_1.jpg), white;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.advantages__slide:nth-child(1)::before {
-  position: absolute;
-  content: "1";
-  top: 4.375rem;
-  left: 1.5625rem;
-  font-family: "Rollestontitlelightitalic";
-  font-weight: normal;
-  font-style: normal;
-  color: #eaa627;
-  font-size: 6.875rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-}
-
-.advantages__slide:nth-child(2) {
-  background: url(../img/advantages-cards/advantages-card_2.jpg), white;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.advantages__slide:nth-child(2)::before {
-  position: absolute;
-  content: "2";
-  top: 4.375rem;
-  left: 1.5625rem;
-  font-family: "Rollestontitlelightitalic";
-  font-weight: normal;
-  font-style: normal;
-  color: #eaa627;
-  font-size: 6.875rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-}
-
-.advantages__slide:nth-child(3) {
-  background: url(../img/advantages-cards/advantages-card_3.jpg), white;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.advantages__slide:nth-child(3)::before {
-  position: absolute;
-  content: "3";
-  top: 4.375rem;
-  left: 1.5625rem;
-  font-family: "Rollestontitlelightitalic";
-  font-weight: normal;
-  font-style: normal;
-  color: #eaa627;
-  font-size: 6.875rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-}
-
-.advantages__slide:nth-child(4) {
-  background: url(../img/advantages-cards/advantages-card_4.jpg), white;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.advantages__slide:nth-child(4)::before {
-  position: absolute;
-  content: "4";
-  top: 4.375rem;
-  left: 1.5625rem;
-  font-family: "Rollestontitlelightitalic";
-  font-weight: normal;
-  font-style: normal;
-  color: #eaa627;
-  font-size: 6.875rem;
-  font-weight: 400;
-  line-height: 1.375rem;
 }
 
 .advantages__laptop {
-  position: relative;
-  width: 56.54%;
-  max-width: 50rem;
-  height: 100vh;
-  background: url(../img/advantages-cards/advantages-laptop-bg.png), -webkit-gradient(linear, left bottom, left top, from(rgba(22, 22, 22, 0.8)), color-stop(51%, rgba(87, 86, 251, 0.8)), to(rgba(22, 22, 22, 0.8)));
-  background: url(../img/advantages-cards/advantages-laptop-bg.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 51%, rgba(22, 22, 22, 0.8) 100%);
-  background-position: 100% 100%, 2px 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 0 0 0 0.1875rem;
-}
-
-.advantages__laptop-content {
-  padding: 8.75rem 0.9375rem 2.5rem 2.5rem;
-}
-
-.advantages__laptop__img {
-  overflow: hidden;
-}
-
-.advantages__laptop__img img {
-  position: relative;
-  left: -5rem;
-}
-
-.advantages__laptop__pretitle {
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  color: #d0eafe;
-}
-
-.advantages__laptop__pretitle--brown {
-  font-family: "Rollestontitlelightitalic";
-  font-weight: normal;
-  font-style: normal;
-  color: #e89a2a;
-}
-
-.advantages__laptop__title {
-  font-family: "Qanelas-Bold";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 3.375rem;
-  line-height: 2.8125rem;
-  color: #ffffff;
-}
-
-.advantages__laptop__title--brown {
-  font-family: "Qanelas-Bold";
-  font-weight: normal;
-  font-style: normal;
-  color: #e89a2a;
-  font-size: 3.375rem;
-}
-
-.advantages__laptop__title--small {
-  margin-bottom: 2.625rem;
-  font-family: "Qanelas-Bold";
-  font-weight: normal;
-  font-style: normal;
-  color: #ffffff;
-  font-size: 2.5rem;
-}
-
-.advantages__player {
-  margin-left: 16.25rem;
-}
-
-.player__title {
-  margin-bottom: 0.5625rem;
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.375rem;
-  color: #ffffff;
-}
-
-.player__link {
-  position: relative;
-  display: inline-block;
-  font-family: "Qanelas-Regular";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #ffffff;
-  border-bottom: 0.125rem dashed #e79526;
-}
-
-.player__link::before {
-  position: absolute;
-  content: "";
-  z-index: 20;
-  bottom: 0;
-  left: -9.375rem;
-  width: 8.3125rem;
-  height: 8.3125rem;
-  background: url(../img/advantages-cards/play-icon.png);
-  background-position: top right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  flex-basis: 50%;
+  max-width: 50%;
+  height: 1200px;
+  background-color: darkgray;
+  background-image: url(https://3.bp.blogspot.com/-4KGx9OZWtE4/XEz-XV8KQuI/AAAAAAAAHio/rCnsBjlhoYA4ggL-m-3mBj2ZBDWg9_YaACHMYCw/s1600/download-the-all-new-iphone-xr-bubble-wallpapers-here-ultralinx.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

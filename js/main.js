@@ -1,36 +1,44 @@
-(function() {
 
-    const sectionAdvantages = document.querySelector('.section-advantages');
-    const advantagesSlider = document.querySelector('.advantages__slider');
+
+    // const bigItems = document.querySelectorAll('.advantages__laptop');
+    // const { scrollHeight } = document.querySelector('body');
+    // window.addEventListener('scroll', e => {
+    //   const { scrollY, innerHeight } = window;
+    //   const sepia = scrollY / (scrollHeight - innerHeight);
+    //   bigItems.forEach(bigItem => bigItem.style.filter = `sepia(${sepia})`);
+    // });
+
+    // const sectionAdvantages = document.querySelector('.section-advantages');
+    // const advantagesSlider = document.querySelector('.advantages__slider');
 
     
-    let coord = sectionAdvantages.getBoundingClientRect().top;
-    console.log(coord);
+    // let coord = sectionAdvantages.getBoundingClientRect().top;
+    // console.log(coord);
 
-    // sectionAdvantages.addEventListener('mousewheel', sliderShow);
+    // // sectionAdvantages.addEventListener('mousewheel', sliderShow);
 
-    // function sliderShow() {
-    //     advantagesSlider.style.top += '10px';
+    // // function sliderShow() {
+    // //     advantagesSlider.style.top += '10px';
+    // // }
+
+    // function disableScrolling() {
+    //     var x=window.scrollX;
+    //     var y=window.scrollY;
+    //     window.onscroll=function(){window.scrollTo(x, y);};
     // }
 
-    function disableScrolling() {
-        var x=window.scrollX;
-        var y=window.scrollY;
-        window.onscroll=function(){window.scrollTo(x, y);};
-    }
+    // function enableScrolling() {
+    //     window.onscroll=function(){};
+    // }
 
-    function enableScrolling() {
-        window.onscroll=function(){};
-    }
+    // if(coord <= 0) {
+    //     console.log('yes');
+    //     // disableScrolling();
+    // } else {
+    //     console.log('no');
+    // }
 
-    if(coord <= 0) {
-        console.log('yes');
-        // disableScrolling();
-    } else {
-        console.log('no');
-    }
 
-})();
 (function() {
     const hamburger = document.getElementById('menu__button');
     const menu = document.querySelector('.nav-list');
