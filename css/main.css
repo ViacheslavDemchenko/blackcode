@@ -717,61 +717,41 @@ template {
 }
 
 .section-advantages {
-  min-height: 100vh;
-  background: #000000;
-}
-
-.section-advantages::before {
-  position: absolute;
-  content: "Преимущества";
-  z-index: 2;
-  top: 49%;
-  left: 0.625rem;
-  transform: translateY(-50%);
-  transform: rotate(-90deg);
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.advantages-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 0 1 auto;
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #000000;
 }
 
-.advantages__slider,
-.advantages__laptop {
-  flex-basis: 50%;
-  max-width: 50%;
+.advantages-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+  margin: 0;
 }
 
-.advantages__slide,
-.advantages__laptop {
-  position: sticky;
-  top: 0px;
-}
-
-.advantages__slide {
-  height: 400px;
-  background-color: lightgray;
-  background-image: url(https://3.bp.blogspot.com/-FUOSuBucarc/XEz-XlUQgXI/AAAAAAAAHis/hQjomTjplZ8_NeRU_weB2uFqwohp-HM1wCHMYCw/s1600/free-computer-wallpapers-for-download-in-hd-for-desktops-and-laptops.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.advantages__laptop {
-  height: 800px;
-  background-color: darkgray;
-  background-image: url(https://3.bp.blogspot.com/-4KGx9OZWtE4/XEz-XV8KQuI/AAAAAAAAHio/rCnsBjlhoYA4ggL-m-3mBj2ZBDWg9_YaACHMYCw/s1600/download-the-all-new-iphone-xr-bubble-wallpapers-here-ultralinx.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.advantages-wrap::before {
+  position: absolute;
+  content: "";
+  z-index: 3;
+  top: 50%;
+  left: -9.0625rem;
+  transform: translateY(-50%);
+  width: 0.375rem;
+  height: 3.0625rem;
+  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+  border-radius: 0.1875rem;
+  background: #2e2dff;
 }
 
 .section-feedback {
@@ -801,6 +781,33 @@ template {
   background-position: 20% 100%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
+}
+
+.section-services::before {
+  position: absolute;
+  content: "Наши услуги";
+  z-index: 2;
+  top: 49%;
+  left: 0.625rem;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-services::after {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  width: 0.0625rem;
+  height: 100%;
+  top: 0;
+  left: 7.5rem;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .section-price-calc {
@@ -898,6 +905,10 @@ template {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-form__wrap {
+  position: relative;
 }
 
 .footer {
@@ -1769,32 +1780,228 @@ template {
 }
 
 .advantages__slider {
-  flex-basis: 50%;
-  max-width: 50%;
-}
-
-.advantages__slide {
-  position: sticky !important;
-  top: 0px;
-  height: 400px;
-  background-color: lightgray;
-  background-image: url(https://3.bp.blogspot.com/-FUOSuBucarc/XEz-XlUQgXI/AAAAAAAAHis/hQjomTjplZ8_NeRU_weB2uFqwohp-HM1wCHMYCw/s1600/free-computer-wallpapers-for-download-in-hd-for-desktops-and-laptops.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.position-relative {
   position: relative;
 }
 
+.advantages__slide-content {
+  width: 97%;
+  padding: 1.4375rem 0 0 5.5625rem;
+}
+
+.advantages__slide__title {
+  margin-bottom: 1.25rem;
+  font-family: "Gilroy-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: #5756fb;
+}
+
+.advantages__slide__text {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.035rem;
+  color: #161616;
+}
+
+.advantages__slide__text--blue {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #2e2dff;
+}
+
+.advantages__slide {
+  position: relative;
+  padding: 0.3125rem;
+  overflow: hidden;
+}
+
+.advantages__slide:nth-child(1) {
+  background: url(../img/advantages-cards/advantages-card_1.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(1)::before {
+  position: absolute;
+  content: "1";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(2) {
+  background: url(../img/advantages-cards/advantages-card_2.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(2)::before {
+  position: absolute;
+  content: "2";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(3) {
+  background: url(../img/advantages-cards/advantages-card_3.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(3)::before {
+  position: absolute;
+  content: "3";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.advantages__slide:nth-child(4) {
+  background: url(../img/advantages-cards/advantages-card_4.jpg), white;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.advantages__slide:nth-child(4)::before {
+  position: absolute;
+  content: "4";
+  top: 4.375rem;
+  left: 1.5625rem;
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #eaa627;
+  font-size: 6.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
 .advantages__laptop {
-  position: sticky !important;
-  top: 0px;
-  flex-basis: 50%;
-  max-width: 50%;
-  height: 1200px;
-  background-color: darkgray;
-  background-image: url(https://3.bp.blogspot.com/-4KGx9OZWtE4/XEz-XV8KQuI/AAAAAAAAHio/rCnsBjlhoYA4ggL-m-3mBj2ZBDWg9_YaACHMYCw/s1600/download-the-all-new-iphone-xr-bubble-wallpapers-here-ultralinx.jpg);
+  position: relative;
+  height: 100vh;
+  background: url(../img/advantages-cards/advantages-laptop-bg.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 51%, rgba(22, 22, 22, 0.8) 100%);
+  background-position: 48% 25px, 2px 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 0.1875rem;
+}
+
+.advantages__laptop-content {
+  padding: 8.125rem 0.9375rem 2.5rem 2.5rem;
+}
+
+.advantages__laptop__img {
+  overflow: hidden;
+}
+
+.advantages__laptop__img img {
+  position: relative;
+  left: -5rem;
+}
+
+.advantages__laptop__pretitle {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  color: #d0eafe;
+}
+
+.advantages__laptop__pretitle--brown {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+}
+
+.advantages__laptop__title {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.advantages__laptop__title--brown {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+  font-size: 3.375rem;
+}
+
+.advantages__laptop__title--small {
+  margin: 1.25rem 0 2.625rem 0;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+.advantages__player {
+  margin-left: 16.25rem;
+}
+
+.player__title {
+  margin-bottom: 0.5625rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+}
+
+.player__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Qanelas-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #ffffff;
+  border-bottom: 0.125rem dashed #e79526;
+}
+
+.player__link::before {
+  position: absolute;
+  content: "";
+  z-index: 20;
+  bottom: 0;
+  left: -9.375rem;
+  width: 8.3125rem;
+  height: 8.3125rem;
+  background: url(../img/advantages-cards/play-icon.png);
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1982,6 +2189,20 @@ template {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   justify-content: space-between;
+}
+
+.services-wrap::after {
+  position: absolute;
+  content: "";
+  z-index: 6;
+  top: 42%;
+  left: 7.3125rem;
+  transform: translateY(-50%);
+  width: 0.375rem;
+  height: 3.0625rem;
+  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+  border-radius: 0.1875rem;
+  background: #5756fb;
 }
 
 .services-leftcol {
@@ -3317,6 +3538,45 @@ fieldset input::-ms-input-placeholder {
     left: 6.8125rem;
   }
 
+  .advantages__slider-wrap {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .advantages__slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    flex-basis: 100%;
+    max-width: 30.1875rem;
+    margin: 0;
+  }
+
+  .advantages__slide {
+    max-width: 30.1875rem;
+    height: 19.6875rem;
+  }
+
+  .advantages__laptop {
+    flex-basis: 100%;
+    max-width: 100%;
+    order: -1;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 2.8125rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__laptop__title {
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
   .feedback-form::after {
     top: 18.375rem;
     right: -0.125rem;
@@ -3760,6 +4020,53 @@ fieldset input::-ms-input-placeholder {
     left: 7.3125rem;
   }
 
+  .advantages__slider-wrap {
+    flex-basis: 43.46%;
+    max-width: 43.46%;
+  }
+
+  .advantages__slider {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    flex-basis: 43.46%;
+    max-width: 38.4375rem;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .advantages__slide {
+    position: sticky;
+    top: 0;
+    max-width: 38.4375rem;
+    height: 25rem;
+  }
+
+  .advantages__laptop {
+    position: sticky;
+    top: 0;
+    flex-basis: 56.54%;
+    width: 56.54%;
+    max-width: 50rem;
+    order: 1;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .advantages__laptop__title {
+    font-size: 3.375rem;
+    line-height: 2.8125rem;
+  }
+
   .feedback-form::after {
     top: -4.1875rem;
     right: -0.125rem;
@@ -3820,8 +4127,63 @@ fieldset input::-ms-input-placeholder {
   }
 
   .price-calc-card {
-    max-width: 68.5rem;
-    padding: 4.0625rem 5.0625rem 7.5625rem 5.0625rem;
+    max-width: 56.75rem;
+    padding: 1.25rem 5.0625rem 7.5625rem 5.0625rem;
+  }
+
+  .price-calc-card::after {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    bottom: -8.75rem;
+    left: -5rem;
+    width: 27.125rem;
+    max-width: 27.125rem;
+    height: 29.75rem;
+    max-height: 29.75rem;
+    background-image: url(../img/price-calc/calculator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .price-calc-card::before {
+    bottom: -3.9375rem;
+    right: 7.3125rem;
+    width: 23.5625rem;
+    max-width: 23.5625rem;
+    height: 25.6875rem;
+    max-height: 25.6875rem;
+    background-image: url(../img/price-calc/note.png);
+  }
+
+  .calc-card__card-content::after {
+    top: 15.9375rem;
+    left: -6.6875rem;
+    width: 56.25rem;
+    max-width: 56.25rem;
+    height: 17.8125rem;
+    max-height: 17.8125rem;
+    background-image: url(../img/price-calc/coins-md.png);
+  }
+
+  .card-content__title {
+    max-width: 43.75rem;
+    margin: 0 auto 1.25rem auto;
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__title--blue {
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__subtitle {
+    max-width: 32.25rem;
+    margin-bottom: 6.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
   }
 
   .form-rightcol {
@@ -3877,24 +4239,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 64rem) and (min-width: 90rem) {
-  .price-calc-card::after {
-    position: absolute;
-    content: "";
-    z-index: 5;
-    bottom: -8.75rem;
-    left: -7.5rem;
-    width: 27.125rem;
-    max-width: 27.125rem;
-    height: 29.75rem;
-    max-height: 29.75rem;
-    background-image: url(../img/price-calc/calculator.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
 @media (min-width: 70.9375rem) {
   .advantages__item:nth-child(2) {
     height: 15rem;
@@ -3907,13 +4251,6 @@ fieldset input::-ms-input-placeholder {
 
   .phone-icon {
     top: 7.5rem;
-  }
-}
-
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
   }
 }
 
@@ -3935,17 +4272,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 77.5em) {
-  .lamp {
-    right: 30%;
-  }
-
-  .lamp-light {
-    right: 28.1%;
-  }
-
-  .lamp-light-main {
-    right: -272%;
+@media (min-width: 73.75rem) {
+  .header__btn {
+    width: 17.4375rem;
+    height: 4.9375rem;
   }
 }
 
@@ -3959,6 +4289,20 @@ fieldset input::-ms-input-placeholder {
     justify-content: flex-start;
     flex-basis: 16.66666667%;
     max-width: 16.66666667%;
+  }
+}
+
+@media (min-width: 77.5em) {
+  .lamp {
+    right: 30%;
+  }
+
+  .lamp-light {
+    right: 28.1%;
+  }
+
+  .lamp-light-main {
+    right: -272%;
   }
 }
 
@@ -3986,9 +4330,9 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
+@media (min-width: 89.0625em) {
+  .header__title--small {
+    font-size: 3.75rem;
   }
 }
 
@@ -4031,9 +4375,15 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.0625em) {
-  .header__title--small {
-    font-size: 3.75rem;
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
+  }
+}
+
+@media (min-width: 90.5625rem) {
+  .small-cards-wrap {
+    width: 40.125rem;
   }
 }
 
@@ -4144,43 +4494,28 @@ fieldset input::-ms-input-placeholder {
     background-position: 100% -1%;
   }
 
-  .price-calc-card::before {
-    bottom: -3.9375rem;
-    right: 7.3125rem;
-    width: 23.5625rem;
-    max-width: 23.5625rem;
-    height: 25.6875rem;
-    max-height: 25.6875rem;
-    background-image: url(../img/price-calc/note.png);
+  .price-calc-card {
+    max-width: 68.5rem;
+    padding-top: 4.0625rem;
+  }
+
+  .price-calc-card::after {
+    left: -7.5rem;
   }
 
   .calc-card__card-content::after {
-    top: 5.625rem;
-    left: -6.6875rem;
     width: 73.125rem;
     max-width: 73.125rem;
-    height: 23.1875rem;
-    max-height: 23.1875rem;
     background-image: url(../img/price-calc/coins.png);
   }
 
   .card-content__title {
     max-width: 58.4375rem;
     margin: 0 auto 3.5rem auto;
-    font-size: 3.375rem;
-    line-height: 3.375rem;
-  }
-
-  .card-content__title--blue {
-    font-size: 3.375rem;
-    line-height: 3.375rem;
   }
 
   .card-content__subtitle {
-    max-width: 32.25rem;
     margin-bottom: 1.5625rem;
-    font-size: 1.5rem;
-    line-height: 1.5625rem;
   }
 
   .form-lefttcol {
@@ -4197,12 +4532,6 @@ fieldset input::-ms-input-placeholder {
 
   .form {
     max-width: 39.375rem;
-  }
-}
-
-@media (min-width: 90.5625rem) {
-  .small-cards-wrap {
-    width: 40.125rem;
   }
 }
 
@@ -4380,6 +4709,10 @@ fieldset input::-ms-input-placeholder {
     background: #00008B;
   }
 
+  .section-services {
+    padding: 9.0625rem 0 3.125rem 0;
+  }
+
   .card__btn {
     min-width: 13rem;
     min-height: 3.6875rem;
@@ -4431,14 +4764,14 @@ fieldset input::-ms-input-placeholder {
 
   .form-right__text--blue {
     max-width: 21.875rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 3.5625rem;
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
 
   .form-right__text {
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.875rem;
   }
 
   .services-leftcol {
@@ -4467,6 +4800,11 @@ fieldset input::-ms-input-placeholder {
 
   .services-rightcol {
     padding: 0 6.25rem 1.875rem 0;
+  }
+
+  .services-card--lg {
+    max-width: 22.25rem;
+    min-height: 26.0625rem;
   }
 
   .services-card--lg .card-options {
@@ -4541,12 +4879,39 @@ fieldset input::-ms-input-placeholder {
     display: block;
     width: 0.0625rem;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.53) 40%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.2) 20%);
     opacity: 0.53;
   }
 
   .header::after {
     display: none;
+  }
+
+  .section-advantages::before {
+    position: absolute;
+    content: "Преимущества";
+    z-index: 2;
+    top: 49%;
+    left: 0.625rem;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-advantages::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 7.5rem;
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .section-feedback::before {
@@ -4603,6 +4968,47 @@ fieldset input::-ms-input-placeholder {
     background: rgba(0, 0, 0, 0.2);
   }
 
+  .section-form::before {
+    position: absolute;
+    content: "Рассчитать стоимость";
+    z-index: 2;
+    top: 49%;
+    left: -0.625rem;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-form::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 7.5rem;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .section-form__wrap::after {
+    position: absolute;
+    content: "";
+    z-index: 6;
+    top: 50%;
+    left: 7.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    box-shadow: 0 0 0.9375rem 0.1875rem rgba(230, 146, 36, 0.51);
+    border-radius: 0.1875rem;
+    background: #e89a2a;
+  }
+
   .feedback-form-wrap::after {
     position: absolute;
     content: "";
@@ -4626,7 +5032,7 @@ fieldset input::-ms-input-placeholder {
     transform: translateY(-50%);
     width: 0.375rem;
     height: 3.0625rem;
-    box-shadow: 0 0 0.9375rem 0.1875rem rgba(230, 146, 36, 0.51);
+    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
     border-radius: 0.1875rem;
     background: #2e2dff;
   }
