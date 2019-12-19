@@ -2514,7 +2514,6 @@ template {
   width: 15.75rem;
   max-width: 15.75rem;
   height: 12.5625rem;
-  max-height: 12.5625rem;
   background-image: url(../img/mobile/price-calc/coins-xs1@x.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -3192,7 +3191,6 @@ fieldset input::-ms-input-placeholder {
     width: 22.4375rem;
     max-width: 22.4375rem;
     height: 17.9375rem;
-    max-height: 17.9375rem;
     background-image: url(../img/mobile/price-calc/coins1@x.png);
   }
 
@@ -3665,7 +3663,6 @@ fieldset input::-ms-input-placeholder {
     width: 32.375rem;
     max-width: 32.375rem;
     height: 25.4375rem;
-    max-height: 25.4375rem;
     background-image: url(../img/tablet/price-calc/coins1@x.png);
   }
 
@@ -4163,7 +4160,6 @@ fieldset input::-ms-input-placeholder {
     width: 56.25rem;
     max-width: 56.25rem;
     height: 17.8125rem;
-    max-height: 17.8125rem;
     background-image: url(../img/price-calc/coins-md.png);
   }
 
@@ -4504,8 +4500,10 @@ fieldset input::-ms-input-placeholder {
   }
 
   .calc-card__card-content::after {
+    top: 5.5rem;
     width: 73.125rem;
     max-width: 73.125rem;
+    height: 23.1875rem;
     background-image: url(../img/price-calc/coins.png);
   }
 
