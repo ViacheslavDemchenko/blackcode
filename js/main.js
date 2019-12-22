@@ -1,5 +1,6 @@
 
 
+
     // const bigItems = document.querySelectorAll('.advantages__laptop');
     // const { scrollHeight } = document.querySelector('body');
     // window.addEventListener('scroll', e => {
@@ -104,3 +105,55 @@
         }
     }
 })();
+
+$(document).ready(function() {
+
+
+    let screenWidth = window.screen.availWidth;
+    const advantagesSlider = document.querySelector('.advantages__slider');
+
+    if($(window).width() < 1024) {
+        advantagesSlider.classList.add('owl-carousel');
+        $('.owl-carousel').owlCarousel({
+            stagePadding: 50,
+            center: true,
+            loop: true,
+            autoWidth: true,
+            autoHeight: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            items: 1
+        });
+    } else if($(window).width() >= 1024) {
+        $('.owl-carousel').trigger('destroy.owl.carousel');
+        advantagesSlider.classList.remove('owl-carousel');
+    }
+
+    $(window).resize(function() {
+        if($(window).width() < 1024) {
+            advantagesSlider.classList.add('owl-carousel');
+            $('.owl-carousel').owlCarousel({
+                stagePadding: 50,
+                center: true,
+                loop: true,
+                autoWidth: true,
+                autoHeight: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                items: 1
+            });
+        } else if($(window).width() >= 1024) {
+            $('.owl-carousel').trigger('destroy.owl.carousel');
+            advantagesSlider.classList.remove('owl-carousel');
+        }
+    });
+
+    
+});
+
+
+
