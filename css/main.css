@@ -46,9 +46,13 @@ body {
 .container {
   min-width: 20rem;
   max-width: 101.6875rem;
-  margin: auto;
+  margin: 0 auto;
   height: 100%;
   padding: 0 0.9375rem;
+}
+
+.container--no-padding {
+  padding: 0;
 }
 
 .no-scroll {
@@ -716,6 +720,7 @@ template {
 }
 
 .section-advantages {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -724,7 +729,8 @@ template {
   margin-right: -0.9375rem;
   justify-content: center;
   margin: 0;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   background: #000000;
 }
 
@@ -1781,7 +1787,7 @@ template {
 .advantages__slider__wrap {
   flex-basis: 100%;
   max-width: 100%;
-  max-height: 320px;
+  height: 10.3125rem;
 }
 
 .advantages__slider {
@@ -1791,14 +1797,19 @@ template {
 }
 
 .advantages__slide-content {
-  padding: 1.4375rem 0 0 5.5625rem;
+  padding: 0.625rem 0 0 2.5rem;
+}
+
+.advantages__slide-content--sm {
+  max-width: 11.5rem;
 }
 
 .advantages__slide__title {
-  margin-bottom: 1.25rem;
   font-family: "Gilroy-Medium";
   font-weight: normal;
   font-style: normal;
+  font-size: 0.75rem;
+  line-height: 0.8125rem;
   color: #5756fb;
 }
 
@@ -1806,7 +1817,9 @@ template {
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
-  letter-spacing: -0.035rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: -0.09em;
   color: #161616;
 }
 
@@ -1815,16 +1828,19 @@ template {
   font-weight: normal;
   font-style: normal;
   color: #2e2dff;
+  letter-spacing: -0.04em;
 }
 
 .advantages__slide {
   position: relative;
+  height: 10.1875rem;
+  width: 15.625rem;
   overflow: hidden;
   background-color: #ffffff;
 }
 
 .advantages__slide_1 {
-  background: url(../img/mobile/advantages/advantages-card-mobile_1@1x.jpg), white;
+  background: url(../img/xs/advantages/advantages-card-xs_1@1x.jpg), white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1833,17 +1849,19 @@ template {
 .advantages__slide_1::before {
   position: absolute;
   content: "1";
-  top: 4.375rem;
-  left: 1.5625rem;
+  top: 3.3125rem;
+  left: 0.8125rem;
   font-family: "Rollestontitlelightitalic";
   font-weight: normal;
   font-style: normal;
   color: #eaa627;
   font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 1.125rem;
 }
 
 .advantages__slide_2 {
-  background: url(../img/mobile/advantages/advantages-card-mobile_2@1x.jpg), white;
+  background: url(../img/xs/advantages/advantages-card-xs_2@1x.jpg), white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1852,17 +1870,19 @@ template {
 .advantages__slide_2::before {
   position: absolute;
   content: "2";
-  top: 4.375rem;
-  left: 1.5625rem;
+  top: 3.3125rem;
+  left: 0.8125rem;
   font-family: "Rollestontitlelightitalic";
   font-weight: normal;
   font-style: normal;
   color: #eaa627;
   font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 1.125rem;
 }
 
 .advantages__slide_3 {
-  background: url(../img/mobile/advantages/advantages-card-mobile_3@1x.jpg), white;
+  background: url(../img/xs/advantages/advantages-card-xs_3@1x.jpg), white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1871,17 +1891,19 @@ template {
 .advantages__slide_3::before {
   position: absolute;
   content: "3";
-  top: 4.375rem;
-  left: 1.5625rem;
+  top: 3.3125rem;
+  left: 0.8125rem;
   font-family: "Rollestontitlelightitalic";
   font-weight: normal;
   font-style: normal;
   color: #eaa627;
   font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 1.125rem;
 }
 
 .advantages__slide_4 {
-  background: url(../img/mobile/advantages/advantages-card-mobile_4@1x.jpg), white;
+  background: url(../img/xs/advantages/advantages-card-xs_4@1x.jpg), white;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1890,51 +1912,54 @@ template {
 .advantages__slide_4::before {
   position: absolute;
   content: "4";
-  top: 4.375rem;
-  left: 1.5625rem;
+  top: 3.3125rem;
+  left: 0.8125rem;
   font-family: "Rollestontitlelightitalic";
   font-weight: normal;
   font-style: normal;
   color: #eaa627;
   font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 1.125rem;
+}
+
+.owl-height,
+.owl-item,
+.owl-carousel {
+  height: 10.1875rem !important;
 }
 
 .advantages__laptop {
   position: relative;
   flex-basis: 100%;
   max-width: 100%;
-  height: 100vh;
   order: -1;
-  background: url(../img/mobile/advantages/advantages-bg-mobile@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 51%, rgba(22, 22, 22, 0.8) 100%);
-  background-position: 106% 248px, 2px 100%;
+  background: url(../img/mobile/advantages/advantages-bg-mobile@1x.png), linear-gradient(to top, #161616 -21%, rgba(87, 86, 251, 0.5) 16%, rgba(22, 22, 22, 0.8) 78%);
+  background-position: 103% 132px, 2px 100%;
   background-repeat: no-repeat;
   background-size: auto;
   border-radius: 0 0 0 0.1875rem;
 }
 
 .advantages__laptop-content {
-  padding: 5.0625rem 0.9375rem 2.5rem 2.5rem;
+  padding: 3.125rem 0.9375rem 2.5rem 0.9375rem;
 }
 
 .advantages__laptop__img {
   position: relative;
-  left: -5rem;
+  left: -0.3125rem;
   bottom: 3.75rem;
-  overflow: hidden;
-}
-
-.advantages__laptop__img img {
-  width: 40.5rem;
-  height: 20.875rem;
+  width: 15.625rem;
+  height: 10.25rem;
 }
 
 .advantages__laptop__pretitle {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
   color: #d0eafe;
 }
 
@@ -1953,12 +1978,13 @@ template {
 }
 
 .advantages__laptop__title--brown {
+  max-width: 93%;
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
   color: #e89a2a;
-  font-size: 2.125rem;
-  line-height: 2.5rem;
+  font-size: 1.625rem;
+  line-height: 2rem;
 }
 
 .advantages__laptop__title--small {
@@ -1967,13 +1993,13 @@ template {
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
-  font-size: 2.125rem;
-  line-height: 2.5rem;
+  font-size: 1.625rem;
+  line-height: 2rem;
 }
 
 .advantages__player {
-  margin-left: 9.375rem;
-  transform: translateY(-110px);
+  margin-left: 7.5rem;
+  transform: translateY(-2rem);
 }
 
 .player__title {
@@ -1981,8 +2007,8 @@ template {
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 0.875rem;
   color: #ffffff;
 }
 
@@ -1992,8 +2018,8 @@ template {
   font-family: "Qanelas-Regular";
   font-weight: normal;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: #ffffff;
   border-bottom: 0.125rem dashed #e79526;
 }
@@ -2003,7 +2029,7 @@ template {
   content: "";
   z-index: 20;
   bottom: 0.3125rem;
-  left: -6.25rem;
+  left: -5rem;
   width: 2.5rem;
   height: 2.5rem;
   background: url(../img/advantages-cards/play-icon.png);
@@ -3116,6 +3142,151 @@ fieldset input::-ms-input-placeholder {
     left: -0.5625rem;
   }
 
+  .advantages__slider__wrap {
+    height: 14.75rem;
+  }
+
+  .advantages__slider {
+    height: 14.75rem;
+  }
+
+  .advantages__slide-content {
+    padding: 0.9375rem 0 0 3.8125rem;
+    max-width: 20.3125rem;
+  }
+
+  .advantages__slide-content--sm {
+    max-width: 14.6875rem;
+  }
+
+  .advantages__slide-content--md {
+    max-width: 17.5rem;
+  }
+
+  .advantages__slide__title {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1rem;
+    line-height: 1.125rem;
+    letter-spacing: -0.04em;
+  }
+
+  .advantages__slide {
+    width: 22.5rem;
+    height: 14.75rem;
+  }
+
+  .advantages__slide_1 {
+    background: url(../img/mobile/advantages/advantages-card-mobile_1@1x.jpg), white;
+  }
+
+  .advantages__slide_1::before {
+    top: 2.6875rem;
+    left: 1.125rem;
+    font-size: 3.9375rem;
+    line-height: 0.8125rem;
+  }
+
+  .advantages__slide_2 {
+    background: url(../img/mobile/advantages/advantages-card-mobile_2@1x.jpg), white;
+  }
+
+  .advantages__slide_2::before {
+    top: 2.6875rem;
+    left: 1.125rem;
+    font-size: 3.9375rem;
+    line-height: 0.8125rem;
+  }
+
+  .advantages__slide_3 {
+    background: url(../img/mobile/advantages/advantages-card-mobile_3@1x.jpg), white;
+  }
+
+  .advantages__slide_3::before {
+    top: 2.6875rem;
+    left: 1.125rem;
+    font-size: 3.9375rem;
+    line-height: 0.8125rem;
+  }
+
+  .advantages__slide_4 {
+    background: url(../img/mobile/advantages/advantages-card-mobile_4@1x.jpg), white;
+  }
+
+  .advantages__slide_4::before {
+    top: 2.6875rem;
+    left: 1.125rem;
+    font-size: 3.9375rem;
+    line-height: 0.8125rem;
+  }
+
+  .owl-height,
+  .owl-item,
+  .owl-carousel {
+    height: 14.75rem !important;
+  }
+
+  .advantages__laptop {
+    background-position: 94% 68%, 2px 100%;
+  }
+
+  .advantages__laptop-content {
+    padding: 5.0625rem 0.9375rem 2.5rem 2.5rem;
+  }
+
+  .advantages__laptop__img {
+    left: -0.125rem;
+    width: 25rem;
+    height: 16.375rem;
+  }
+
+  .advantages__laptop__img img {
+    width: 25rem;
+    height: 16.375rem;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .advantages__laptop__title--brown {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__laptop__title--small {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__player {
+    margin-left: 9.6875rem;
+    transform: translateY(-3.4375rem);
+  }
+
+  .player__title {
+    font-size: 1.5rem;
+    line-height: 1.375rem;
+  }
+
+  .player__link {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .player__link::before {
+    bottom: 0.3125rem;
+    left: -6.25rem;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
   .feedback-form::after {
     top: 12.4375rem;
     right: 0;
@@ -3542,6 +3713,10 @@ fieldset input::-ms-input-placeholder {
     left: 6.8125rem;
   }
 
+  .advantages__slider__wrap {
+    height: 19.75rem;
+  }
+
   .advantages__slider {
     display: flex;
     flex-direction: row;
@@ -3556,9 +3731,18 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__slide-content {
-    width: 88%;
+    max-width: 26.875rem;
+    padding: 0.9375rem 0 0 5.3125rem;
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+
+  .advantages__slide-content--sm {
+    max-width: 19.1875rem;
+  }
+
+  .advantages__slide-content--md {
+    max-width: 22.75rem;
   }
 
   .advantages__slide__title {
@@ -3572,7 +3756,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__slide {
-    max-width: 30.1875rem;
+    width: 30.25rem;
     height: 19.6875rem;
   }
 
@@ -3612,24 +3796,34 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.0625rem;
   }
 
+  .owl-height,
+  .owl-item,
+  .owl-carousel {
+    height: 19.6875rem !important;
+  }
+
+  .owl-item {
+    width: 30.25rem !important;
+  }
+
   .advantages__laptop {
     flex-basis: 100%;
     max-width: 100%;
     background: url(../img/tablet/advantages/advantages-bg-table@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 30%, rgba(22, 22, 22, 0.8) 57%);
     background-repeat: no-repeat;
-    background-position: 109% 88%;
+    background-position: 100% 88%;
   }
 
   .advantages__laptop__img {
-    left: -7.5rem;
-    bottom: 12.5rem;
-    width: 50rem;
-    height: 37.6875rem;
+    left: -5.3125rem;
+    bottom: 3.875rem;
+    width: 51.375rem;
+    height: 29.5625rem;
   }
 
   .advantages__laptop__img img {
-    width: 50rem;
-    height: 37.6875rem;
+    width: 51.375rem;
+    height: 29.5625rem;
   }
 
   .advantages__laptop__pretitle {
@@ -3639,7 +3833,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__laptop__title--brown {
-    max-width: 34.6875rem;
+    max-width: 82%;
     font-size: 3.375rem;
     line-height: 3.75rem;
   }
@@ -3650,18 +3844,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__player {
-    margin-left: 200px;
-    transform: translateY(-300px);
-  }
-
-  .player__title {
-    font-size: 1.5rem;
-    line-height: 1.375rem;
-  }
-
-  .player__link {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    margin-left: 15.625rem;
+    transform: translateY(-4.8125rem);
   }
 
   .player__link::before {
@@ -3849,7 +4033,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages-wrap {
-    height: 1600px;
+    height: 78.75rem;
   }
 
   .section-form {
@@ -4136,65 +4320,48 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__slide-content {
-    width: 97%;
+    max-width: 97%;
+    padding: 1.5625rem 0 0 5rem;
+  }
+
+  .advantages__slide-content--sm {
+    max-width: 21.25rem;
   }
 
   .advantages__slide__title {
-    font-size: 1.25rem;
-    line-height: 1.375rem;
+    margin-bottom: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 
   .advantages__slide__text {
-    font-size: 1.75rem;
-    line-height: 1.875rem;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
   }
 
   .advantages__slide {
     position: sticky;
     top: 0;
-    max-width: 38.4375rem;
-    height: 25rem;
+    width: 100%;
+    max-width: 30.25rem;
+    height: 19.6875rem;
     margin-right: 0;
   }
 
-  .advantages__slide_1 {
-    background: url(../img/desktop/advantages/advantages-card_1.jpg), white;
-    background-position: center;
-  }
-
   .advantages__slide_1::before {
-    font-size: 6.875rem;
-    line-height: 1.375rem;
-  }
-
-  .advantages__slide_2 {
-    background: url(../img/desktop/advantages/advantages-card_2.jpg), white;
-    background-position: center;
+    top: 4.125rem;
   }
 
   .advantages__slide_2::before {
-    font-size: 6.875rem;
-    line-height: 1.375rem;
-  }
-
-  .advantages__slide_3 {
-    background: url(../img/desktop/advantages/advantages-card_3.jpg), white;
-    background-position: center;
+    top: 4.125rem;
   }
 
   .advantages__slide_3::before {
-    font-size: 6.875rem;
-    line-height: 1.375rem;
-  }
-
-  .advantages__slide_4 {
-    background: url(../img/desktop/advantages/advantages-card_4.jpg), white;
-    background-position: center;
+    top: 4.125rem;
   }
 
   .advantages__slide_4::before {
-    font-size: 6.875rem;
-    line-height: 1.375rem;
+    top: 4.125rem;
   }
 
   .advantages__laptop {
@@ -4213,15 +4380,15 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__laptop__img {
-    left: -14.375rem;
-    bottom: 9.375rem;
-    width: 51.375rem;
-    height: 29.5625rem;
+    left: -3.375rem;
+    bottom: 4.625rem;
+    width: 37.5rem;
+    height: 21.5625rem;
   }
 
   .advantages__laptop__img img {
-    width: 51.375rem;
-    height: 29.5625rem;
+    width: 37.5rem;
+    height: 21.5625rem;
   }
 
   .advantages__laptop__pretitle {
@@ -4572,6 +4739,10 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 90rem) {
+  .advantages-wrap {
+    height: 100rem;
+  }
+
   .section-services {
     padding: 9.0625rem 0 3.125rem 0;
     background-position: top left;
@@ -4627,8 +4798,67 @@ fieldset input::-ms-input-placeholder {
     text-align: left;
   }
 
+  .advantages__slide-content {
+    max-width: 97%;
+    padding: 1.5625rem 0 0 6.25rem;
+  }
+
+  .advantages__slide__title {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+
+  .advantages__slide_1 {
+    background: url(../img/desktop/advantages/advantages-card_1.jpg), white;
+    background-position: center;
+  }
+
+  .advantages__slide_1::before {
+    top: 4.6875rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_2 {
+    background: url(../img/desktop/advantages/advantages-card_2.jpg), white;
+    background-position: center;
+  }
+
+  .advantages__slide_2::before {
+    top: 4.6875rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_3 {
+    background: url(../img/desktop/advantages/advantages-card_3.jpg), white;
+    background-position: center;
+  }
+
+  .advantages__slide_3::before {
+    top: 4.6875rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_4 {
+    background: url(../img/desktop/advantages/advantages-card_4.jpg), white;
+    background-position: center;
+  }
+
+  .advantages__slide_4::before {
+    top: 4.6875rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
   .advantages__laptop__img {
-    left: -5rem;
+    left: -3.0625rem;
     bottom: 3.75rem;
     width: 51.375rem;
     height: 29.5625rem;
