@@ -4370,9 +4370,11 @@ fieldset input::-ms-input-placeholder {
     flex-basis: 56.54%;
     width: 56.54%;
     max-width: 50rem;
+    height: 59.375rem;
     order: 1;
     background: url(../img/desktop/advantages/advantages-bg-desktop@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 51%, rgba(22, 22, 22, 0.8) 100%);
     background-position: top right, 2px 100%;
+    background-repeat: no-repeat;
   }
 
   .advantages__laptop-content {
