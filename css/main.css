@@ -4410,7 +4410,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__player {
     margin-left: 16.25rem;
-    transform: translateY(-60px);
+    transform: translateY(-6.875rem);
   }
 
   .player__link::before {
