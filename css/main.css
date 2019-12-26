@@ -778,41 +778,14 @@ template {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   justify-content: center;
-  height: 62.875rem;
-  padding: 6.25rem 0 3.125rem 0;
+  min-height: 62.875rem;
+  padding: 2.1875rem 0 2.1875rem 0;
   margin: 0;
   background-color: #000000;
-  background-image: url(../img/desktop/services/services-bg-3@1x.png);
-  background-position: 20% 100%;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/mobile/services/services-bg-mobile@1x.png);
+  background-position: 31% -63px;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.section-services::before {
-  position: absolute;
-  content: "Наши услуги";
-  z-index: 2;
-  top: 49%;
-  left: 0.625rem;
-  transform: translateY(-50%);
-  transform: rotate(-90deg);
-  font-family: "Qanelas-Medium";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.section-services::after {
-  position: absolute;
-  content: "";
-  z-index: 5;
-  width: 0.0625rem;
-  height: 100%;
-  top: 0;
-  left: 7.5rem;
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .section-price-calc {
@@ -1462,8 +1435,10 @@ template {
 }
 
 .card__btn {
-  width: 11.25rem;
-  height: 3.4375rem;
+  width: 10rem;
+  height: 2.8125rem;
+  font-size: 1rem;
+  line-height: 1.3125rem;
   box-shadow: 0 0 2.3125rem 0.375rem rgba(240, 198, 104, 0.4), 0 6px 1px #b5811e;
   border-radius: 1.875rem;
   background-image: linear-gradient(to right, #f4d48e 0%, #eaa93b 77%, #e68f21 97%, #e68f21 100%);
@@ -1838,7 +1813,7 @@ template {
 
 .advantages__slide_1 {
   background: url(../img/xs/advantages/advantages-card-xs_1@1x.jpg), white;
-  background-position: center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1859,7 +1834,7 @@ template {
 
 .advantages__slide_2 {
   background: url(../img/xs/advantages/advantages-card-xs_2@1x.jpg), white;
-  background-position: center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1880,7 +1855,7 @@ template {
 
 .advantages__slide_3 {
   background: url(../img/xs/advantages/advantages-card-xs_4@1x.jpg), white;
-  background-position: center;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1901,7 +1876,7 @@ template {
 
 .advantages__slide_4 {
   background: url(../img/xs/advantages/advantages-card-xs_3@1x.jpg), white;
-  background-position: bottom;
+  background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2223,25 +2198,11 @@ template {
   justify-content: space-between;
 }
 
-.services-wrap::after {
-  position: absolute;
-  content: "";
-  z-index: 6;
-  top: 42%;
-  left: 7.3125rem;
-  transform: translateY(-50%);
-  width: 0.375rem;
-  height: 3.0625rem;
-  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-  border-radius: 0.1875rem;
-  background: #5756fb;
-}
-
 .services-leftcol {
   display: flex;
   flex-direction: column;
-  flex-basis: 65%;
-  max-width: 65%;
+  flex-basis: 100%;
+  max-width: 100%;
   padding-bottom: 0rem;
 }
 
@@ -2251,10 +2212,12 @@ template {
 }
 
 .leftcol__pretitle {
-  margin: 0.3125rem 0 1.4375rem 0;
+  margin: 0 0 0.9375rem 0;
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
+  font-size: 1rem;
+  line-height: 1.375rem;
   font-weight: 400;
   color: #e0e0ff;
 }
@@ -2272,35 +2235,34 @@ template {
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
-  font-size: 2.1875rem;
-  line-height: 2.1875rem;
+  font-size: 1.625rem;
+  line-height: 2rem;
   color: #ffffff;
 }
 
 .dialog-block {
   position: absolute;
-  top: 10.625rem;
-  left: 23%;
+  top: 7.5625rem;
+  left: 6.375rem;
 }
 
 .dialog {
   position: relative;
-  max-width: 45%;
-  min-height: 10rem;
-  margin: 0.875rem 0 0 0rem;
-  padding: 1.875rem 0.9375rem 1.875rem 0.9375rem;
+  max-width: 50vw;
+  min-height: 5.625rem;
+  padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
   background-color: #ffffff;
-  border-radius: 2.5rem;
+  border-radius: 1.4375rem;
 }
 
 .dialog::after {
   position: absolute;
   content: "";
-  left: 3.75rem;
-  bottom: -2.4375rem;
-  border: 2.5rem solid transparent;
+  left: 1.125rem;
+  bottom: -1.5rem;
+  border: 1.5625rem solid transparent;
   border-bottom: 0 solid transparent;
-  border-right: 5rem solid #ffffff;
+  border-right: 2.25rem solid #ffffff;
   border-left: 0 solid transparent;
   transform: rotate(180deg);
 }
@@ -2310,8 +2272,8 @@ template {
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.3125rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #5756fb;
 }
 
@@ -2320,6 +2282,8 @@ template {
   font-weight: normal;
   font-style: normal;
   color: #0e0e0e;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
 }
 
 .service-man-wrap {
@@ -2334,9 +2298,9 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 35%;
-  max-width: 35%;
-  padding-right: 4.0625rem;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-top: 21.625rem;
 }
 
 .services-card {
@@ -2356,9 +2320,9 @@ template {
 
 .services-card--lg {
   position: relative;
-  max-width: 22.25rem;
-  min-height: 26.0625rem;
-  margin-bottom: 2.125rem;
+  max-width: 18.8125rem;
+  min-height: 26.875rem;
+  margin-bottom: 1.25rem;
   background-image: url(../img/services/mac.jpg);
   background-position: 100% -1%;
 }
@@ -2369,8 +2333,8 @@ template {
   z-index: 2;
   top: -0.625rem;
   right: -0.625rem;
-  width: 5.3125rem;
-  height: 5.3125rem;
+  width: 4.0625rem;
+  height: 4.0625rem;
   background: #f1f1f1;
   border-radius: 50%;
 }
@@ -2378,10 +2342,10 @@ template {
 .services-card--lg__icon {
   position: absolute;
   z-index: 5;
-  top: 0.9375rem;
-  right: 0.8125rem;
-  width: 2.8125rem;
-  height: 2.6875rem;
+  top: 0.625rem;
+  right: 0.625rem;
+  width: 1.9375rem;
+  height: 1.9375rem;
   fill: #3433ff;
 }
 
@@ -2392,12 +2356,7 @@ template {
 
 .small-cards-wrap {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 0 1 auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .services-card--sm {
@@ -2421,18 +2380,28 @@ template {
 }
 
 .services-card--sm:nth-child(1) {
-  display: none;
+  margin-bottom: 1.25rem;
+  background-image: url(../img/services/keyboard.png);
+  background-position: 100% -1%;
+}
+
+.services-card--sm:nth-child(1) .card__title {
+  margin-top: 9.5rem;
 }
 
 .services-card--sm:nth-child(1) .card-options {
   margin-bottom: 1.125rem;
-  padding: 0 0.3125rem 0 1.875rem;
+  padding: 0 0.3125rem 0 2.6875rem;
 }
 
 .services-card--sm:nth-child(2) {
   background-image: url(../img/services/mac-horizontal.png);
-  background-position: 50% -1%;
+  background-position: 50% 3%;
   background-size: 70%;
+}
+
+.services-card--sm:nth-child(2) .card__title {
+  margin-top: 9.625rem;
 }
 
 .services-card--sm:nth-child(2) .card-options {
@@ -3121,6 +3090,11 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.25rem;
   }
 
+  .card__btn {
+    width: 11.25rem;
+    height: 3.1875rem;
+  }
+
   .card-content__btn {
     min-width: 14.75rem;
     min-height: 4.3125rem;
@@ -3186,6 +3160,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__slide_2 {
     background: url(../img/mobile/advantages/advantages-card-mobile_2@1x.jpg), white;
+    background-position: 100% 100%;
   }
 
   .advantages__slide_2::before {
@@ -3339,6 +3314,36 @@ fieldset input::-ms-input-placeholder {
   .form-right__text {
     font-size: 1.125rem;
     line-height: 1.25rem;
+  }
+
+  .leftcol__pretitle {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .leftcol__title {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .dialog__text--blue {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .dialog__text {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  .services-card--lg {
+    max-width: 18.8125rem;
+    min-height: 24.0625rem;
+  }
+
+  .services-card--sm {
+    max-width: 18.8125rem;
+    min-height: 24.0625rem;
   }
 
   .price-calc-card {
@@ -3503,6 +3508,11 @@ fieldset input::-ms-input-placeholder {
     background-position: 44% 100%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .section-services {
+    background-image: url(../img/tablet/services/services-bg-tablet@1x.png);
+    background-position: 100% 8%;
   }
 
   .section-price-calc {
@@ -3748,6 +3758,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__slide_1 {
     background: url(../img/tablet/advantages/advantages-card_1@1x.jpg), white;
+    background-position: 100% 100%;
   }
 
   .advantages__slide_1::before {
@@ -3766,6 +3777,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__slide_3 {
     background: url(../img/tablet/advantages/advantages-card_4@1x.jpg), white;
+    background-position: 100% 100%;
   }
 
   .advantages__slide_3::before {
@@ -3775,6 +3787,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__slide_4 {
     background: url(../img/tablet/advantages/advantages-card_3@1x.jpg), white;
+    background-position: 100% 100%;
   }
 
   .advantages__slide_4::before {
@@ -3912,6 +3925,54 @@ fieldset input::-ms-input-placeholder {
   .form-right__text {
     font-size: 1.625rem;
     line-height: 1.875rem;
+  }
+
+  .leftcol-content {
+    max-width: 30rem;
+    margin-left: 8.125rem;
+  }
+
+  .leftcol__pretitle {
+    font-size: 1.375rem;
+    line-height: 2.5rem;
+  }
+
+  .leftcol__title {
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
+  .dialog-block {
+    top: 17.9375rem;
+    left: 16.5rem;
+  }
+
+  .dialog__text--blue {
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+  }
+
+  .dialog__text {
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+  }
+
+  .services-rightcol {
+    margin-top: 40.25rem;
+  }
+
+  .small-cards-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+
+  .services-card--sm:nth-child(1) {
+    margin: 0;
+    margin-right: 3.125rem;
   }
 
   .price-calc-card {
@@ -4465,10 +4526,24 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 2rem;
   }
 
+  .leftcol__pretitle {
+    margin: 0.3125rem 0 1.4375rem 0;
+  }
+
   .services-card--lg {
     padding: 0.75rem 0.75rem 1.375rem 0.75rem;
     max-width: 18.8125rem;
     min-height: 21.9375rem;
+  }
+
+  .services-card--lg::after {
+    width: 5.3125rem;
+    height: 5.3125rem;
+  }
+
+  .services-card--lg__icon {
+    top: 0.9375rem;
+    right: 0.8125rem;
   }
 
   .price-calc-card {
@@ -4748,11 +4823,24 @@ fieldset input::-ms-input-placeholder {
 
 @media (min-width: 90.5625rem) {
   .small-cards-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    justify-content: space-between;
     width: 40.125rem;
   }
 }
 
 @media (min-width: 90rem) {
+  .section-services {
+    padding: 6.25rem 0 3.125rem 0;
+    background-image: url(../img/desktop/services/services-bg-3@1x.png);
+    background-position: 100% 100%;
+  }
+
   .section-services {
     padding: 9.0625rem 0 3.125rem 0;
     background-position: top left;
@@ -4958,8 +5046,6 @@ fieldset input::-ms-input-placeholder {
   .services-card--sm:nth-child(1) {
     display: flex;
     margin-right: 2.375rem;
-    background-image: url(../img/services/keyboard.png);
-    background-position: 100% -1%;
   }
 
   .price-calc-card {
@@ -5411,6 +5497,33 @@ fieldset input::-ms-input-placeholder {
     background: rgba(255, 255, 255, 0.2);
   }
 
+  .section-services::before {
+    position: absolute;
+    content: "Наши услуги";
+    z-index: 2;
+    top: 49%;
+    left: 0.625rem;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-services::after {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 7.5rem;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
   .section-price-calc::before {
     position: absolute;
     content: "Рассчитать стоимость";
@@ -5499,6 +5612,20 @@ fieldset input::-ms-input-placeholder {
     box-shadow: 0 0 0.9375rem 0.1875rem rgba(230, 146, 36, 0.51);
     border-radius: 0.1875rem;
     background: #e89a2a;
+  }
+
+  .services-wrap::after {
+    position: absolute;
+    content: "";
+    z-index: 6;
+    top: 42%;
+    left: 7.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+    border-radius: 0.1875rem;
+    background: #5756fb;
   }
 
   .price-calc-card-wrap::before {
