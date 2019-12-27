@@ -5522,6 +5522,11 @@ fieldset input::-ms-input-placeholder {
   .section-form {
     background-position: 95% 100%, center;
   }
+
+  .services-leftcol {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
 }
 
 @media (min-width: 109.75rem) {
