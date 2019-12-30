@@ -1731,10 +1731,10 @@ template {
 }
 
 .lamp-icon {
-  top: 3.375rem;
-  left: -0.625rem;
-  width: 2.5rem;
-  height: 2.1875rem;
+  top: 3.5rem;
+  left: -0.4375rem;
+  width: 2.1875rem;
+  height: 1.875rem;
 }
 
 .phone-icon {
@@ -2302,7 +2302,7 @@ template {
   align-items: center;
   flex-basis: 100%;
   max-width: 100%;
-  padding-top: 1.25rem;
+  margin-top: -2.125rem;
   padding-bottom: 2.1875rem;
   background-image: url(../img/mobile/services/services-stars-mobile@1x.png);
   background-position: 100% 100%;
@@ -2327,9 +2327,10 @@ template {
 
 .services-card--lg {
   position: relative;
-  max-width: 18.8125rem;
-  min-height: 26.875rem;
+  width: 19.0625rem;
+  height: 22.3125rem;
   margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
   background-image: url(../img/services/mac.jpg);
   background-position: 100% -1%;
 }
@@ -2368,8 +2369,8 @@ template {
 
 .services-card--sm {
   position: relative;
-  max-width: 18.8125rem;
-  min-height: 24.0625rem;
+  width: 19.0625rem;
+  height: 22.3125rem;
   padding: 0.75rem 0.75rem 1.375rem 0.75rem;
   background-color: #ffffff;
 }
@@ -3829,8 +3830,6 @@ fieldset input::-ms-input-placeholder {
   .advantages__item::before {
     top: 0.4375rem;
     left: 6.3125rem;
-    width: 3.5rem;
-    height: 3.5rem;
   }
 
   .advantages__item:nth-child(2) {
@@ -3850,7 +3849,7 @@ fieldset input::-ms-input-placeholder {
 
   .lamp-icon {
     top: 1.1875rem;
-    left: 6.8125rem;
+    left: 7rem;
   }
 
   .phone-icon {
@@ -4205,8 +4204,6 @@ fieldset input::-ms-input-placeholder {
     background-image: url(../img/desktop/header/header-bg-6@1x.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    max-height: 59.375rem;
   }
 
   .line-right {
@@ -4252,8 +4249,8 @@ fieldset input::-ms-input-placeholder {
     margin-right: -0.9375rem;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 60%;
-    max-width: 60%;
+    flex-basis: 65%;
+    max-width: 65%;
     padding: 0 2vw;
   }
 
@@ -4375,7 +4372,6 @@ fieldset input::-ms-input-placeholder {
     max-width: 50%;
     text-align: left;
     align-items: flex-start;
-    margin-bottom: 3.125rem;
   }
 
   .header__title {
@@ -4396,12 +4392,12 @@ fieldset input::-ms-input-placeholder {
 
   .header__subtitle {
     max-width: 29.0625rem;
-    margin: 1.25rem 0 0rem 0;
+    margin: 1.25rem 0 1.875rem 0;
   }
 
   .header__text {
-    font-size: 1.5rem;
-    line-height: 1.625rem;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
   }
 
   .header-arrow__icon {
@@ -4472,28 +4468,28 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__item::before {
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .advantages__text {
-    font-size: 1.25rem;
-    line-height: 1.375rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 
   .lamp-icon {
-    top: 1.5625rem;
-    left: 7.25rem;
+    top: 1.375rem;
+    left: 7rem;
   }
 
   .phone-icon {
-    top: 1.5rem;
-    left: 7.25rem;
+    top: 1.1875rem;
+    left: 6.875rem;
   }
 
   .computer-icon {
-    top: 2rem;
-    left: 7.3125rem;
+    top: 1.6875rem;
+    left: 6.875rem;
   }
 
   .advantages__slider__wrap {
@@ -5126,6 +5122,34 @@ fieldset input::-ms-input-placeholder {
   .header-content {
     max-width: 66.66666667%;
     text-align: left;
+    margin-bottom: 3.125rem;
+  }
+
+  .advantages__item::before {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  .advantages__text {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+
+  .lamp-icon {
+    top: 1.5625rem;
+    left: 7.25rem;
+    width: 2.5rem;
+    height: 2.1875rem;
+  }
+
+  .phone-icon {
+    top: 7.75rem;
+    left: 7.25rem;
+  }
+
+  .computer-icon {
+    top: 2rem;
+    left: 7.3125rem;
   }
 
   .advantages__slide-content {
