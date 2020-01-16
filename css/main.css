@@ -2561,8 +2561,13 @@ template {
   line-height: 1.25rem;
 }
 
+.portfolio__laptop {
+  margin-left: 38.75rem;
+}
+
 .portfolio__laptop-content {
-  padding: 3.125rem 0.9375rem 2.5rem 0.9375rem;
+  width: 50%;
+  padding: 1.25rem 0.3125rem 2.5rem 0.3125rem;
 }
 
 .portfolio__laptop__wrap {
@@ -3408,8 +3413,12 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.375rem;
   }
 
+  .portfolio__laptop {
+    margin-left: 35rem;
+  }
+
   .portfolio__laptop-content {
-    padding: 5.0625rem 0.9375rem 2.5rem 2.5rem;
+    width: 60%;
   }
 
   .portfolio__laptop__pretitle {
@@ -3552,6 +3561,14 @@ fieldset input::-ms-input-placeholder {
   .services-leftcol {
     background-position: 33% 59%;
   }
+
+  .portfolio__laptop {
+    margin-left: 31.25rem;
+  }
+
+  .portfolio__laptop-content {
+    width: 80%;
+  }
 }
 
 @media (min-width: 40.625rem) {
@@ -3599,6 +3616,16 @@ fieldset input::-ms-input-placeholder {
   .services-card--sm:nth-child(1) {
     margin: 0;
     margin-right: 3.125rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .portfolio__laptop {
+    margin-left: 25rem;
+  }
+
+  .portfolio__laptop-content {
+    width: 100%;
   }
 }
 
@@ -4169,6 +4196,10 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 21.25rem;
     font-size: 1.5rem;
     line-height: 1.875rem;
+  }
+
+  .portfolio__laptop {
+    margin-left: 0;
   }
 
   .portfolio__laptop-content {
@@ -4885,6 +4916,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop-content {
+    margin-left: 0;
     max-width: 39.375rem;
     padding: 5rem 0.9375rem 2.5rem 5rem;
   }
@@ -5158,6 +5190,13 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 73.75rem) {
+  .header__btn {
+    width: 17.4375rem;
+    height: 4.9375rem;
+  }
+}
+
 @media (min-width: 73.125em) {
   .lamp {
     right: 35%;
@@ -5165,13 +5204,6 @@ fieldset input::-ms-input-placeholder {
 
   .lamp-light {
     right: 32.7%;
-  }
-}
-
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
   }
 }
 
@@ -5205,20 +5237,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 77.5em) {
-  .lamp {
-    right: 30%;
-  }
-
-  .lamp-light {
-    right: 28.1%;
-  }
-
-  .lamp-light-main {
-    right: -272%;
-  }
-}
-
 @media (min-width: 77.5rem) {
   .nav {
     flex-basis: 70%;
@@ -5235,6 +5253,20 @@ fieldset input::-ms-input-placeholder {
     flex-basis: 16.66666667%;
     max-width: 16.66666667%;
     margin-right: 6.75rem;
+  }
+}
+
+@media (min-width: 77.5em) {
+  .lamp {
+    right: 30%;
+  }
+
+  .lamp-light {
+    right: 28.1%;
+  }
+
+  .lamp-light-main {
+    right: -272%;
   }
 }
 
@@ -5294,6 +5326,13 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 89.0625rem) {
+  .header__title {
+    font-size: 5.3125rem;
+    line-height: 4.375rem;
+  }
+}
+
 @media (min-width: 89.9375rem) {
   .nav {
     justify-content: space-between;
@@ -5323,13 +5362,6 @@ fieldset input::-ms-input-placeholder {
 @media (min-width: 89.9375em) {
   .header-top {
     padding-top: 2.375em;
-  }
-}
-
-@media (min-width: 89.0625rem) {
-  .header__title {
-    font-size: 5.3125rem;
-    line-height: 4.375rem;
   }
 }
 
@@ -5781,38 +5813,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 96.875rem) {
-  .header__title {
-    font-size: 5.9375rem;
-    line-height: 4.75rem;
-  }
-
-  .header__title--small {
-    font-size: 4.375rem;
-  }
-
-  .header__subtitle {
-    max-width: 43.125rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-
-  .header__text {
-    max-width: 22.5rem;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-
-  .phone-icon {
-    top: 7.75rem;
-  }
-
-  .computer-icon {
-    top: 1.875rem;
-    left: 7.3125rem;
-  }
-}
-
 @media (min-width: 96.875em) {
   .lamp {
     right: 35%;
@@ -5882,6 +5882,38 @@ fieldset input::-ms-input-placeholder {
   .order-rect__text--fourth::before {
     width: 3.125rem;
     height: 3.125rem;
+  }
+}
+
+@media (min-width: 96.875rem) {
+  .header__title {
+    font-size: 5.9375rem;
+    line-height: 4.75rem;
+  }
+
+  .header__title--small {
+    font-size: 4.375rem;
+  }
+
+  .header__subtitle {
+    max-width: 43.125rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .header__text {
+    max-width: 22.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .phone-icon {
+    top: 7.75rem;
+  }
+
+  .computer-icon {
+    top: 1.875rem;
+    left: 7.3125rem;
   }
 }
 
@@ -6429,7 +6461,7 @@ fieldset input::-ms-input-placeholder {
 
   .portfolio__laptop-content {
     max-width: 100%;
-    padding: 3.75rem 0.9375rem 2.5rem 15rem;
+    padding: 3.75rem 0.9375rem 2.5rem 13.125rem;
   }
 
   .portfolio__laptop__pretitle {
