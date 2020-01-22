@@ -677,49 +677,6 @@ template {
   background-size: cover;
 }
 
-.header::after {
-  position: absolute;
-  content: "";
-  z-index: 2;
-  top: 0;
-  right: 1.0625rem;
-  width: 0.0625rem;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.header::before {
-  position: absolute;
-  content: "";
-  z-index: 2;
-  top: 0;
-  left: 1.0625rem;
-  width: 0.0625rem;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.line-right {
-  position: absolute;
-  z-index: 1000;
-  top: 0;
-  display: none;
-  width: 0.0625rem;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.line-left {
-  position: absolute;
-  z-index: 1000;
-  top: 0;
-  left: 32.71%;
-  display: block;
-  width: 0.0625rem;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .section-advantages {
   position: relative;
   display: flex;
@@ -735,6 +692,12 @@ template {
   background: #000000;
 }
 
+.advantages-main-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .advantages-wrap {
   position: relative;
   display: flex;
@@ -744,20 +707,6 @@ template {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   margin: 0;
-}
-
-.advantages-wrap::before {
-  position: absolute;
-  content: "";
-  z-index: 3;
-  top: 50%;
-  left: -8.125rem;
-  transform: translateY(-50%);
-  width: 0.375rem;
-  height: 3.0625rem;
-  box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-  border-radius: 0.1875rem;
-  background: #2e2dff;
 }
 
 .section-feedback {
@@ -857,6 +806,8 @@ template {
 }
 
 .footer {
+  position: relative;
+  z-index: 9000;
   width: 100%;
   border: 0.0625rem solid #e69023;
   background-image: linear-gradient(to top, #383876 0%, #383876 1%, #222233 62%, #191919 86%);
@@ -1752,6 +1703,7 @@ template {
   flex-basis: 100%;
   max-width: 100%;
   height: 10.3125rem;
+  min-height: 100%;
 }
 
 .advantages__slider__wrap .owl-height,
@@ -1764,6 +1716,7 @@ template {
   position: relative;
   flex-basis: 100%;
   max-width: 100%;
+  min-height: 100%;
 }
 
 .advantages__slide-content {
@@ -1898,8 +1851,27 @@ template {
   border-radius: 0 0 0 0.1875rem;
 }
 
+.advantages__laptop::after,
+.advantages__laptop::before {
+  position: absolute;
+  content: "";
+  width: 0.0625rem;
+  height: 100%;
+  top: 0;
+}
+
+.advantages__laptop::after {
+  right: 0;
+  background: linear-gradient(to top, rgba(49, 67, 164, 0.5) 0%, rgba(74, 73, 205, 0.4) 100%);
+}
+
+.advantages__laptop::before {
+  right: 19.7%;
+  background: linear-gradient(to top, rgba(49, 67, 164, 0.4) 0%, rgba(74, 73, 205, 0.2) 100%);
+}
+
 .advantages__laptop-content {
-  padding: 3.125rem 0.9375rem 2.5rem 0.9375rem;
+  padding: 1.25rem 0.9375rem 2.5rem 0.9375rem;
 }
 
 .advantages__laptop__img {
@@ -2300,7 +2272,7 @@ template {
   flex-basis: 100%;
   max-width: 100%;
   margin-top: -2.125rem;
-  padding-bottom: 2.1875rem;
+  padding-bottom: 1.25rem;
   background-image: url(../img/mobile/services/services-stars-mobile@1x.png);
   background-position: 100% 100%;
   background-repeat: no-repeat;
@@ -2316,7 +2288,7 @@ template {
   margin-right: -0.9375rem;
   justify-content: center;
   overflow: hidden;
-  border-radius: 0.3125rem;
+  border-radius: 0.4375rem;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2500,7 +2472,7 @@ template {
   max-width: 15.625rem;
   height: 17.25rem;
   max-height: 17.25rem;
-  background-image: url(../img/mobile/price-calc/note-xs1@x.png);
+  background-image: url(../img/mobile/price-calc/notebook-mobile-xs@1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2516,7 +2488,7 @@ template {
   content: "";
   z-index: 2;
   bottom: -2.3125rem;
-  left: 1.0625rem;
+  left: 1.5625rem;
   width: 15.75rem;
   max-width: 15.75rem;
   height: 12.5625rem;
@@ -2562,7 +2534,8 @@ template {
 }
 
 .portfolio__laptop {
-  margin-left: 38.75rem;
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%);
+  padding-left: 38.75rem;
 }
 
 .portfolio__laptop-content {
@@ -2621,6 +2594,7 @@ template {
   flex-basis: 100%;
   max-width: 100%;
   height: 15.625rem;
+  height: 100%;
 }
 
 .portfolio__slide-content {
@@ -2659,9 +2633,10 @@ template {
   position: relative;
   width: 100%;
   max-width: 15.625rem;
-  height: 15.625rem;
+  min-height: 15.625rem;
   overflow: hidden;
   background-color: #ffffff;
+  border-radius: 0.3125rem;
 }
 
 .portfolio__slide-bottom {
@@ -2700,6 +2675,7 @@ template {
   align-items: center;
   margin: auto;
   margin-top: 2.5rem;
+  height: 100%;
 }
 
 .inputs-wrap {
@@ -3383,8 +3359,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .calc-card__card-content::after {
-    bottom: -3.75rem;
-    left: 0.4375rem;
+    bottom: -2.6875rem;
+    left: 0.8125rem;
     width: 22.4375rem;
     max-width: 22.4375rem;
     height: 17.9375rem;
@@ -3414,7 +3390,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop {
-    margin-left: 35rem;
+    padding-left: 35rem;
   }
 
   .portfolio__laptop-content {
@@ -3471,7 +3447,7 @@ fieldset input::-ms-input-placeholder {
   .portfolio__slide {
     width: 100%;
     max-width: 20.125rem;
-    height: 21.375rem;
+    min-height: 21.375rem;
   }
 
   .portfolio__slide__img {
@@ -3563,7 +3539,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop {
-    margin-left: 31.25rem;
+    padding-left: 31.25rem;
   }
 
   .portfolio__laptop-content {
@@ -3621,7 +3597,8 @@ fieldset input::-ms-input-placeholder {
 
 @media (min-width: 48rem) {
   .portfolio__laptop {
-    margin-left: 25rem;
+    width: 100%;
+    padding-left: 25rem;
   }
 
   .portfolio__laptop-content {
@@ -3661,37 +3638,6 @@ fieldset input::-ms-input-placeholder {
     left: 1.375rem;
     width: 0.0625rem;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .line-right {
-    display: block;
-    right: 17.5%;
-  }
-
-  .line-left {
-    left: 17.5%;
-  }
-
-  .line-center-top {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 0.0625rem;
-    height: 30%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .line-center-bottom {
-    position: absolute;
-    z-index: 1000;
-    bottom: 0;
-    left: 50%;
-    display: block;
-    width: 0.0625rem;
-    height: 16.7%;
     background-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -4199,7 +4145,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .portfolio__laptop-content {
@@ -4271,7 +4217,8 @@ fieldset input::-ms-input-placeholder {
   .portfolio__slide {
     width: 100%;
     max-width: 32rem;
-    height: 32.3125rem;
+    min-height: 32.3125rem;
+    border-radius: 0;
     border-top-left-radius: 0.625rem;
     border-top-right-radius: 0.625rem;
   }
@@ -4336,22 +4283,6 @@ fieldset input::-ms-input-placeholder {
     background-image: url(../img/desktop/header/header-bg-6@1x.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  .line-right {
-    display: none;
-  }
-
-  .line-left {
-    display: none;
-  }
-
-  .line-center-top {
-    display: none;
-  }
-
-  .line-center-bottom {
-    display: none;
   }
 
   .advantages-wrap {
@@ -4566,6 +4497,7 @@ fieldset input::-ms-input-placeholder {
 
   .brief-btn {
     position: absolute;
+    z-index: 8400;
     bottom: 1.25rem;
     right: 10%;
     border: none;
@@ -4750,7 +4682,7 @@ fieldset input::-ms-input-placeholder {
     position: sticky;
     top: 0;
     height: 1000px;
-    background: url(../img/desktop/advantages/advantages-bg-desktop@1x.png);
+    background: url(../img/desktop/advantages/advantages-bg-desktop@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 30%, rgba(22, 22, 22, 0.8) 57%);
     background-position: 80% 9%, 2px 100%;
     background-repeat: no-repeat;
   }
@@ -4951,13 +4883,13 @@ fieldset input::-ms-input-placeholder {
     position: sticky;
     top: 0;
     height: 1000px;
-    background: url(../img/tablet/portfolio/laptop-flower-tablet@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%), url(../img/tablet/portfolio/smoke-tablet@1x.png);
-    background-position: -165px 56%, 100% 100%, -81px 15%;
+    background: url(../img/tablet/portfolio/laptop-flower-tablet@1x.png), url(../img/tablet/portfolio/smoke-tablet@1x.png);
+    background-position: -165px 56%, -57px 20%;
     background-repeat: no-repeat;
   }
 
   .portfolio__slider__wrap {
-    max-height: auto;
+    height: 100%;
     flex-basis: 28%;
     width: 28%;
     max-width: 26.625rem;
@@ -4995,10 +4927,9 @@ fieldset input::-ms-input-placeholder {
     top: 0;
     width: 100%;
     max-width: 26.625rem;
-    height: 18.75rem;
+    min-height: 18.75rem;
     margin-right: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0;
   }
 
   .portfolio__slide__img {
@@ -5008,14 +4939,13 @@ fieldset input::-ms-input-placeholder {
 
   .form-rightcol {
     position: absolute;
-    z-index: 2;
+    z-index: 8500;
     right: 0%;
     flex-basis: 40%;
     width: 40%;
     max-width: 39.375rem;
     padding: 6.25rem 0.3125rem 0.3125rem 0.3125rem;
     margin: 0;
-    height: 100vh;
     background: #1a1a1a;
   }
 
@@ -5116,7 +5046,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slide {
-    height: 65.625rem;
+    min-height: 65.625rem;
   }
 }
 
@@ -5190,13 +5120,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
-  }
-}
-
 @media (min-width: 73.125em) {
   .lamp {
     right: 35%;
@@ -5212,6 +5135,13 @@ fieldset input::-ms-input-placeholder {
     max-width: 100%;
     flex-basis: 100%;
     padding: 0 !important;
+  }
+}
+
+@media (min-width: 73.75rem) {
+  .header__btn {
+    width: 17.4375rem;
+    height: 4.9375rem;
   }
 }
 
@@ -5233,7 +5163,21 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slide {
-    height: 23.75rem;
+    min-height: 23.75rem;
+  }
+}
+
+@media (min-width: 77.5em) {
+  .lamp {
+    right: 30%;
+  }
+
+  .lamp-light {
+    right: 28.1%;
+  }
+
+  .lamp-light-main {
+    right: -272%;
   }
 }
 
@@ -5253,20 +5197,6 @@ fieldset input::-ms-input-placeholder {
     flex-basis: 16.66666667%;
     max-width: 16.66666667%;
     margin-right: 6.75rem;
-  }
-}
-
-@media (min-width: 77.5em) {
-  .lamp {
-    right: 30%;
-  }
-
-  .lamp-light {
-    right: 28.1%;
-  }
-
-  .lamp-light-main {
-    right: -272%;
   }
 }
 
@@ -5316,20 +5246,19 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slide {
-    height: 25rem;
+    min-height: 25rem;
+  }
+}
+
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
   }
 }
 
 @media (min-width: 89.0625em) {
   .header__title--small {
     font-size: 3.75rem;
-  }
-}
-
-@media (min-width: 89.0625rem) {
-  .header__title {
-    font-size: 5.3125rem;
-    line-height: 4.375rem;
   }
 }
 
@@ -5359,9 +5288,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
+@media (min-width: 89.0625rem) {
+  .header__title {
+    font-size: 5.3125rem;
+    line-height: 4.375rem;
   }
 }
 
@@ -5379,9 +5309,9 @@ fieldset input::-ms-input-placeholder {
   }
 
   .section-form {
-    background-image: url(../img/form/brief.png), url(../img/desktop/form/form-bg1@x.png);
-    background-position: 100% 100%, center;
-    background-size: 317px 320px, cover;
+    background-image: url(../img/desktop/form/form-bg1@x.png);
+    background-position: center;
+    background-size: cover;
   }
 
   .nav__item:nth-child(3) {
@@ -5656,8 +5586,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop-inner {
-    background: url(../img/tablet/portfolio/laptop-flower-tablet-2@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%), url(../img/tablet/portfolio/smoke-tablet-2@1x.png);
-    background-position: -190px 37%, 100% 100%, -98px 11%;
+    background: url(../img/tablet/portfolio/laptop-flower-tablet-2@1x.png), url(../img/tablet/portfolio/smoke-tablet-2@1x.png);
+    background-position: -190px 37%, -98px 14%;
     background-repeat: no-repeat;
   }
 
@@ -5666,7 +5596,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slide-content {
-    padding: 0.625rem 0 0 0.9375rem;
+    padding: 1.25rem 0 0 0.9375rem;
   }
 
   .portfolio__slide-content--sm {
@@ -5689,7 +5619,7 @@ fieldset input::-ms-input-placeholder {
     top: 0;
     width: 100%;
     max-width: 26.625rem;
-    height: 28.1875rem;
+    min-height: 28.1875rem;
     margin-right: 0;
   }
 
@@ -5707,11 +5637,24 @@ fieldset input::-ms-input-placeholder {
     right: 21%;
     flex-basis: 40%;
     width: 40%;
+    height: 100%;
     padding: 9.375rem 0.3125rem 0.3125rem 0.3125rem;
   }
 
   .form {
     max-width: 39.375rem;
+  }
+
+  .form-brief-wrap {
+    position: absolute;
+    z-index: 8000;
+    right: 2%;
+    bottom: 0;
+    width: 18.75rem;
+    height: 17.5rem;
+    background-image: url(../img/form/brief.png);
+    background-position: center;
+    background-size: cover;
   }
 
   .footer-inner-wrap {
@@ -5800,16 +5743,48 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 92.5rem) {
-  .section-form {
-    background-position: 98% 100%, center;
-  }
-}
-
 @media (min-width: 93.75rem) {
   .form-lefttcol {
     flex-basis: 45%;
     max-width: 45%;
+  }
+}
+
+@media (min-width: 95rem) {
+  .form-brief-wrap {
+    right: 3%;
+  }
+}
+
+@media (min-width: 96.875rem) {
+  .header__title {
+    font-size: 5.9375rem;
+    line-height: 4.75rem;
+  }
+
+  .header__title--small {
+    font-size: 4.375rem;
+  }
+
+  .header__subtitle {
+    max-width: 43.125rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .header__text {
+    max-width: 22.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .phone-icon {
+    top: 7.75rem;
+  }
+
+  .computer-icon {
+    top: 1.875rem;
+    left: 7.3125rem;
   }
 }
 
@@ -5885,38 +5860,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 96.875rem) {
-  .header__title {
-    font-size: 5.9375rem;
-    line-height: 4.75rem;
-  }
-
-  .header__title--small {
-    font-size: 4.375rem;
-  }
-
-  .header__subtitle {
-    max-width: 43.125rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-
-  .header__text {
-    max-width: 22.5rem;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-
-  .phone-icon {
-    top: 7.75rem;
-  }
-
-  .computer-icon {
-    top: 1.875rem;
-    left: 7.3125rem;
-  }
-}
-
 @media (min-width: 97rem) {
   .advantages-list {
     flex-basis: 66.66666667%;
@@ -5931,46 +5874,6 @@ fieldset input::-ms-input-placeholder {
 @media (min-width: 100rem) {
   .section-feedback {
     background-image: url(../img/desktop/feedback/feedback-bg-2@1x.png);
-  }
-
-  .line-left--first {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 42.1875rem;
-    width: 0.0625rem;
-    height: 100%;
-    background: #00008B;
-  }
-
-  .line-left--second {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 53.875rem;
-    width: 0.0625rem;
-    height: 100%;
-    background: #00008B;
-  }
-
-  .line-right--first {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 16.5625rem;
-    width: 0.0625rem;
-    height: 100%;
-    background: #00008B;
-  }
-
-  .line-right--second {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 27.1875rem;
-    width: 0.0625rem;
-    height: 100%;
-    background: #00008B;
   }
 
   .card__btn {
@@ -6059,7 +5962,7 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--lg {
     max-width: 22.25rem;
-    min-height: 26.0625rem;
+    min-height: 26.875rem;
   }
 
   .services-card--lg .card-options {
@@ -6093,23 +5996,27 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 101.25rem) {
-  .section-form {
-    background-position: 97% 100%, center;
-  }
-
   .brief-btn {
     right: 11%;
   }
 }
 
-@media (min-width: 106.25rem) {
-  .section-form {
-    background-position: 95% 100%, center;
+@media (min-width: 103.125rem) {
+  .form-brief-wrap {
+    right: 4%;
   }
+}
 
+@media (min-width: 106.25rem) {
   .services-leftcol {
     flex-basis: 45%;
     max-width: 45%;
+  }
+}
+
+@media (min-width: 108.75rem) {
+  .form-brief-wrap {
+    right: 5%;
   }
 }
 
@@ -6129,10 +6036,36 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 113.125rem) {
-  .section-form {
-    background-size: 370px 366px, cover;
-    background-position: 97% 100%, center;
+@media (min-width: 115.625rem) {
+  .form-brief-wrap {
+    right: 6%;
+  }
+}
+
+@media (min-width: 120.0625rem) {
+  .portfolio__slider__wrap {
+    max-width: 690px;
+  }
+
+  .portfolio__slider {
+    flex-basis: 100%;
+    max-width: 426px;
+    min-height: 100vh;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .portfolio__slide__text {
+    font-size: 20px;
+  }
+
+  .portfolio__slide {
+    max-width: 426px;
+    min-height: 31.25rem;
+    background-size: cover;
   }
 }
 
@@ -6179,6 +6112,20 @@ fieldset input::-ms-input-placeholder {
     top: 0;
     left: 7.5rem;
     background: rgba(255, 255, 255, 0.2);
+  }
+
+  .advantages-main-wrap::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: 50%;
+    left: 7.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+    border-radius: 0.1875rem;
+    background: #2e2dff;
   }
 
   .section-feedback::before {
@@ -6455,8 +6402,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop {
-    flex-basis: 71%;
-    max-width: 71%;
+    flex-basis: 64.6%;
+    max-width: 64.6%;
   }
 
   .portfolio__laptop-content {
@@ -6477,7 +6424,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__laptop-inner {
-    background: url(../img/desktop/portfolio/laptop-flower-desktop-6@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%), url(../img/desktop/portfolio/smoke-desktop@1x.png);
+    background: url(../img/desktop/portfolio/laptop-flower-desktop-6@1x.png), url(../img/desktop/portfolio/smoke-desktop@1x.png);
     background-position: 75% 32%;
     background-repeat: no-repeat;
   }
@@ -6512,7 +6459,27 @@ fieldset input::-ms-input-placeholder {
   .portfolio__slide {
     width: 100%;
     max-width: 26.625rem;
-    height: 28.1875rem;
+    min-height: 28.1875rem;
+  }
+
+  .form-brief-wrap {
+    right: 3.5%;
+    width: 23.125rem;
+    height: 22.875rem;
+  }
+}
+
+@media (min-width: 120.3125rem) {
+  .portfolio__slide-content {
+    max-width: 70%;
+    padding: 0.3125rem;
+  }
+}
+
+@media (min-width: 121.875rem) {
+  .portfolio__laptop {
+    max-width: 1554px;
+    height: 100rem;
   }
 }
 
@@ -6526,6 +6493,25 @@ fieldset input::-ms-input-placeholder {
     transform: translateY(-200px);
     width: 600px;
     margin-left: 47%;
+  }
+}
+
+@media (min-width: 137.5rem) {
+  .portfolio__slide-btn {
+    width: 2.875rem;
+    height: 2.875rem;
+    margin: 1.25rem 0.3125rem 0 auto;
+  }
+
+  .portfolio__slide-btn::before {
+    top: calc(50% - 5px);
+    left: calc(50% - 16px);
+    width: 1.5625rem;
+    height: 0.625rem;
+  }
+
+  .portfolio__slide-bottom {
+    margin-top: 5%;
   }
 }
 
@@ -6554,7 +6540,6 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__slider__wrap {
     max-width: 700px;
-    height: 100%;
   }
 
   .advantages__slider {
@@ -6606,44 +6591,13 @@ fieldset input::-ms-input-placeholder {
     width: 700px;
   }
 
-  .portfolio__laptop {
-    max-width: 75rem;
-    height: 100rem;
-  }
-
   .portfolio__laptop-inner {
     height: 1900px;
     background-position: 35% 37%, 2px 100%;
   }
 
-  .portfolio__slider__wrap {
-    max-width: 700px;
-    height: 100%;
-  }
-
-  .portfolio__slider {
-    flex-basis: 100%;
-    height: 100vh;
-  }
-
-  .portfolio__slide-content {
-    max-width: 92%;
-    padding: 0.625rem 0 0 6.25rem;
-  }
-
-  .portfolio__slide__title {
-    margin-bottom: 0;
-    font-size: 0.938rem;
-  }
-
-  .portfolio__slide__text {
-    font-size: 1.46rem;
-  }
-
-  .portfolio__slide {
-    width: 700px;
-    height: 500px;
-    background-size: cover;
+  .portfolio__slide-bottom {
+    margin-top: 10%;
   }
 }
 
