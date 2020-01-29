@@ -675,6 +675,8 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 68.75rem;
+  height: 100vh;
 }
 
 .section-advantages {
@@ -747,11 +749,29 @@ template {
   margin: 0;
   padding: 6.25rem 0;
   background-color: #eaa627;
-  background-image: url(../img/mobile/price-calc/wave-left1@x.png), url(../img/mobile/price-calc/wave-right1@x.png);
-  background-position: 62% -208px, 21% -124%;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 616px 666px, 906px 698px;
   overflow: hidden;
+}
+
+.left-wave,
+.right-wave {
+  position: absolute;
+  width: 54.5rem;
+  height: 37.0625rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-wave {
+  top: -6.625rem;
+  left: -15.5rem;
+  background-image: url(../img/mobile/price-calc/wave-left1@x.png);
+}
+
+.right-wave {
+  bottom: -14.0625rem;
+  right: -20.375rem;
+  background-image: url(../img/mobile/price-calc/wave-right1@x.png);
 }
 
 .section-portfolio {
@@ -918,7 +938,7 @@ template {
   position: fixed;
   z-index: 9999;
   top: 1.25rem;
-  right: 1.1875rem;
+  right: 10%;
   display: block;
   margin: 0;
   padding: 0;
@@ -1094,94 +1114,6 @@ template {
 
 .logo--white {
   color: #ffffff;
-}
-
-.lamp {
-  position: absolute;
-  z-index: 3;
-  top: 0rem;
-  right: 30%;
-  display: none;
-  padding: 0 2.5rem;
-  width: 6.5625rem;
-  height: 9rem;
-  background-image: url(../img/header/lamp.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.lamp-light {
-  position: absolute;
-  z-index: 2;
-  top: -0.5rem;
-  right: 27.5%;
-  display: none;
-  width: 10rem;
-  height: 12.875rem;
-  background-image: url(../img/header/lamp-light-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0;
-}
-
-.lamp-light--on {
-  transition: opacity 2s ease-out;
-  opacity: 1;
-}
-
-.lamp-light--off {
-  transition: opacity 1s ease-out;
-  opacity: 0;
-}
-
-.lamp-light-small {
-  position: absolute;
-  z-index: 4;
-  top: 84%;
-  right: 1.5%;
-  width: 6.25rem;
-  height: 1.9375rem;
-  background-image: url(../img/header/lamp-light-2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0;
-}
-
-.lamp-light-small--on {
-  transition: opacity 1s ease-out;
-  opacity: 1;
-}
-
-.lamp-light-small--off {
-  transition: opacity 1s ease-out;
-  opacity: 0;
-}
-
-.lamp-light-main {
-  position: absolute;
-  z-index: 0;
-  top: -122%;
-  right: -275%;
-  width: 45.3125rem;
-  height: 68.75rem;
-  background-image: url(../img/header/lamp-light-main.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0;
-}
-
-.lamp-light-main--on {
-  transition: opacity 1s ease-out;
-  opacity: 0.2;
-}
-
-.lamp-light-main--off {
-  transition: opacity 1s ease-out;
-  opacity: 0;
 }
 
 .header-content-wrap {
@@ -2166,7 +2098,7 @@ template {
   max-width: 100%;
   padding-top: 2.1875rem;
   min-height: 37.5rem;
-  background-image: url(../img/mobile/services/services-man-mobile@1x.png);
+  background-image: url(../img/mobile/services/services-man-mobile@1x.jpg);
   background-position: 33% -27px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2273,7 +2205,7 @@ template {
   max-width: 100%;
   margin-top: -2.125rem;
   padding-bottom: 1.25rem;
-  background-image: url(../img/mobile/services/services-stars-mobile@1x.png);
+  background-image: url(../img/mobile/services/services-stars-mobile@1x.jpg);
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2441,6 +2373,7 @@ template {
 
 .price-calc-card-wrap {
   position: relative;
+  z-index: 1000;
   width: 100%;
   height: 100%;
   display: flex;
@@ -2854,19 +2787,27 @@ fieldset input::-ms-input-placeholder {
 }
 
 .column-second {
-  flex-basis: 70%;
-  max-width: 70%;
-  text-align: left;
+  flex-basis: 75%;
+  width: 75%;
+  max-width: 14.1875rem;
+  text-align: center;
   order: 1;
 }
 
-.column-second__text {
+.column-second__text,
+.column-second__copyright {
   font-family: "Qanelas-Medium";
   font-weight: normal;
   font-style: normal;
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.125rem;
+}
+
+.column-second__text {
+  width: 14.1875rem;
+  margin: 0 auto 1.25rem auto;
+  border-bottom: 0.125rem dashed #e79526;
 }
 
 .column-third {
@@ -2949,31 +2890,20 @@ fieldset input::-ms-input-placeholder {
     background-position: 100% 26%;
   }
 
-  .header::after {
-    position: absolute;
-    content: "";
-    z-index: 2;
-    top: 0;
-    right: 12.5%;
-    width: 0.0625rem;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .header::before {
-    position: absolute;
-    content: "";
-    z-index: 2;
-    top: 0;
-    left: 12.5%;
-    width: 0.0625rem;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
   .section-price-calc {
     padding: 4.375rem 0;
-    background-position: 116% -197px, 35% -221%;
+  }
+
+  .left-wave {
+    top: -6.25rem;
+    left: -15.125rem;
+    background-image: url(../img/mobile/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -10.4375rem;
+    right: -14.5625rem;
+    background-image: url(../img/mobile/price-calc/wave-right1@x.png);
   }
 
   .section-form {
@@ -2992,7 +2922,6 @@ fieldset input::-ms-input-placeholder {
 
   .cmn-toggle-switch {
     top: 1.25rem;
-    right: 3.8125rem;
   }
 
   .logo {
@@ -3505,8 +3434,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .column-second {
-    flex-basis: 60%;
-    max-width: 60%;
+    flex-basis: 100%;
+    width: 100%;
   }
 
   .column-third {
@@ -3516,7 +3445,7 @@ fieldset input::-ms-input-placeholder {
 
 @media (min-width: 31.25rem) {
   .services-leftcol {
-    background-image: url(../img/tablet/services/services-man-tablet@1x.png);
+    background-image: url(../img/tablet/services/services-man-tablet@1x.jpg);
     background-position: 33% -38px;
   }
 }
@@ -3606,39 +3535,11 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 50rem) and (min-width: 64rem) {
-  .header::after,
-  .header::before {
-    display: none;
-  }
-}
-
 @media (min-width: 50rem) {
   .header {
+    min-height: 71.875rem;
     background-image: url(../img/tablet/header/header-bg-3@1x.jpg);
     background-position: 100% 26%;
-  }
-
-  .header::after {
-    position: absolute;
-    content: "111";
-    z-index: 2;
-    top: 0;
-    right: 1.375rem;
-    width: 0.0625rem;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .header::before {
-    position: absolute;
-    content: "222";
-    z-index: 2;
-    top: 0;
-    left: 1.375rem;
-    width: 0.0625rem;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .section-feedback {
@@ -3649,11 +3550,16 @@ fieldset input::-ms-input-placeholder {
     background-size: cover;
   }
 
-  .section-price-calc {
-    background-image: url(../img/tablet/price-calc/wave-left1@x.png), url(../img/tablet/price-calc/wave-right1@x.png);
-    background-position: -296px -335px, -278px 136px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1025px 1111px, 1510px 1162px;
+  .left-wave {
+    top: -13.375rem;
+    left: -12.25rem;
+    background-image: url(../img/tablet/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -10.4375rem;
+    right: -15.25rem;
+    background-image: url(../img/tablet/price-calc/wave-right1@x.png);
   }
 
   .portfolio-wrap {
@@ -3684,7 +3590,6 @@ fieldset input::-ms-input-placeholder {
 
   .cmn-toggle-switch {
     top: 1.875rem;
-    right: 1.5rem;
   }
 
   .cmn-toggle-switch span {
@@ -4098,6 +4003,10 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.6875rem;
   }
 
+  .services-rightcol {
+    background-image: url(../img/tablet/services/services-stars-tablet@1x.jpg);
+  }
+
   .price-calc-card {
     max-width: 37.5rem;
     padding: 4.0625rem 2.8125rem 4.75rem 2.8125rem;
@@ -4267,19 +4176,39 @@ fieldset input::-ms-input-placeholder {
     line-height: 1rem;
   }
 
-  .column-third {
-    padding-left: 8.75rem;
+  .footer-inner-wrap {
+    padding: 1.875rem 1.25rem;
   }
-}
 
-@media (min-width: 56.25rem) {
+  .column-first {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
   .column-third {
-    padding-left: 9.375rem;
+    padding: 0;
+    margin: auto;
+    flex-basis: 33%;
+    max-width: 33%;
+    text-align: center;
+  }
+
+  .footer-phone::before {
+    left: 1.375rem;
+  }
+
+  .footer-email::before {
+    left: 1.25rem;
+  }
+
+  .footer-social {
+    align-items: flex-end;
   }
 }
 
 @media (min-width: 64rem) {
   .header {
+    min-height: 56.25rem;
     background-image: url(../img/desktop/header/header-bg-6@1x.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -4436,7 +4365,7 @@ fieldset input::-ms-input-placeholder {
     margin-right: -0.9375rem;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 0.625rem;
+    margin: 3.125rem 0;
     padding: 0.625rem 0.625rem 0.625rem 1.875rem;
   }
 
@@ -4464,7 +4393,7 @@ fieldset input::-ms-input-placeholder {
 
   .header__subtitle {
     max-width: 29.0625rem;
-    margin: 1.25rem 0 1.875rem 0;
+    margin: 1.25rem 0 4.375rem 0;
   }
 
   .header__text {
@@ -4478,7 +4407,6 @@ fieldset input::-ms-input-placeholder {
 
   .header__btn {
     order: 0;
-    align-self: center;
   }
 
   .mobile-menu__btn {
@@ -4766,7 +4694,7 @@ fieldset input::-ms-input-placeholder {
   .services-card--lg {
     padding: 0.75rem 0.75rem 1.375rem 0.75rem;
     max-width: 18.8125rem;
-    min-height: 21.9375rem;
+    min-height: 24.375rem;
   }
 
   .services-card--lg::after {
@@ -4843,7 +4771,7 @@ fieldset input::-ms-input-placeholder {
     top: 0;
     flex-basis: 71%;
     max-width: 71%;
-    height: 100vh;
+    height: 100%;
     order: -1;
   }
 
@@ -4902,7 +4830,7 @@ fieldset input::-ms-input-placeholder {
     flex-direction: column;
     flex-basis: 43.46%;
     max-width: 38.4375rem;
-    height: 900px;
+    height: 56.25rem;
     margin: 0;
   }
 
@@ -4989,29 +4917,29 @@ fieldset input::-ms-input-placeholder {
   }
 
   .footer-inner-wrap {
-    justify-content: flex-start;
+    align-items: baseline;
     padding: 1.875rem 3.125rem 1.25rem 3.125rem;
   }
 
-  .column-first {
-    flex-basis: 27%;
-    max-width: 27%;
-  }
-
   .column-second {
-    flex-basis: 25%;
-    max-width: 25%;
+    max-width: 19.25rem;
+    order: 2;
   }
 
   .column-third {
-    padding-left: 3.8125rem;
-    margin: auto;
-    flex-basis: 33%;
-    max-width: 33%;
+    text-align: left;
   }
 
   .footer-phone {
     font-size: 1.375rem;
+  }
+
+  .footer-phone::before {
+    left: -2rem;
+  }
+
+  .footer-email::before {
+    left: -2rem;
   }
 
   .footer-social {
@@ -5120,16 +5048,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 73.125em) {
-  .lamp {
-    right: 35%;
-  }
-
-  .lamp-light {
-    right: 32.7%;
-  }
-}
-
 @media (min-width: 73.125rem) {
   .nav-list {
     max-width: 100%;
@@ -5164,20 +5082,6 @@ fieldset input::-ms-input-placeholder {
 
   .portfolio__slide {
     min-height: 23.75rem;
-  }
-}
-
-@media (min-width: 77.5em) {
-  .lamp {
-    right: 30%;
-  }
-
-  .lamp-light {
-    right: 28.1%;
-  }
-
-  .lamp-light-main {
-    right: -272%;
   }
 }
 
@@ -5250,12 +5154,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
-  }
-}
-
 @media (min-width: 89.0625em) {
   .header__title--small {
     font-size: 3.75rem;
@@ -5295,13 +5193,40 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
+  }
+}
+
+@media (min-width: 90.5625rem) {
+  .small-cards-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+    justify-content: space-between;
+    width: 40.125rem;
+  }
+}
+
 @media (min-width: 90rem) {
   .section-price-calc {
     padding: 1.875rem 0;
-    background-image: url(../img/desktop/price-calc/wave-left1@x.png), url(../img/desktop/price-calc/wave-right1@x.png);
-    background-position: 0% 12%, 101% 74%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 872px 593px, 872px 593px;
+  }
+
+  .left-wave {
+    top: -1.125rem;
+    left: -1.25rem;
+    background-image: url(../img/desktop/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -1.125rem;
+    right: -1.25rem;
+    background-image: url(../img/desktop/price-calc/wave-right1@x.png);
   }
 
   .portfolio-wrap {
@@ -5348,7 +5273,11 @@ fieldset input::-ms-input-placeholder {
   .header-content {
     max-width: 66.66666667%;
     text-align: left;
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .header__subtitle {
+    margin: 1.25rem 0 3.125rem 0;
   }
 
   .portfolio__slide-btn {
@@ -5536,6 +5465,7 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--lg {
     padding: 0.75rem;
+    min-height: 25.625rem;
   }
 
   .services-card--sm:nth-child(1) {
@@ -5658,7 +5588,13 @@ fieldset input::-ms-input-placeholder {
   }
 
   .footer-inner-wrap {
+    align-items: center;
     padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+  }
+
+  .column-first {
+    flex-basis: 25%;
+    max-width: 25%;
   }
 
   .column-first__text {
@@ -5684,8 +5620,13 @@ fieldset input::-ms-input-placeholder {
     text-align: center;
   }
 
-  .column-second__text {
+  .column-second__text,
+  .column-second__copyright {
     font-size: 1.125rem;
+  }
+
+  .column-second__text {
+    width: 15.9375rem;
   }
 
   .column-third {
@@ -5730,19 +5671,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 90.5625rem) {
-  .small-cards-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 0 1 auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
-    justify-content: space-between;
-    width: 40.125rem;
-  }
-}
-
 @media (min-width: 93.75rem) {
   .form-lefttcol {
     flex-basis: 45%;
@@ -5756,48 +5684,7 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 96.875rem) {
-  .header__title {
-    font-size: 5.9375rem;
-    line-height: 4.75rem;
-  }
-
-  .header__title--small {
-    font-size: 4.375rem;
-  }
-
-  .header__subtitle {
-    max-width: 43.125rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-
-  .header__text {
-    max-width: 22.5rem;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-
-  .phone-icon {
-    top: 7.75rem;
-  }
-
-  .computer-icon {
-    top: 1.875rem;
-    left: 7.3125rem;
-  }
-}
-
 @media (min-width: 96.875em) {
-  .lamp {
-    right: 35%;
-  }
-
-  .lamp-light {
-    top: -0.5rem;
-    right: 33.46%;
-  }
-
   .order-rect--first {
     top: 28%;
     right: 13%;
@@ -5860,6 +5747,38 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 96.875rem) {
+  .header__title {
+    font-size: 5.9375rem;
+    line-height: 4.75rem;
+  }
+
+  .header__title--small {
+    font-size: 4.375rem;
+  }
+
+  .header__subtitle {
+    max-width: 43.125rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .header__text {
+    max-width: 22.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .phone-icon {
+    top: 7.75rem;
+  }
+
+  .computer-icon {
+    top: 1.875rem;
+    left: 7.3125rem;
+  }
+}
+
 @media (min-width: 97rem) {
   .advantages-list {
     flex-basis: 66.66666667%;
@@ -5905,8 +5824,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-left-socials {
-    margin-left: 0.9375rem;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0.9375rem;
     padding: 1.0625rem 1.375rem;
   }
 
@@ -5963,6 +5881,11 @@ fieldset input::-ms-input-placeholder {
   .services-card--lg {
     max-width: 22.25rem;
     min-height: 26.875rem;
+  }
+
+  .services-card--lg {
+    max-width: 22.25rem;
+    min-height: 25.625rem;
   }
 
   .services-card--lg .card-options {
@@ -6043,14 +5966,9 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 120.0625rem) {
-  .portfolio__slider__wrap {
-    max-width: 690px;
-  }
-
   .portfolio__slider {
     flex-basis: 100%;
-    max-width: 426px;
-    min-height: 100vh;
+    min-height: 100%;
   }
 
   .portfolio__slide__title {
@@ -6063,13 +5981,17 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slide {
-    max-width: 426px;
-    min-height: 31.25rem;
+    max-width: 26.625rem;
+    height: 31.25rem;
     background-size: cover;
   }
 }
 
 @media (min-width: 120rem) {
+  .header {
+    min-height: 67.5rem;
+  }
+
   .header::before {
     position: absolute;
     content: "";
@@ -6209,6 +6131,16 @@ fieldset input::-ms-input-placeholder {
     background: rgba(0, 0, 0, 0.2);
   }
 
+  .left-wave {
+    top: 0;
+    left: -1.875rem;
+  }
+
+  .right-wave {
+    bottom: -1.25rem;
+    right: -0.9375rem;
+  }
+
   .section-portfolio::before {
     position: absolute;
     content: "Преимущества";
@@ -6305,7 +6237,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .header__subtitle {
-    margin-bottom: 3.75rem;
+    margin-bottom: 4.375rem;
   }
 
   .header__btn {
@@ -6387,6 +6319,10 @@ fieldset input::-ms-input-placeholder {
     padding: 4.375rem 3.125rem 1.875rem 0;
   }
 
+  .services-card--lg .card-options {
+    padding: 0 0.3125rem 0 1.6875rem;
+  }
+
   .price-calc-card-wrap::before {
     position: absolute;
     content: "";
@@ -6425,7 +6361,7 @@ fieldset input::-ms-input-placeholder {
 
   .portfolio__laptop-inner {
     background: url(../img/desktop/portfolio/laptop-flower-desktop-6@1x.png), url(../img/desktop/portfolio/smoke-desktop@1x.png);
-    background-position: 75% 32%;
+    background-position: 70% 32%;
     background-repeat: no-repeat;
   }
 
@@ -6434,7 +6370,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .portfolio__slider {
-    width: 26.625rem;
+    max-width: 426px;
   }
 
   .portfolio__slide-content {
@@ -6478,8 +6414,7 @@ fieldset input::-ms-input-placeholder {
 
 @media (min-width: 121.875rem) {
   .portfolio__laptop {
-    max-width: 1554px;
-    height: 100rem;
+    max-width: 97.125rem;
   }
 }
 
@@ -6611,14 +6546,6 @@ fieldset input::-ms-input-placeholder {
   .header-top {
     justify-content: flex-start;
     padding: 1.25rem 0.9375rem 0 0.9375rem;
-  }
-
-  .lamp {
-    display: block;
-  }
-
-  .lamp-light {
-    display: block;
   }
 
   .header-man__img {
