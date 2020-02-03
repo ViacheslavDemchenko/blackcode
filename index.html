@@ -21,7 +21,7 @@
       <header class="section header">
         <div class="container">
           <div class="header-top">
-            <div class="logo" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link" href="#" itemprop="name">BLACKCODE.<span class="logo--white">agency</span></a></div>
+            <div class="logo" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link" itemprop="name" href="#">BLACKCODE.<span class="logo--white">agency</span></a></div>
             <nav class="nav" role="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
               <ul class="nav-list">
                             <li class="nav__item--desktop nav__item" role="menuitem"><a class="nav__link" itemprop="url" href="#">Все проекты</a></li>
@@ -167,49 +167,55 @@
               <h4 class="leftcol__pretitle">Наши сайты <span class="leftcol__pretitle--yellow">привлекают клиентов</span></h4>
               <h2 class="leftcol__title"> Мы позаботились о том, чтобы решить все задачи</h2>
             </div>
-            <div class="dialog-block">
+            <div class="dialog-block" id="target">
               <div class="dialog">
-                <p class="dialog__text--blue">Нам важно, <span class="dialog__text">чтобы ведение вашего бизнеса протекало как можно комфортнее и для этого выделили отдельные услуги для небольших задач</span></p>
+                <p class="dialog__text--blue"> </p>
               </div>
             </div>
           </div>
           <div class="services-rightcol">
-            <div class="services-card services-card--lg">
-              <svg class="services-card--lg__icon" width="45" height="43">
-                <use xlink:href="img/sprite.svg#responsive-icon"></use>
-              </svg>
-              <h4 class="card__title">Сайт под ключ</h4>
-              <ul class="card-options">
-                <li class="options__item">Анализ ЦА и рынка</li>
-                <li class="options__item">Создание дизайна</li>
-                <li class="options__item">Верстка с “помощью кода”</li>
-                <li class="options__item">Подключение CRM</li>
-              </ul>
-              <button class="btn card__btn">Заказать</button>
-            </div>
-            <div class="small-cards-wrap">
-              <div class="services-card services-card--sm">
-                <svg class="services-card--sm__icon services-card--sm__icon-settings" width="31" height="31">
-                  <use xlink:href="img/sprite.svg#settings-icon"></use>
+            <div class="services-card-wrap">
+              <div class="services-card services-card--lg">
+                <svg class="services-card--lg__icon" width="45" height="43">
+                  <use xlink:href="img/sprite.svg#responsive-icon"></use>
                 </svg>
-                <h4 class="card__title">Верстка</h4>
+                <h4 class="card__title">Сайт под ключ</h4>
                 <ul class="card-options">
-                  <li class="options__item options__item--middle">Реализация проекта с вашим дизайном</li>
+                  <li class="options__item">Анализ ЦА и рынка</li>
+                  <li class="options__item">Создание дизайна</li>
+                  <li class="options__item">Верстка с “помощью кода”</li>
                   <li class="options__item">Подключение CRM</li>
                 </ul>
                 <button class="btn card__btn">Заказать</button>
               </div>
-              <div class="services-card services-card--sm">
-                <svg class="services-card--sm__icon" width="31" height="31">
-                  <use xlink:href="img/sprite.svg#design-icon"></use>
-                </svg>
-                <h4 class="card__title">Дизайн сайта</h4>
-                <ul class="card-options">
-                  <li class="options__item">Разработка и анализ</li>
-                  <li class="options__item">Построение прототипа</li>
-                  <li class="options__item">Создание дизайн-макета </li>
-                </ul>
-                <button class="btn card__btn">Заказать</button>
+            </div>
+            <div class="small-cards-wrap">
+              <div class="small-services-card-wrap">
+                <div class="services-card services-card--sm services-card--sm__first">
+                  <svg class="services-card--sm__icon services-card--sm__icon-settings" width="31" height="31">
+                    <use xlink:href="img/sprite.svg#settings-icon"></use>
+                  </svg>
+                  <h4 class="card__title">Верстка</h4>
+                  <ul class="card-options">
+                    <li class="options__item options__item--middle">Реализация проекта с вашим дизайном</li>
+                    <li class="options__item">Подключение CRM</li>
+                  </ul>
+                  <button class="btn card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="small-services-card-wrap">
+                <div class="services-card services-card--sm services-card--sm__second">
+                  <svg class="services-card--sm__icon" width="31" height="31">
+                    <use xlink:href="img/sprite.svg#design-icon"></use>
+                  </svg>
+                  <h4 class="card__title">Дизайн сайта</h4>
+                  <ul class="card-options">
+                    <li class="options__item">Разработка и анализ</li>
+                    <li class="options__item">Построение прототипа</li>
+                    <li class="options__item">Создание дизайн-макета </li>
+                  </ul>
+                  <button class="btn card__btn">Заказать</button>
+                </div>
               </div>
             </div>
           </div>
