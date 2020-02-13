@@ -118,16 +118,20 @@
                       <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
                     </div>
                     <p class="main-modal__question">Когда вам перезвонить ?</p>
-                    <div class="main-modal-select">Через 30 мин.
+                    <div class="main-modal-select time">С 12 до 6
                       <svg class="main-modal__icon-clock" width="27" height="27">
                         <use xlink:href="img/sprite.svg#clock-icon"></use>
                       </svg>
                       <ul class="select">
-                        <li class="select__option">Через 1 час</li>
-                        <li class="select__option">Через 2 часа</li>
-                        <li class="select__option">Через 3 часа</li>
-                        <li class="select__option">Через 4 часа</li>
+                        <li class="select__option time">С 6 до 9 </li>
+                        <li class="select__option time">Свой вариант</li>
                       </ul>
+                    </div>
+                    <div class="input-wrap">
+                      <svg class="main-modal__icon-clock--textarea" width="27" height="27">
+                        <use xlink:href="img/sprite.svg#clock-icon"></use>
+                      </svg>
+                      <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
                     </div>
                     <input class="btn main-modal__form-submit" type="submit" name="submit" value="Заказать">
                   </div>
@@ -285,6 +289,138 @@
             </div>
           </div>
         </div>
+        <div class="quiz">
+          <div class="quiz__inner"> 
+            <div class="close close--quiz"></div>
+            <div class="quiz__inner-top">
+              <ul class="question-number">
+                <li class="question question--active">1 вопрос</li>
+                <li class="question">2 вопрос</li>
+                <li class="question">3 вопрос</li>
+              </ul>
+              <div class="progress-bar">
+                <div class="progress-bar__inner"></div>
+              </div>
+            </div>
+            <ul class="question-list">
+              <li class="question__item">
+                <ul class="answer-list">
+                  <li class="answer__item">
+                    <h4 class="question__item-title">Какой тип сайта вам нужен?</h4>
+                    <div class="answer__item__inner">
+                      <div class="answer__item__top">
+                        <div class="input-block">
+                          <input id="landing" type="checkbox" name="landing">
+                          <label for="landing">Лендинг</label>
+                        </div>
+                        <div class="input-block">
+                          <input id="multi-page" type="checkbox" name="multi-page">
+                          <label for="multi-page">Многостраничник</label>
+                        </div>
+                        <div class="input-block"> 
+                          <input id="longrid" type="checkbox" name="longrid">
+                          <label for="longrid">Лонгрид</label>
+                        </div>
+                      </div>
+                      <div class="answer__item__center">
+                        <div class="input-block">
+                          <input id="business-site" type="checkbox" name="business-site">
+                          <label for="business-site">Визитка</label>
+                        </div>
+                        <div class="input-block"> 
+                          <input id="shop" type="checkbox" name="shop">
+                          <label for="shop">Интернет-магазин</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer__item__bottom">
+                      <div class="user-answer-block">
+                        <label for="user-answer-site">Ваш вариант ответа</label>
+                        <input id="user-answer-site" type="text" name="user-answer-site">
+                      </div>
+                      <div class="answer__item__btns">
+                        <button class="quiz__btn--left"></button>
+                        <button class="quiz__btn--right"></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="question__item">
+                <ul class="answer-list">
+                  <li class="answer__item">
+                    <h4 class="question__item-title question__item-title--second">Какие сроки разработки?</h4>
+                    <div class="answer__item__inner answer__item__inner--second">
+                      <div class="answer__item__top answer__item__top--second">
+                        <div class="input-block">
+                          <input id="seven-days" type="checkbox" name="seven-days">
+                          <label for="seven-days">до 7 дней</label>
+                        </div>
+                        <div class="input-block">
+                          <input id="two-weeks" type="checkbox" name="two-weeks">
+                          <label for="two-weeks">до 2 недель</label>
+                        </div>
+                        <div class="input-block"> 
+                          <input id="thirty-days" type="checkbox" name="thirty-days">
+                          <label for="thirty-days">до 30 дней</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer__item__bottom">
+                      <div class="user-answer-block">
+                        <label for="user-answer-period">Ваш вариант ответа</label>
+                        <input id="user-answer-period" type="text" name="user-answer-period">
+                      </div>
+                      <div class="answer__item__btns">
+                        <button class="quiz__btn--left"></button>
+                        <button class="quiz__btn--right"></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="question__item question__item--active">
+                <ul class="answer-list">
+                  <li class="answer__item">
+                    <h4 class="question__item-title">Что из перечисленного вы готовы предоставить? </h4>
+                    <div class="answer__item__inner answer__item__inner--center--third">
+                      <div class="answer__item__top answer__item__top--center answer__item__top--third">
+                        <div class="input-block">
+                          <input id="text" type="checkbox" name="text">
+                          <label for="text">Текст</label>
+                        </div>
+                        <div class="input-block">
+                          <input id="pictures" type="checkbox" name="pictures">
+                          <label for="pictures">Изображения</label>
+                        </div>
+                      </div>
+                      <div class="answer__item__center answer__item__center--center answer__item__center--third">
+                        <div class="input-block"> 
+                          <input id="nothing" type="checkbox" name="nothing">
+                          <label for="nothing">Ничего</label>
+                        </div>
+                        <div class="input-block"> 
+                          <input id="technical-task" type="checkbox" name="technical-task">
+                          <label for="technical-task">Техническое задание</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="answer__item__bottom">
+                      <div class="user-answer-block">
+                        <label for="user-answer-material">Ваш вариант ответа</label>
+                        <input id="user-answer-material" type="text" name="user-answer-material">
+                      </div>
+                      <div class="answer__item__btns">
+                        <button class="quiz__btn--left"></button>
+                        <button class="quiz__btn--right"></button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="section-portfolio">
         <div class="portfolio-wrap">
@@ -420,6 +556,100 @@
           </div>
         </div>
       </footer>
+      <div class="main-modal">
+        <div class="main-modal__inner"> 
+          <div class="main-modal__top">
+            <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
+            <div class="close"></div>
+          </div>
+          <div class="woman">
+            <picture>
+              <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
+            </picture>
+          </div>
+          <form class="main-modal__form" action="#" method="post">
+            <div class="main-modal__form-content">
+              <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
+            </div>
+            <fieldset class="main-modal__form-fieldset">
+              <legend class="main-modal__form-subtitle">Для этого заполните форму ниже  своими контактными данными</legend>
+              <div class="main-modal__form__inputs-wrap">
+                <div class="input-wrap">
+                  <label for="modal__username">
+                    <svg class="main-modal__icon-user" width="24" height="26">
+                      <use xlink:href="img/sprite.svg#user-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="modal__username" type="text" name="modal__username" placeholder="Имя*">
+                </div>
+                <div class="input-wrap">
+                  <label for="modal__phone">
+                    <svg class="main-modal__icon-phone" width="23" height="32">
+                      <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
+                </div>
+                <p class="main-modal__question">Когда вам перезвонить ?</p>
+                <div class="main-modal-select time">С 12 до 6
+                  <svg class="main-modal__icon-clock" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#clock-icon"></use>
+                  </svg>
+                  <ul class="select">
+                    <li class="select__option time">С 6 до 9 </li>
+                    <li class="select__option time">Свой вариант</li>
+                  </ul>
+                </div>
+                <div class="input-wrap">
+                  <svg class="main-modal__icon-clock--textarea" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#clock-icon"></use>
+                  </svg>
+                  <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
+                </div>
+                <input class="btn main-modal__form-submit" type="submit" name="submit" value="Заказать">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="quiz-final">
+        <div class="main-modal__inner main-modal__inner--quiz">
+          <div class="main-modal__top">
+            <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
+            <div class="close"></div>
+          </div>
+          <form class="main-modal__form main-modal__form--quiz" action="#" method="post">
+            <div class="main-modal__form-content">
+              <h3 class="main-modal__form-title">Спасибо за ответы!</h3>
+            </div>
+            <fieldset class="main-modal__form-fieldset">
+              <legend class="main-modal__form-subtitle main-modal__form-subtitle--quiz">Как вы хотите узнать стоимость? 
+                <p class="main-modal__form-subtitle--blue">Позвонить <span class="main-modal__form-subtitle">или </span><span class="main-modal__form-subtitle--blue">отправить на почту </span><span class="main-modal__form-subtitle">?</span></p>
+              </legend>
+              <div class="main-modal__form__inputs-wrap main-modal__form__inputs-wrap--quiz">
+                <div class="input-wrap">
+                  <label for="quiz__username">
+                    <svg class="main-modal__icon-user" width="24" height="26">
+                      <use xlink:href="img/sprite.svg#user-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="quiz__username" type="tel" name="quiz__username" placeholder="Телефон*">
+                  <p class="feedback-form__or--quiz">или</p>
+                </div>
+                <div class="input-wrap">
+                  <label for="quiz__phone">
+                    <svg class="main-modal__icon-phone" width="23" height="32">
+                      <use xlink:href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="quiz__phone" type="email" name="quiz__phone" placeholder="E-mail*">
+                </div>
+                <input class="btn main-modal__form-submit main-modal__form-submit--quiz" type="submit" name="submit" value="Получить рассчет">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
