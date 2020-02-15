@@ -298,14 +298,14 @@
                 <li class="question">2 вопрос</li>
                 <li class="question">3 вопрос</li>
               </ul>
-              <div class="progress-bar">
-                <div class="progress-bar__inner"></div>
-              </div>
             </div>
             <ul class="question-list">
-              <li class="question__item">
+              <li class="question__item question__item--active">
                 <ul class="answer-list">
                   <li class="answer__item">
+                    <div class="progress-bar">
+                      <div class="progress-bar__inner progress-bar__inner--first"></div>
+                    </div>
                     <h4 class="question__item-title">Какой тип сайта вам нужен?</h4>
                     <div class="answer__item__inner">
                       <div class="answer__item__top">
@@ -338,10 +338,6 @@
                         <label for="user-answer-site">Ваш вариант ответа</label>
                         <input id="user-answer-site" type="text" name="user-answer-site">
                       </div>
-                      <div class="answer__item__btns">
-                        <button class="quiz__btn--left"></button>
-                        <button class="quiz__btn--right"></button>
-                      </div>
                     </div>
                   </li>
                 </ul>
@@ -349,6 +345,9 @@
               <li class="question__item">
                 <ul class="answer-list">
                   <li class="answer__item">
+                    <div class="progress-bar">
+                      <div class="progress-bar__inner progress-bar__inner--second"></div>
+                    </div>
                     <h4 class="question__item-title question__item-title--second">Какие сроки разработки?</h4>
                     <div class="answer__item__inner answer__item__inner--second">
                       <div class="answer__item__top answer__item__top--second">
@@ -371,17 +370,17 @@
                         <label for="user-answer-period">Ваш вариант ответа</label>
                         <input id="user-answer-period" type="text" name="user-answer-period">
                       </div>
-                      <div class="answer__item__btns">
-                        <button class="quiz__btn--left"></button>
-                        <button class="quiz__btn--right"></button>
-                      </div>
+                      <div class="answer__item__btns"></div>
                     </div>
                   </li>
                 </ul>
               </li>
-              <li class="question__item question__item--active">
+              <li class="question__item">
                 <ul class="answer-list">
                   <li class="answer__item">
+                    <div class="progress-bar">
+                      <div class="progress-bar__inner progress-bar__inner--third"></div>
+                    </div>
                     <h4 class="question__item-title">Что из перечисленного вы готовы предоставить? </h4>
                     <div class="answer__item__inner answer__item__inner--center--third">
                       <div class="answer__item__top answer__item__top--center answer__item__top--third">
@@ -410,15 +409,15 @@
                         <label for="user-answer-material">Ваш вариант ответа</label>
                         <input id="user-answer-material" type="text" name="user-answer-material">
                       </div>
-                      <div class="answer__item__btns">
-                        <button class="quiz__btn--left"></button>
-                        <button class="quiz__btn--right"></button>
-                      </div>
                     </div>
                   </li>
                 </ul>
               </li>
             </ul>
+            <div class="answer__item__btns">
+              <button class="quiz__btn--left"></button>
+              <button class="quiz__btn--right">  </button>
+            </div>
           </div>
         </div>
       </section>
@@ -616,7 +615,7 @@
         <div class="main-modal__inner main-modal__inner--quiz">
           <div class="main-modal__top">
             <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
-            <div class="close"></div>
+            <div class="close" id="close--quiz"></div>
           </div>
           <form class="main-modal__form main-modal__form--quiz" action="#" method="post">
             <div class="main-modal__form-content">
@@ -629,20 +628,20 @@
               <div class="main-modal__form__inputs-wrap main-modal__form__inputs-wrap--quiz">
                 <div class="input-wrap">
                   <label for="quiz__username">
-                    <svg class="main-modal__icon-user" width="24" height="26">
+                    <svg class="main-modal__icon-user main-modal__icon-user--quiz" width="24" height="26">
                       <use xlink:href="img/sprite.svg#user-icon"></use>
                     </svg>
                   </label>
-                  <input id="quiz__username" type="tel" name="quiz__username" placeholder="Телефон*">
+                  <input class="quiz__phone" id="quiz__username" type="tel" name="quiz__username" placeholder="Телефон*">
                   <p class="feedback-form__or--quiz">или</p>
                 </div>
                 <div class="input-wrap">
                   <label for="quiz__phone">
-                    <svg class="main-modal__icon-phone" width="23" height="32">
+                    <svg class="main-modal__icon-phone main-modal__icon-phone--quiz" width="23" height="32">
                       <use xlink:href="img/sprite.svg#phone-icon"></use>
                     </svg>
                   </label>
-                  <input id="quiz__phone" type="email" name="quiz__phone" placeholder="E-mail*">
+                  <input class="quiz__email" id="quiz__phone" type="email" name="quiz__phone" placeholder="E-mail*">
                 </div>
                 <input class="btn main-modal__form-submit main-modal__form-submit--quiz" type="submit" name="submit" value="Получить рассчет">
               </div>

@@ -901,10 +901,6 @@ template {
   align-items: center;
 }
 
-.main-modal__form--quiz {
-  margin: 0 0 0 auto;
-}
-
 .main-modal__form-content {
   text-align: center;
 }
@@ -935,8 +931,10 @@ template {
 }
 
 .main-modal__form-subtitle--quiz {
-  width: 33.125rem;
   max-width: 33.125rem;
+  width: 80%;
+  margin: 0 0 2.5rem 0;
+  padding-top: 1.875rem;
 }
 
 .main-modal__form__inputs-wrap {
@@ -947,8 +945,16 @@ template {
 }
 
 .main-modal__form__inputs-wrap--quiz {
-  width: 21.875rem;
+  width: 95%;
   max-width: 21.875rem;
+}
+
+.main-modal__form__inputs-wrap--quiz .quiz__phone,
+.main-modal__form__inputs-wrap--quiz .quiz__email {
+  width: 100%;
+  max-width: 16.25rem;
+  font-size: 1rem;
+  line-height: 1.375rem;
 }
 
 .main-modal__form__inputs-wrap .input-wrap {
@@ -1079,11 +1085,22 @@ template {
   height: 1.625rem;
 }
 
+.main-modal__icon-user--quiz {
+  top: calc(50% - 19px);
+  left: -0.625rem;
+  width: 1.5rem;
+  height: 1.625rem;
+}
+
 .main-modal__icon-phone {
   top: calc(50% - 11px);
   left: -0.125rem;
   width: 1.4375rem;
   height: 2rem;
+}
+
+.main-modal__icon-phone--quiz {
+  left: -0.6875rem;
 }
 
 .main-modal__icon-clock {
@@ -1134,7 +1151,7 @@ template {
   z-index: 11000;
   width: 90%;
   max-width: 62.9375rem;
-  height: 70%;
+  height: 90%;
   max-height: 38.5625rem;
   overflow: visible;
   margin: auto;
@@ -1198,13 +1215,25 @@ template {
 }
 
 .progress-bar__inner {
-  width: 33%;
   height: 75%;
   margin: 0rem 0.1875rem;
   border-radius: 1.25rem;
   background-color: #ffd272;
   background-size: 1.5625rem 1.5625rem;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+  transition: 1s ease;
+}
+
+.progress-bar__inner--first {
+  width: 33.3%;
+}
+
+.progress-bar__inner--second {
+  width: 66.6%;
+}
+
+.progress-bar__inner--third {
+  width: 100%;
 }
 
 .question__item {
@@ -1227,10 +1256,11 @@ template {
 }
 
 .question__item-title--second {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.75rem;
 }
 
 .answer-list {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1315,7 +1345,7 @@ template {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   justify-content: center;
-  margin: 0 auto 1.875rem auto;
+  margin: 0 auto 3.125rem auto;
   padding: 0;
 }
 
@@ -1420,6 +1450,10 @@ template {
 }
 
 .answer__item__btns {
+  position: absolute;
+  bottom: 1.5625rem;
+  right: 50%;
+  transform: translateX(50%);
   margin: auto;
 }
 
@@ -1465,8 +1499,10 @@ template {
 .quiz-final {
   position: fixed;
   z-index: 11000;
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  max-width: 62.9375rem;
+  height: 90%;
+  max-height: 38.5625rem;
   overflow: visible;
   margin: auto;
   top: 0;
@@ -1474,17 +1510,9 @@ template {
   bottom: 0;
   right: 0;
   display: none;
-  width: 62.9375rem;
-  max-width: 62.9375rem;
-  height: 41.5625rem;
-  min-height: 41.5625rem;
   border: 0.0625rem solid #ffa600;
   border-radius: 0.3125rem;
   background-color: #ffffff;
-  background: url(../img/desktop/modals/woman-desktop-2@1x.png), linear-gradient(to left, #fafafa 59%, #ffffff 0%);
-  background-repeat: no-repeat;
-  background-position: -136px -64%, center;
-  background-size: cover;
 }
 
 .quiz-final input {
@@ -2061,7 +2089,7 @@ template {
 }
 
 .main-modal__form-submit--quiz {
-  margin-top: 5rem;
+  margin-top: 2.8125rem;
   padding-right: 1.25rem;
   height: 4.125rem !important;
   width: 13.5rem !important;
@@ -2744,7 +2772,6 @@ template {
 }
 
 .feedback-form__or--quiz {
-  margin-top: 0.625rem;
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
@@ -4340,6 +4367,12 @@ fieldset input::-ms-input-placeholder {
     background-image: url(../img/tablet/form/form-bg@1x.jpg);
   }
 
+  .quiz__btn--left,
+  .quiz__btn--right {
+    width: 3.9375rem !important;
+    height: 3.9375rem !important;
+  }
+
   .header-top {
     padding: 3.125rem 0.9375rem 0 0.9375rem;
   }
@@ -5044,6 +5077,10 @@ fieldset input::-ms-input-placeholder {
     padding: 0.625rem;
   }
 
+  .main-modal__form--quiz {
+    margin: 0 0 0 auto;
+  }
+
   .main-modal__form-title {
     margin-bottom: 0;
     font-size: 3.375rem;
@@ -5054,6 +5091,26 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 1.25rem;
     font-size: 1.75rem;
     line-height: 2rem;
+  }
+
+  .main-modal__form-subtitle--quiz {
+    width: 33.125rem;
+    max-width: 33.125rem;
+    padding: 0;
+    margin: 0 0 1.875rem 0;
+  }
+
+  .main-modal__form__inputs-wrap--quiz {
+    width: 100%;
+    width: 21.875rem;
+  }
+
+  .main-modal__form__inputs-wrap--quiz .quiz__phone,
+  .main-modal__form__inputs-wrap--quiz .quiz__email {
+    width: 100%;
+    max-width: 20.4375rem;
+    font-size: 1.125rem;
+    line-height: 2.625rem;
   }
 
   .main-modal__form__inputs-wrap input[name="modal__username"],
@@ -5071,6 +5128,14 @@ fieldset input::-ms-input-placeholder {
   .main-modal-select {
     font-size: 1.125rem;
     line-height: 1.5rem;
+  }
+
+  .main-modal__icon-user--quiz {
+    left: -2.1875rem;
+  }
+
+  .main-modal__icon-phone--quiz {
+    left: -2.1875rem;
   }
 
   .close {
@@ -5106,6 +5171,10 @@ fieldset input::-ms-input-placeholder {
   .question__item-title {
     margin: 0.9375rem 0 3.125rem 0;
     font-size: 1.75rem;
+  }
+
+  .question__item-title--second {
+    margin-bottom: 2.5rem;
   }
 
   .answer__item__top {
@@ -5152,6 +5221,7 @@ fieldset input::-ms-input-placeholder {
     max-width: 100%;
     margin: auto;
     width: 37.5rem;
+    margin-bottom: 3.75rem;
   }
 
   .answer__item__inner--second {
@@ -5163,6 +5233,7 @@ fieldset input::-ms-input-placeholder {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
     justify-content: space-around;
+    margin-bottom: 5.4375rem;
   }
 
   .answer__item .input-block label::before {
@@ -5211,13 +5282,24 @@ fieldset input::-ms-input-placeholder {
   }
 
   .answer__item__btns {
+    bottom: 4.625rem;
+    right: 10.625rem;
     margin: 0;
   }
 
-  .quiz__btn--left,
-  .quiz__btn--right {
-    width: 3.9375rem;
-    height: 3.9375rem;
+  .quiz-final {
+    width: 90%;
+    max-width: 62.9375rem;
+    height: 90%;
+    max-height: 38.5625rem;
+    background: url(../img/desktop/modals/woman-desktop-2@1x.png), linear-gradient(to left, #fafafa 59%, #ffffff 0%);
+    background-repeat: no-repeat;
+    background-position: -136px -64%, center;
+    background-size: cover;
+  }
+
+  .quiz-final input {
+    margin-top: 1.5625rem;
   }
 
   .nav {
@@ -5449,6 +5531,10 @@ fieldset input::-ms-input-placeholder {
     height: 0.625rem;
   }
 
+  .main-modal__form-submit--quiz {
+    margin-top: 5rem;
+  }
+
   .advantages {
     display: flex;
     flex-direction: row;
@@ -5654,6 +5740,10 @@ fieldset input::-ms-input-placeholder {
 
   .feedback-form__or {
     margin-bottom: 1.125rem;
+  }
+
+  .feedback-form__or--quiz {
+    margin-top: 0.625rem;
   }
 
   .form-right__gears {
