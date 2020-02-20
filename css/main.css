@@ -871,8 +871,8 @@ template {
   position: fixed;
   z-index: 11000;
   width: 90%;
-  height: 70%;
-  max-height: 33.125rem;
+  height: 80%;
+  max-height: 37.5rem;
   overflow: visible;
   margin: auto;
   top: 0;
@@ -887,8 +887,8 @@ template {
 
 .main-modal__inner {
   position: relative;
-  height: 33.125rem;
-  max-height: 33.125rem;
+  height: 100%;
+  max-height: 43.75rem;
   width: 100%;
   padding: 0.625rem;
 }
@@ -1021,10 +1021,6 @@ template {
   transform: rotate(45deg);
 }
 
-.main-modal-select:hover .select {
-  display: block;
-}
-
 .main-modal__form-fieldset {
   text-align: center;
   max-width: 25rem;
@@ -1044,10 +1040,6 @@ template {
   border: 0.125rem solid #2451af;
 }
 
-.main-modal__user-time--active {
-  display: block;
-}
-
 .select {
   position: absolute;
   width: 100%;
@@ -1058,6 +1050,10 @@ template {
   background-color: #ffffff;
   border-bottom-right-radius: 0.3125rem;
   border-bottom-left-radius: 0.3125rem;
+}
+
+.select--active {
+  display: block;
 }
 
 .select__option {
@@ -1652,6 +1648,8 @@ template {
   top: 1.5rem;
   left: 0.3125rem;
   right: 0.3125rem;
+  width: 2rem;
+  margin: auto;
   display: block;
   height: 0.0625rem;
   border-radius: 0.3125rem;
@@ -2582,6 +2580,7 @@ template {
 }
 
 .player__title {
+  position: relative;
   margin-bottom: 0.5625rem;
   font-family: "Qanelas-Medium";
   font-weight: normal;
@@ -2589,6 +2588,20 @@ template {
   font-size: 1rem;
   line-height: 0.875rem;
   color: #ffffff;
+}
+
+.player__title::before {
+  position: absolute;
+  content: "";
+  z-index: 1000;
+  top: 1.8125rem;
+  right: 3.5625rem;
+  width: 2.5rem;
+  height: 2.0625rem;
+  background-image: url(../img/finger-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .player__link {
@@ -2936,6 +2949,7 @@ template {
   position: relative;
   width: 19.0625rem;
   height: 22.3125rem;
+  margin-bottom: 1.875rem;
 }
 
 .services-card-wrap:nth-child(1)::before {
@@ -2967,7 +2981,6 @@ template {
   position: relative;
   width: 19.0625rem;
   height: 22.3125rem;
-  margin-bottom: 1.25rem;
   padding-bottom: 0.75rem;
   background-image: url(../img/services/mac.jpg);
   background-position: 100% -1%;
@@ -3235,12 +3248,27 @@ template {
 }
 
 .portfolio__laptop__title {
+  position: relative;
   font-family: "Qanelas-Bold";
   font-weight: normal;
   font-style: normal;
   font-size: 1.875rem;
   line-height: 2.25rem;
   color: #ffffff;
+}
+
+.portfolio__laptop__title::before {
+  position: absolute;
+  content: "";
+  z-index: 1000;
+  top: 6.25rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.0625rem;
+  background-image: url(../img/finger-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .portfolio__laptop-inner {
@@ -3481,9 +3509,8 @@ fieldset input::-ms-input-placeholder {
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
   margin: 0;
-  justify-content: center;
   align-items: center;
-  padding: 1.875rem 0.5rem 0.625rem 0.5rem;
+  padding: 1.875rem 0.625rem 0.625rem 1.3125rem;
 }
 
 .column-first {
@@ -3550,8 +3577,11 @@ fieldset input::-ms-input-placeholder {
 .column-third {
   flex-basis: 70%;
   max-width: 72%;
-  padding-left: 4.375rem;
   margin-right: 1.875rem;
+}
+
+.contacts-list {
+  padding-left: 2.1875rem;
 }
 
 .footer-phone {
@@ -3612,6 +3642,7 @@ fieldset input::-ms-input-placeholder {
   display: flex;
   flex-direction: column;
   margin-top: -1.375rem;
+  margin-left: auto;
 }
 
 .footer-social__item:nth-child(1) {
@@ -4061,7 +4092,6 @@ fieldset input::-ms-input-placeholder {
   .services-card--lg {
     max-width: 18.8125rem;
     min-height: 24.0625rem;
-    margin-bottom: 1.875rem;
   }
 
   .services-card--sm {
@@ -4120,6 +4150,7 @@ fieldset input::-ms-input-placeholder {
 
   .portfolio__laptop-content {
     width: 60%;
+    padding: 2.5rem 0.3125rem 2.5rem 0.3125rem;
   }
 
   .portfolio__laptop__pretitle {
@@ -4131,6 +4162,11 @@ fieldset input::-ms-input-placeholder {
   .portfolio__laptop__title {
     font-size: 2.125rem;
     line-height: 2.5rem;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 4.3125rem;
+    right: -0.4375rem;
   }
 
   .portfolio__slider__wrap {
@@ -4214,13 +4250,17 @@ fieldset input::-ms-input-placeholder {
   }
 
   fieldset input {
-    margin: 1.25rem 0 0.625rem 0;
+    margin: 1.25rem 0 0 0;
     width: 22.8125rem;
     max-width: 100%;
   }
 
   .policy-text {
     max-width: 19.375rem;
+  }
+
+  .footer-inner-wrap {
+    padding: 1.875rem 1.875rem 1.25rem 3.125rem;
   }
 
   .column-first {
@@ -4233,8 +4273,8 @@ fieldset input::-ms-input-placeholder {
     width: 100%;
   }
 
-  .column-third {
-    padding-left: 6.375rem;
+  .footer-social {
+    margin: 0 0 -2.5rem auto;
   }
 }
 
@@ -4255,12 +4295,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 35rem) {
-  .column-third {
-    padding-left: 6.875rem;
-  }
-}
-
 @media (min-width: 37.5rem) {
   .services-leftcol {
     background-position: 33% 59%;
@@ -4273,11 +4307,10 @@ fieldset input::-ms-input-placeholder {
   .portfolio__laptop-content {
     width: 80%;
   }
-}
 
-@media (min-width: 40.625rem) {
-  .column-third {
-    padding-left: 7.5rem;
+  .portfolio__laptop__title::before {
+    top: 4.3125rem;
+    right: -0.4375rem;
   }
 }
 
@@ -4309,10 +4342,6 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 3.125rem;
   }
 
-  .services-card--lg {
-    margin-bottom: 3.125rem;
-  }
-
   .services-card--sm__first {
     margin: 0;
     margin-right: 3.125rem;
@@ -4327,6 +4356,11 @@ fieldset input::-ms-input-placeholder {
 
   .portfolio__laptop-content {
     width: 100%;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 2.5625rem;
+    right: 25rem;
   }
 }
 
@@ -4891,6 +4925,11 @@ fieldset input::-ms-input-placeholder {
     line-height: 3.125rem;
   }
 
+  .portfolio__laptop__title::before {
+    top: 8.125rem;
+    right: -6.25rem;
+  }
+
   .portfolio__laptop-inner {
     flex-basis: 100%;
     max-width: 100%;
@@ -4999,28 +5038,48 @@ fieldset input::-ms-input-placeholder {
   }
 
   .column-first {
-    flex-basis: 40%;
-    max-width: 40%;
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+
+  .column-second {
+    flex-basis: 30%;
+    max-width: 30%;
+    padding: 0;
+    text-align: center;
+    margin: auto;
   }
 
   .column-third {
     padding: 0;
-    margin: auto;
+    margin: 0;
+    margin-left: auto;
     flex-basis: 33%;
     max-width: 33%;
-    text-align: center;
+  }
+
+  .contacts-list {
+    padding-left: 6.25rem;
   }
 
   .footer-phone::before {
-    left: 1.375rem;
+    left: -1.875rem;
   }
 
   .footer-email::before {
-    left: 1.25rem;
+    left: -2.0625rem;
   }
 
   .footer-social {
+    flex-basis: 8%;
+    max-width: 8%;
+    margin: 0;
+    margin-bottom: 1.375rem;
     align-items: flex-end;
+  }
+
+  .footer-social__item:nth-child(1) {
+    margin-bottom: 0;
   }
 }
 
@@ -5698,6 +5757,10 @@ fieldset input::-ms-input-placeholder {
     transform: translateY(-4.6875rem);
   }
 
+  .player__title::before {
+    display: none;
+  }
+
   .player__link::before {
     bottom: 1.25rem;
     left: -9.375rem;
@@ -5906,6 +5969,10 @@ fieldset input::-ms-input-placeholder {
     line-height: 2.5rem;
   }
 
+  .portfolio__laptop__title::before {
+    display: none;
+  }
+
   .portfolio__laptop-inner {
     position: sticky;
     top: 0;
@@ -6005,6 +6072,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   fieldset input {
+    margin: 1.25rem 0 0.625rem 0;
     width: 26.5rem;
     max-width: 80%;
   }
@@ -6020,13 +6088,12 @@ fieldset input::-ms-input-placeholder {
     padding: 1.875rem 3.125rem 1.25rem 3.125rem;
   }
 
-  .column-second {
-    max-width: 19.25rem;
-    order: 2;
+  .column-first {
+    margin-right: auto;
   }
 
-  .column-third {
-    text-align: left;
+  .column-second {
+    order: 2;
   }
 
   .footer-phone {
@@ -6043,10 +6110,14 @@ fieldset input::-ms-input-placeholder {
 
   .footer-social {
     order: 1;
-    flex-basis: 4%;
-    max-width: 4%;
+    flex-basis: 10%;
+    max-width: 10%;
     align-items: center;
     margin-top: -0.625rem;
+    margin-left: 0;
+  }
+
+  .footer-social-list {
     margin-left: auto;
   }
 }
@@ -6151,18 +6222,18 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 73.75rem) {
+  .header__btn {
+    width: 17.4375rem;
+    height: 4.9375rem;
+  }
+}
+
 @media (min-width: 73.125rem) {
   .nav-list {
     max-width: 100%;
     flex-basis: 100%;
     padding: 0 !important;
-  }
-}
-
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
   }
 }
 
@@ -6257,25 +6328,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.0625em) {
-  .header__title--small {
-    font-size: 3.75rem;
-  }
-}
-
-@media (min-width: 89.0625rem) {
-  .header__title {
-    font-size: 5.3125rem;
-    line-height: 4.375rem;
-  }
-}
-
-@media (min-width: 89.9375em) {
-  .header-top {
-    padding-top: 2.375em;
-  }
-}
-
 @media (min-width: 89.9375rem) {
   .nav {
     justify-content: space-between;
@@ -6299,6 +6351,25 @@ fieldset input::-ms-input-placeholder {
 
   .advantages {
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 89.0625rem) {
+  .header__title {
+    font-size: 5.3125rem;
+    line-height: 4.375rem;
+  }
+}
+
+@media (min-width: 89.0625em) {
+  .header__title--small {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 89.9375em) {
+  .header-top {
+    padding-top: 2.375em;
   }
 }
 
@@ -6713,12 +6784,12 @@ fieldset input::-ms-input-placeholder {
 
   .footer-inner-wrap {
     align-items: center;
-    padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+    padding: 2.5rem 3.125rem 2.5rem 7.25rem;
   }
 
   .column-first {
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: 15%;
+    max-width: 15%;
   }
 
   .column-first__text {
@@ -6739,9 +6810,8 @@ fieldset input::-ms-input-placeholder {
 
   .column-second {
     order: 0;
-    flex-basis: 33%;
-    max-width: 33%;
-    text-align: center;
+    flex-basis: 43%;
+    max-width: 43%;
   }
 
   .column-second__text,
@@ -6754,11 +6824,12 @@ fieldset input::-ms-input-placeholder {
   }
 
   .column-third {
-    flex-basis: 20%;
-    max-width: 20%;
+    flex-basis: 24%;
+    max-width: 24%;
   }
 
   .footer-phone::before {
+    left: -2.5rem;
     width: 1.5625rem;
     height: 2rem;
   }
@@ -6769,13 +6840,13 @@ fieldset input::-ms-input-placeholder {
   }
 
   .footer-email::before {
+    left: -2.5rem;
     width: 1.5625rem;
     height: 1.3125rem;
   }
 
   .footer-social {
-    flex-basis: 7%;
-    max-width: 7%;
+    display: none;
   }
 
   .footer-social-list {
@@ -6788,10 +6859,6 @@ fieldset input::-ms-input-placeholder {
     margin-right: -0.9375rem;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .footer-social__item:nth-child(1) {
-    margin-bottom: 0;
   }
 }
 
