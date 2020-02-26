@@ -117,14 +117,13 @@
                       </label>
                       <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
                     </div>
-                    <p class="main-modal__question">Когда вам перезвонить ?</p>
-                    <div class="main-modal-select" id="current-select">Выберите время звонка
-                      <ul class="select">
-                        <li class="select__option">С 12 до 6 </li>
-                        <li class="select__option">С 6 до 9 </li>
-                        <li class="select__option">Свой вариант</li>
-                      </ul>
-                    </div>
+                    <p>Когда вам перезвонить ?</p>
+                    <select class="main-modal-select">Выберите время звонка
+                      <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
+                      <option class="select__option" value="С 12 до 6">С 12 до 6</option>
+                      <option class="select__option" value="С 6 до 9">С 6 до 9</option>
+                      <option class="select__option" value="Свой вариант">Свой вариант</option>
+                    </select>
                     <div class="input-wrap">
                       <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
                     </div>
@@ -305,25 +304,25 @@
                     <div class="answer__item__inner">
                       <div class="answer__item__top">
                         <div class="input-block">
-                          <input id="landing" type="checkbox" name="landing">
+                          <input id="landing" type="radio" name="site-name">
                           <label for="landing">Лендинг</label>
                         </div>
                         <div class="input-block">
-                          <input id="multi-page" type="checkbox" name="multi-page">
+                          <input id="multi-page" type="radio" name="site-name">
                           <label for="multi-page">Многостраничник</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="longrid" type="checkbox" name="longrid">
+                          <input id="longrid" type="radio" name="site-name">
                           <label for="longrid">Лонгрид</label>
                         </div>
                       </div>
                       <div class="answer__item__center">
                         <div class="input-block">
-                          <input id="business-site" type="checkbox" name="business-site">
+                          <input id="business-site" type="radio" name="site-name">
                           <label for="business-site">Визитка</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="shop" type="checkbox" name="shop">
+                          <input id="shop" type="radio" name="site-name">
                           <label for="shop">Интернет-магазин</label>
                         </div>
                       </div>
@@ -347,15 +346,15 @@
                     <div class="answer__item__inner answer__item__inner--second">
                       <div class="answer__item__top answer__item__top--second">
                         <div class="input-block">
-                          <input id="seven-days" type="checkbox" name="seven-days">
+                          <input id="seven-days" type="radio" name="period">
                           <label for="seven-days">до 7 дней</label>
                         </div>
                         <div class="input-block">
-                          <input id="two-weeks" type="checkbox" name="two-weeks">
+                          <input id="two-weeks" type="radio" name="period">
                           <label for="two-weeks">до 2 недель</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="thirty-days" type="checkbox" name="thirty-days">
+                          <input id="thirty-days" type="radio" name="period">
                           <label for="thirty-days">до 30 дней</label>
                         </div>
                       </div>
@@ -380,21 +379,21 @@
                     <div class="answer__item__inner answer__item__inner--center--third">
                       <div class="answer__item__top answer__item__top--center answer__item__top--third">
                         <div class="input-block">
-                          <input id="text" type="checkbox" name="text">
+                          <input id="text" type="radio" name="material">
                           <label for="text">Текст</label>
                         </div>
                         <div class="input-block">
-                          <input id="pictures" type="checkbox" name="pictures">
+                          <input id="pictures" type="radio" name="material">
                           <label for="pictures">Изображения</label>
                         </div>
                       </div>
                       <div class="answer__item__center answer__item__center--center answer__item__center--third">
                         <div class="input-block"> 
-                          <input id="nothing" type="checkbox" name="nothing">
+                          <input id="nothing" type="radio" name="material">
                           <label for="nothing">Ничего</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="technical-task" type="checkbox" name="technical-task">
+                          <input id="technical-task" type="radio" name="material">
                           <label for="technical-task">Техническое задание</label>
                         </div>
                       </div>
@@ -584,14 +583,13 @@
                   </label>
                   <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
                 </div>
-                <p class="main-modal__question">Когда вам перезвонить ?</p>
-                <div class="main-modal-select" id="current-select">Выберите время звонка
-                  <ul class="select">
-                    <li class="select__option">С 12 до 6 </li>
-                    <li class="select__option">С 6 до 9 </li>
-                    <li class="select__option">Свой вариант</li>
-                  </ul>
-                </div>
+                <p>Когда вам перезвонить ?</p>
+                <select class="main-modal-select">Выберите время звонка
+                  <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
+                  <option class="select__option" value="С 12 до 6">С 12 до 6</option>
+                  <option class="select__option" value="С 6 до 9">С 6 до 9</option>
+                  <option class="select__option" value="Свой вариант">Свой вариант</option>
+                </select>
                 <div class="input-wrap">
                   <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
                 </div>
