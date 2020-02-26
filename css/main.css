@@ -7438,6 +7438,9 @@ fieldset input::-ms-input-placeholder {
 
   .header__btn {
     align-self: baseline;
+    width: 17.4375rem;
+    height: 4.9375rem;
+    margin-bottom: 0;
   }
 
   .portfolio__slide-btn {
@@ -7455,10 +7458,11 @@ fieldset input::-ms-input-placeholder {
 
   .advantages {
     padding: 0 3.125rem 0 3.75rem;
+    margin-top: -0.9375rem;
   }
 
   .advantages-list {
-    margin-top: 2.5rem;
+    margin-top: -3.75rem;
     max-width: 56.25rem;
   }
 
