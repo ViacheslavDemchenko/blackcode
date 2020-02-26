@@ -6197,13 +6197,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 73.75rem) {
-  .header__btn {
-    width: 17.4375rem;
-    height: 4.9375rem;
-  }
-}
-
 @media (min-width: 73.125rem) {
   .nav-list {
     max-width: 100%;
@@ -6314,14 +6307,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 81.25rem) {
-  .advantages-list {
-    flex-basis: 60%;
-    width: 60%;
-    max-width: 45rem;
-  }
-}
-
 @media (min-width: 84.375rem) {
   .portfolio-wrap {
     height: 75rem;
@@ -6348,17 +6333,25 @@ fieldset input::-ms-input-placeholder {
   }
 
   .header__subtitle {
-    margin: 1.25rem 0 4.375rem 0;
+    margin: 1.25rem 0 3.75rem 0;
   }
 
   .header__btn {
-    margin-bottom: 3.75rem;
+    margin-bottom: 3.4375rem;
+    margin-top: 0;
   }
 
   .advantages {
     align-items: center;
     padding: 0 3.6875rem 0 3.75rem;
     margin-bottom: 0;
+  }
+
+  .advantages-list {
+    flex-basis: 60%;
+    width: 60%;
+    max-width: 45rem;
+    margin-top: 1.25rem;
   }
 }
 
@@ -6388,16 +6381,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.0625em) {
-  .header__title--small {
-    font-size: 3.75rem;
-  }
-}
-
 @media (min-width: 89.0625rem) {
   .header__title {
     font-size: 5.3125rem;
     line-height: 4.375rem;
+  }
+}
+
+@media (min-width: 89.0625em) {
+  .header__title--small {
+    font-size: 3.75rem;
   }
 }
 
