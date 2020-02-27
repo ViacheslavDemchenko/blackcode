@@ -1464,6 +1464,10 @@ template {
   background: url(../img/portfolio/arrow.png);
 }
 
+.input--hidden {
+  display: none;
+}
+
 .quiz-final {
   position: fixed;
   z-index: 11000;
@@ -1826,7 +1830,7 @@ template {
   left: -0.125rem;
   width: 1.6875rem;
   height: 0.625rem;
-  background-image: url(../img/header/dollar-icon.png);
+  background-image: url(../img/dollar-icon.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6337,7 +6341,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .header__btn {
-    margin-bottom: 3.4375rem;
+    margin-bottom: -4.5625rem;
     margin-top: 0;
   }
 
@@ -6351,7 +6355,7 @@ fieldset input::-ms-input-placeholder {
     flex-basis: 60%;
     width: 60%;
     max-width: 45rem;
-    margin-top: 1.25rem;
+    margin-top: -4.75rem;
   }
 }
 

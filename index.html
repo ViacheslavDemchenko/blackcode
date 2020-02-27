@@ -94,7 +94,7 @@
                   <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
                 </picture>
               </div>
-              <form class="main-modal__form" action="#" method="post">
+              <form class="main-modal__form" id="form-header" action="" method="post">
                 <div class="main-modal__form-content">
                   <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
                 </div>
@@ -118,7 +118,7 @@
                       <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
                     </div>
                     <p>Когда вам перезвонить ?</p>
-                    <select class="main-modal-select">Выберите время звонка
+                    <select class="main-modal-select" name="call-time">Выберите время звонка
                       <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
                       <option class="select__option" value="С 12 до 6">С 12 до 6</option>
                       <option class="select__option" value="С 6 до 9">С 6 до 9</option>
@@ -304,25 +304,25 @@
                     <div class="answer__item__inner">
                       <div class="answer__item__top">
                         <div class="input-block">
-                          <input id="landing" type="radio" name="site-name">
+                          <input id="landing" type="radio" name="site-name" value="Лендинг">
                           <label for="landing">Лендинг</label>
                         </div>
                         <div class="input-block">
-                          <input id="multi-page" type="radio" name="site-name">
+                          <input id="multi-page" type="radio" name="site-name" value="Многостраничник">
                           <label for="multi-page">Многостраничник</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="longrid" type="radio" name="site-name">
+                          <input id="longrid" type="radio" name="site-name" value="Лонгрид">
                           <label for="longrid">Лонгрид</label>
                         </div>
                       </div>
                       <div class="answer__item__center">
                         <div class="input-block">
-                          <input id="business-site" type="radio" name="site-name">
+                          <input id="business-site" type="radio" name="site-name" value="Визитка">
                           <label for="business-site">Визитка</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="shop" type="radio" name="site-name">
+                          <input id="shop" type="radio" name="site-name" value="Интернет-магазин">
                           <label for="shop">Интернет-магазин</label>
                         </div>
                       </div>
@@ -333,6 +333,7 @@
                         <input id="user-answer-site" type="text" name="user-answer-site">
                       </div>
                     </div>
+                    <input class="input--hidden" id="first-answer" type="text" value="">
                   </li>
                 </ul>
               </li>
@@ -346,15 +347,15 @@
                     <div class="answer__item__inner answer__item__inner--second">
                       <div class="answer__item__top answer__item__top--second">
                         <div class="input-block">
-                          <input id="seven-days" type="radio" name="period">
+                          <input id="seven-days" type="radio" name="period" value="до 7 дней">
                           <label for="seven-days">до 7 дней</label>
                         </div>
                         <div class="input-block">
-                          <input id="two-weeks" type="radio" name="period">
+                          <input id="two-weeks" type="radio" name="period" value="до 2 недель">
                           <label for="two-weeks">до 2 недель</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="thirty-days" type="radio" name="period">
+                          <input id="thirty-days" type="radio" name="period" value="до 30 дней">
                           <label for="thirty-days">до 30 дней</label>
                         </div>
                       </div>
@@ -364,8 +365,8 @@
                         <label for="user-answer-period">Ваш вариант ответа</label>
                         <input id="user-answer-period" type="text" name="user-answer-period">
                       </div>
-                      <div class="answer__item__btns"></div>
                     </div>
+                    <input class="input--hidden" id="second-answer" type="text" value="">
                   </li>
                 </ul>
               </li>
@@ -379,21 +380,21 @@
                     <div class="answer__item__inner answer__item__inner--center--third">
                       <div class="answer__item__top answer__item__top--center answer__item__top--third">
                         <div class="input-block">
-                          <input id="text" type="radio" name="material">
+                          <input id="text" type="radio" name="material" value="Текст">
                           <label for="text">Текст</label>
                         </div>
                         <div class="input-block">
-                          <input id="pictures" type="radio" name="material">
+                          <input id="pictures" type="radio" name="material" value="Изображения">
                           <label for="pictures">Изображения</label>
                         </div>
                       </div>
                       <div class="answer__item__center answer__item__center--center answer__item__center--third">
                         <div class="input-block"> 
-                          <input id="nothing" type="radio" name="material">
+                          <input id="nothing" type="radio" name="material" value="Ничего">
                           <label for="nothing">Ничего</label>
                         </div>
                         <div class="input-block"> 
-                          <input id="technical-task" type="radio" name="material">
+                          <input id="technical-task" type="radio" name="material" value="Техническое задание">
                           <label for="technical-task">Техническое задание</label>
                         </div>
                       </div>
@@ -404,6 +405,7 @@
                         <input id="user-answer-material" type="text" name="user-answer-material">
                       </div>
                     </div>
+                    <input class="input--hidden" id="third-answer" type="text" value="">
                   </li>
                 </ul>
               </li>
@@ -489,7 +491,7 @@
       <section class="section-form__wrap">
         <div class="section-form">
           <div class="form-rightcol">
-            <form class="form" action="#" method="post">
+            <form class="form" id="form-rightcol" action="" method="post">
               <div class="form-content">
                 <h3 class="form__pretitle">Наши сайты <span class="form__pretitle--yellow">продают</span></h3>
                 <h2 class="form__title">Мы свяжемся с вами и ответим на все вопросы</h2>
@@ -560,7 +562,7 @@
               <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
             </picture>
           </div>
-          <form class="main-modal__form" action="#" method="post">
+          <form class="main-modal__form" id="form-header" action="" method="post">
             <div class="main-modal__form-content">
               <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
             </div>
@@ -584,7 +586,7 @@
                   <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
                 </div>
                 <p>Когда вам перезвонить ?</p>
-                <select class="main-modal-select">Выберите время звонка
+                <select class="main-modal-select" name="call-time">Выберите время звонка
                   <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
                   <option class="select__option" value="С 12 до 6">С 12 до 6</option>
                   <option class="select__option" value="С 6 до 9">С 6 до 9</option>
@@ -605,7 +607,7 @@
             <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
             <div class="close" id="close--quiz"></div>
           </div>
-          <form class="main-modal__form main-modal__form--quiz" action="#" method="post">
+          <form class="main-modal__form main-modal__form--quiz" action="" method="post">
             <div class="main-modal__form-content">
               <h3 class="main-modal__form-title">Спасибо за ответы!</h3>
             </div>
@@ -624,12 +626,12 @@
                   <p class="feedback-form__or--quiz">или</p>
                 </div>
                 <div class="input-wrap">
-                  <label for="quiz__phone">
+                  <label for="quiz__email">
                     <svg class="main-modal__icon-phone main-modal__icon-phone--quiz" width="23" height="32">
                       <use xlink:href="img/sprite.svg#phone-icon"></use>
                     </svg>
                   </label>
-                  <input class="quiz__email" id="quiz__phone" type="email" name="quiz__phone" placeholder="E-mail*">
+                  <input class="quiz__email" id="quiz__email" type="email" name="quiz__email" placeholder="E-mail*">
                 </div>
                 <input class="btn main-modal__form-submit main-modal__form-submit--quiz" type="submit" name="submit" value="Получить рассчет">
               </div>
