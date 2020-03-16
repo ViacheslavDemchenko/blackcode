@@ -2013,7 +2013,6 @@ template {
   }
 
   .header__subtitle {
-    max-width: auto;
     text-align: left;
     margin: 1.25rem 0 4.375rem 0;
   }
@@ -2180,12 +2179,6 @@ template {
     width: 3.125rem;
     height: 1.75rem;
   }
-
-  .header__subtitle {
-    max-width: 37.5rem;
-    font-size: 1.5rem;
-    line-height: 1.625rem;
-  }
 }
 
 @media (min-width: 85.3125rem) {
@@ -2328,9 +2321,7 @@ template {
 
 @media (min-width: 96.875rem) {
   .header__subtitle {
-    max-width: 43.125rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
+    max-width: 31.25rem;
   }
 
   .header__text {
