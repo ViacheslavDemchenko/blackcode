@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head itemscope itemtype="http://schema.org/WPHeader">
+  <head>
     <meta charset="UTF-8">
-    <title itemprop="headline">Blackcode.agency — создание сайтов в Одинцово и Москве под ключ</title>
-    <meta itemprop="description" name="description" content="Заказать разработку и продвижение веб сайта &amp;#128421;. Индивидуальный дизайн и концепция, система управления, адаптивность и высокая конверсия! Лендинги, корпоративные сайты, интернет-магазины. Техподдержка!">
-    <meta itemprop="keywords" name="keywords" content="создание сайтов Москва под ключ, разработка сайтов Москва под ключ, создание сайтов Одинцово под ключ, разработка сайтов Одинцово под ключ, заказать сайт, купить сайт, заказать недорого лендинг, корпоративный сайт, интернет магазин, индивидуальный дизайн, гибкие цены">
+    <title>Новый проект</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/owl.carousel.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="icon" href="#" type="image/x-icon">
     <link rel="shortcut icon" href="#" type="image/x-icon">
@@ -18,10 +16,12 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header class="section header">
-        <div class="container">
+      <header class="header">
+        <div class="container container--header">
           <div class="header-top">
-            <div class="logo" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link" itemprop="name" href="#">BLACKCODE.<span class="logo--white">agency</span></a></div>
+            <div class="logo" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link" itemprop="name" href="#">BLACKCODE.<span class="logo--white">agency</span></a>
+              <div class="hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Одинцово</span><span itemprop="addressRegion">Московская область</span></div><span class="hidden" itemprop="telephone">+7(929) 523-87-52</span>
+            </div>
             <nav class="nav" role="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
               <ul class="nav-list">
                             <li class="nav__item--desktop nav__item" role="menuitem"><a class="nav__link" itemprop="url" href="#">Все проекты</a></li>
@@ -36,13 +36,13 @@
                 <button class="btn mobile-menu__btn">Позвонить нам</button>
                 <div class="social">
                   <ul class="social-list">
-                    <li class="social__item"><a class="social__link" href="#" aria-label="Вконтакте">
-                        <svg class="social__icon" width="28" height="28">
-                          <use xlink:href="img/sprite.svg#instagram-icon"></use>
-                        </svg></a></li>
                     <li class="social__item"><a class="social__link" href="#" aria-label="Инстаграм">
                         <svg class="social__icon" width="32" height="32">
-                          <use xlink:href="img/sprite.svg#vk-icon"></use>
+                          <use xlink:href="img/icons/sprite.svg#instagram-icon"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="https://vk.com/blackcodeagency" target="_blank" rel="nofollow noopener" aria-label="Вконтакте">
+                        <svg class="social__icon" width="28" height="28">
+                          <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
                         </svg></a></li>
                   </ul>
                 </div>
@@ -54,9 +54,9 @@
             <div class="header-content">
               <h1 class="header__title">Са<span class="header__title__dollar">и</span><span>ты, которые </span><span class="header__title--small">притягивают клиентов</span></h1>
               <p class="header__subtitle">Создаем атмосферу, стиль, привлекаем внимание и делаем так, чтобы ваш продукт покупали!</p>
-              <p class="header__text">Доверьте разработку сайта нам и получите конверсию <span class="header__text--blue">от 80%</span><a class="social__link" href="#" aria-label="Прокрутка экрана вниз">
+              <p class="header__text">Доверьте разработку сайта нам и получите конверсию <span class="header__text--blue">от 80%</span><a class="header-arrow" href="#" aria-label="Прокрутка экрана вниз">
                   <svg class="header-arrow__icon" width="34" height="33">
-                    <use xlink:href="img/sprite.svg#arrow-down-icon"></use>
+                    <use xlink:href="img/icons/sprite.svg#arrow-down-icon"></use>
                   </svg></a></p>
             </div>
           </div>
@@ -65,586 +65,27 @@
             <ul class="advantages-list">
               <li class="advantages__item">
                 <svg class="advantages__icon lamp-icon" width="28" height="42">
-                  <use xlink:href="img/sprite.svg#creativity-icon"></use>
+                  <use xlink:href="img/icons/sprite.svg#creativity-icon"></use>
                 </svg>
                 <p class="advantages__text">Воплощение любых идей опытными специалистами</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__icon phone-icon" width="28" height="44">
-                  <use xlink:href="img/sprite.svg#mobile-app-icon"></use>
+                  <use xlink:href="img/icons/sprite.svg#mobile-app-icon"></use>
                 </svg>
                 <p class="advantages__text">Постоянная связь в общем чате во время разработки</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__icon computer-icon" width="38" height="36">
-                  <use xlink:href="img/sprite.svg#cms-icon"></use>
+                  <use xlink:href="img/icons/sprite.svg#cms-icon"></use>
                 </svg>
-                <p class="advantages__text">Бесплатная техническая поддержка 1 месяц</p>
+                <p class="advantages__text advantages__text--third">Бесплатная техническая поддержка 1 месяц</p>
               </li>
             </ul>
-          </div>
-          <div class="main-modal">
-            <div class="main-modal__inner"> 
-              <div class="main-modal__top">
-                <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
-                <div class="close"></div>
-              </div>
-              <div class="woman">
-                <picture>
-                  <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
-                </picture>
-              </div>
-              <form class="main-modal__form" id="form-header" action="" method="post">
-                <div class="main-modal__form-content">
-                  <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
-                </div>
-                <fieldset class="main-modal__form-fieldset">
-                  <legend class="main-modal__form-subtitle">Для этого заполните форму ниже  своими контактными данными</legend>
-                  <div class="main-modal__form__inputs-wrap">
-                    <div class="input-wrap">
-                      <label for="modal__username">
-                        <svg class="main-modal__icon-user" width="24" height="26">
-                          <use xlink:href="img/sprite.svg#user-icon"></use>
-                        </svg>
-                      </label>
-                      <input id="modal__username" type="text" name="modal__username" placeholder="Имя*">
-                    </div>
-                    <div class="input-wrap">
-                      <label for="modal__phone">
-                        <svg class="main-modal__icon-phone" width="23" height="32">
-                          <use xlink:href="img/sprite.svg#phone-icon"></use>
-                        </svg>
-                      </label>
-                      <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
-                    </div>
-                    <p>Когда вам перезвонить ?</p>
-                    <select class="main-modal-select" name="call-time">Выберите время звонка
-                      <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
-                      <option class="select__option" value="С 12 до 6">С 12 до 6</option>
-                      <option class="select__option" value="С 6 до 9">С 6 до 9</option>
-                      <option class="select__option" value="Свой вариант">Свой вариант</option>
-                    </select>
-                    <div class="input-wrap">
-                      <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
-                    </div>
-                    <input class="btn main-modal__form-submit" type="submit" name="submit" value="Заказать">
-                  </div>
-                </fieldset>
-              </form>
-            </div>
           </div>
         </div>
       </header>
-      <section class="section-advantages">
-        <div class="advantages-main-wrap">
-          <div class="container container--no-padding">
-            <div class="advantages-wrap">
-              <div class="advantages__slider__wrap">
-                <div class="advantages__slider advantages__slider__shadow-bottom advantages__slider__shadow-top">
-                  <div class="advantages__slide advantages__slide_1">
-                    <div class="advantages__slide-content">
-                      <h4 class="advantages__slide__title">Чистый код</h4><span class="advantages__slide__text">Наши сайты загружаются за 3 секунды, потому что мы <span class="advantages__slide__text--blue">пишем их руками, </span></span><span class="advantages__slide__text">а не собираем на конструкторе</span>
-                    </div>
-                  </div>
-                  <div class="advantages__slide advantages__slide_2">
-                    <div class="advantages__slide-content">
-                      <h4 class="advantages__slide__title">Индивидуальность</h4><span class="advantages__slide__text">Наш <span class="advantages__slide__text--blue">дизайнер разрабатывает стратегию </span></span><span class="advantages__slide__text">и только потом дизайн</span>
-                    </div>
-                  </div>
-                  <div class="advantages__slide advantages__slide_3">
-                    <div class="advantages__slide-content advantages__slide-content--sm">
-                      <h4 class="advantages__slide__title"> Интеграция</h4><span class="advantages__slide__text">Умеем подключать <span class="advantages__slide__text--blue">любую CRM - систему</span></span>
-                    </div>
-                  </div>
-                  <div class="advantages__slide advantages__slide_4">
-                    <div class="advantages__slide-content advantages__slide-content--md">
-                      <h4 class="advantages__slide__title">Функциональность</h4><span class="advantages__slide__text">Построим автоворонку, напишем текст, отрисуем дизайн и сверстаем, <span class="advantages__slide__text--blue">что-то еще? </span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="advantages__laptop">
-                <div class="advantages__laptop-inner">
-                  <div class="advantages__laptop-content">
-                    <h3 class="advantages__laptop__pretitle">Наши сайты <span class="advantages__laptop__pretitle--brown">приносят прибыль</span></h3>
-                    <h2 class="advantages__laptop__title--brown">BLACKCODE.<span class="advantages__laptop__title">agency - </span>
-                      <p class="advantages__laptop__title--small">онлайн агенство, которому доверяют</p>
-                    </h2>
-                  </div>
-                  <div class="advantages__laptop__img">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 800px)" srcset="img/desktop/advantages/advantages-laptop-desktop@1x.webp 1x, img/desktop/advantages/advantages-laptop-desktop@2x.webp 2x">
-                      <source media="(min-width: 800px)" srcset="img/desktop/advantages/advantages-laptop-desktop@1x.png 1x, img/desktop/advantages/advantages-laptop-desktop@2x.png 2x">
-                      <source type="image/webp" srcset="img/mobile/advantages/advantages-laptop-mobile@1x.webp 1x, img/mobile/advantages/advantages-laptop-mobile@2x.webp 2x"><img src="img/mobile/advantages/advantages-laptop-mobile@1x.png" srcset="img/mobile/advantages/advantages-laptop-mobile@2x.png 2x" alt="Ноутбук" width="822" heght="473">
-                    </picture>
-                  </div>
-                  <div class="advantages__player">
-                    <p class="player__title">О нашей веб-студии</p><a class="player__link" href="#" aria-label="Смотреть видео презентацию">Смотреть</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-feedback">
-        <div class="feedback-form-wrap">
-          <div class="feedback-form">
-            <div class="feedback-form-left">
-              <h2 class="form-left__title">Есть вопрос ? Мы ответим!</h2>
-              <p class="form-left__text--blue">Выберите мессенжер, <span class="form-left__text">в котором вам будет удобно получить консультацию.</span></p>
-              <div class="inner-wrap"> 
-                <ul class="form-left-socials">
-                  <li class="form-left__social-item"><a class="form-left__social__link whatsapp" href="#" aria-label="Вотсап"></a></li>
-                  <li class="form-left__social-item"><a class="form-left__social__link telegram" href="#" aria-label="Телеграм"></a></li>
-                  <li class="form-left__social-item"><a class="form-left__social__link vkontakte" href="#" aria-label="Вконтакте"></a></li>
-                </ul>
-                <p class="feedback-form__or">или</p>
-              </div>
-            </div>
-            <div class="feedback-form-right">
-              <div class="form-right__gears"></div>
-              <p class="form-right__text--blue">Заполните форму, <span class="form-right__text">нажав на кнопку, и мы вам перезвоним.</span></p>
-              <button class="btn form-right__btn">Мы расскажем больше</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-services">
-        <div class="services-wrap">
-          <div class="services-leftcol">
-            <div class="leftcol-content">
-              <h4 class="leftcol__pretitle">Наши сайты <span class="leftcol__pretitle--yellow">привлекают клиентов</span></h4>
-              <h2 class="leftcol__title"> Мы позаботились о том, чтобы решить все задачи</h2>
-            </div>
-            <div class="dialog-block" id="target">
-              <div class="dialog">
-                <p class="dialog__text--blue"> </p>
-              </div>
-            </div>
-          </div>
-          <div class="services-rightcol">
-            <div class="services-card-wrap">
-              <div class="services-card services-card--lg">
-                <svg class="services-card--lg__icon" width="45" height="43">
-                  <use xlink:href="img/sprite.svg#responsive-icon"></use>
-                </svg>
-                <h4 class="card__title">Сайт под ключ</h4>
-                <ul class="card-options">
-                  <li class="options__item">Анализ ЦА и рынка</li>
-                  <li class="options__item">Создание дизайна</li>
-                  <li class="options__item">Верстка с “помощью кода”</li>
-                  <li class="options__item">Подключение CRM</li>
-                </ul>
-                <button class="btn card__btn">Заказать</button>
-              </div>
-            </div>
-            <div class="small-cards-wrap">
-              <div class="small-services-card-wrap">
-                <div class="services-card services-card--sm services-card--sm__first">
-                  <svg class="services-card--sm__icon services-card--sm__icon-settings" width="31" height="31">
-                    <use xlink:href="img/sprite.svg#settings-icon"></use>
-                  </svg>
-                  <h4 class="card__title">Верстка</h4>
-                  <ul class="card-options">
-                    <li class="options__item options__item--middle">Реализация проекта с вашим дизайном</li>
-                    <li class="options__item">Подключение CRM</li>
-                  </ul>
-                  <button class="btn card__btn">Заказать</button>
-                </div>
-              </div>
-              <div class="small-services-card-wrap">
-                <div class="services-card services-card--sm services-card--sm__second">
-                  <svg class="services-card--sm__icon" width="31" height="31">
-                    <use xlink:href="img/sprite.svg#design-icon"></use>
-                  </svg>
-                  <h4 class="card__title">Дизайн сайта</h4>
-                  <ul class="card-options">
-                    <li class="options__item">Разработка и анализ</li>
-                    <li class="options__item">Построение прототипа</li>
-                    <li class="options__item">Создание дизайн-макета </li>
-                  </ul>
-                  <button class="btn card__btn">Заказать</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-price-calc">
-        <div class="left-wave"></div>
-        <div class="right-wave"></div>
-        <div class="price-calc-card-wrap">
-          <div class="price-calc-card">
-            <div class="calc-card__card-content">
-              <h2 class="card-content__title card-content__title--lg">Узнайте стоимость <span class="card-content__title">разработки сайта, ответив </span><span class="card-content__title">на </span><span class="card-content__title--blue">3 простых </span><span class="card-content__title">вопроса</span></h2>
-              <p class="card-content__subtitle">Не надо мечтать о большом потоке заявок, заполните анкету и приблизьтесь к своей цели!</p>
-              <button class="btn card-content__btn">Узнать стоимость</button>
-            </div>
-          </div>
-        </div>
-        <div class="quiz">
-          <div class="quiz__inner"> 
-            <div class="close close--quiz"></div>
-            <div class="quiz__inner-top">
-              <ul class="question-number">
-                <li class="question question--active">1 вопрос</li>
-                <li class="question">2 вопрос</li>
-                <li class="question">3 вопрос</li>
-              </ul>
-            </div>
-            <ul class="question-list">
-              <li class="question__item question__item--active">
-                <ul class="answer-list">
-                  <li class="answer__item">
-                    <div class="progress-bar">
-                      <div class="progress-bar__inner progress-bar__inner--first"></div>
-                    </div>
-                    <h4 class="question__item-title">Какой тип сайта вам нужен?</h4>
-                    <div class="answer__item__inner">
-                      <div class="answer__item__top">
-                        <div class="input-block">
-                          <input id="landing" type="radio" name="site-name" value="Лендинг">
-                          <label for="landing">Лендинг</label>
-                        </div>
-                        <div class="input-block">
-                          <input id="multi-page" type="radio" name="site-name" value="Многостраничник">
-                          <label for="multi-page">Многостраничник</label>
-                        </div>
-                        <div class="input-block"> 
-                          <input id="longrid" type="radio" name="site-name" value="Лонгрид">
-                          <label for="longrid">Лонгрид</label>
-                        </div>
-                      </div>
-                      <div class="answer__item__center">
-                        <div class="input-block">
-                          <input id="business-site" type="radio" name="site-name" value="Визитка">
-                          <label for="business-site">Визитка</label>
-                        </div>
-                        <div class="input-block"> 
-                          <input id="shop" type="radio" name="site-name" value="Интернет-магазин">
-                          <label for="shop">Интернет-магазин</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="answer__item__bottom">
-                      <div class="user-answer-block">
-                        <label for="user-answer-site">Ваш вариант ответа</label>
-                        <input id="user-answer-site" type="text" name="user-answer-site">
-                      </div>
-                    </div>
-                    <input class="input--hidden" id="first-answer" type="text" name="first-answer" value="">
-                  </li>
-                </ul>
-              </li>
-              <li class="question__item">
-                <ul class="answer-list">
-                  <li class="answer__item">
-                    <div class="progress-bar">
-                      <div class="progress-bar__inner progress-bar__inner--second"></div>
-                    </div>
-                    <h4 class="question__item-title question__item-title--second">Какие сроки разработки?</h4>
-                    <div class="answer__item__inner answer__item__inner--second">
-                      <div class="answer__item__top answer__item__top--second">
-                        <div class="input-block">
-                          <input id="seven-days" type="radio" name="period" value="до 7 дней">
-                          <label for="seven-days">до 7 дней</label>
-                        </div>
-                        <div class="input-block">
-                          <input id="two-weeks" type="radio" name="period" value="до 2 недель">
-                          <label for="two-weeks">до 2 недель</label>
-                        </div>
-                        <div class="input-block"> 
-                          <input id="thirty-days" type="radio" name="period" value="до 30 дней">
-                          <label for="thirty-days">до 30 дней</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="answer__item__bottom">
-                      <div class="user-answer-block">
-                        <label for="user-answer-period">Ваш вариант ответа</label>
-                        <input id="user-answer-period" type="text" name="user-answer-period">
-                      </div>
-                    </div>
-                    <input class="input--hidden" id="second-answer" type="text" name="second-answer" value="">
-                  </li>
-                </ul>
-              </li>
-              <li class="question__item">
-                <ul class="answer-list">
-                  <li class="answer__item">
-                    <div class="progress-bar">
-                      <div class="progress-bar__inner progress-bar__inner--third"></div>
-                    </div>
-                    <h4 class="question__item-title">Что из перечисленного вы готовы предоставить? </h4>
-                    <div class="answer__item__inner answer__item__inner--center--third">
-                      <div class="answer__item__top answer__item__top--center answer__item__top--third">
-                        <div class="input-block">
-                          <input id="text" type="radio" name="material" value="Текст">
-                          <label for="text">Текст</label>
-                        </div>
-                        <div class="input-block">
-                          <input id="pictures" type="radio" name="material" value="Изображения">
-                          <label for="pictures">Изображения</label>
-                        </div>
-                      </div>
-                      <div class="answer__item__center answer__item__center--center answer__item__center--third">
-                        <div class="input-block"> 
-                          <input id="nothing" type="radio" name="material" value="Ничего">
-                          <label for="nothing">Ничего</label>
-                        </div>
-                        <div class="input-block"> 
-                          <input id="technical-task" type="radio" name="material" value="Техническое задание">
-                          <label for="technical-task">Техническое задание</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="answer__item__bottom">
-                      <div class="user-answer-block">
-                        <label for="user-answer-material">Ваш вариант ответа</label>
-                        <input id="user-answer-material" type="text" name="user-answer-material">
-                      </div>
-                    </div>
-                    <input class="input--hidden" id="third-answer" type="text" name="third-answer" value="">
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="answer__item__btns">
-              <button class="quiz__btn--left"></button>
-              <button class="quiz__btn--right">  </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-portfolio">
-        <div class="portfolio-wrap">
-          <div class="portfolio__laptop">
-            <div class="portfolio__laptop-inner">
-              <div class="portfolio__laptop-content">
-                <h3 class="portfolio__laptop__pretitle">Нашими сайтами <span class="portfolio__laptop__pretitle--brown">довольны клиенты</span></h3>
-                <h2 class="portfolio__laptop__title">Работы, сделанные нашими специалистами </h2>
-              </div>
-            </div>
-            <div class="portfolio__laptop__wrap"></div>
-          </div>
-          <div class="portfolio__slider__wrap">
-            <div class="portfolio__slider portfolio__slider__shadow-bottom portfolio__slider__shadow-top">
-              <div class="portfolio__slide">
-                <div class="portfolio__slide__img">
-                  <picture>
-                    <source srcset="img/desktop/portfolio/card-desktop-1@1x.webp 1x, img/desktop/portfolio/card-desktop-1@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-                    <source srcset="img/desktop/portfolio/card-desktop-1@1x.jpg 1x, img/desktop/portfolio/card-desktop-1@2x.jpg 2x" media="(min-width: 1440px)">
-                    <source srcset="img/tablet/portfolio/card-tablet-1@1x.webp 1x, img/tablet/portfolio/card-tablet-1@2x.webp 2x" media="(min-width: 800px)" type="image/webp">
-                    <source srcset="img/tablet/portfolio/card-tablet-1@1x.jpg 1x, img/tablet/portfolio/card-tablet-1@2x.jpg 2x" media="(min-width: 800px)">
-                    <source srcset="img/mobile/portfolio/card-mobile-1@1x.webp 1x, img/mobile/portfolio/card-mobile-1@2x.webp 2x" type="image/webp"><img src="img/mobile/portfolio/card-mobile-1@1x.jpg" alt="Проект сайта услуг лифтинга" srcset="img/mobile/portfolio/card-mobile-1@1x.jpg 2x" width="426" height="326">
-                  </picture>
-                </div>
-                <div class="portfolio__slide-bottom">
-                  <div class="portfolio__slide-content">
-                    <h3 class="portfolio__slide__title">SMAS-лифтинг в Москве</h3>
-                    <p class="portfolio__slide__text">Срок выполнения:  10 дней</p>
-                  </div>
-                  <button class="portfolio__slide-btn"></button>
-                </div>
-              </div>
-              <div class="portfolio__slide">
-                <div class="portfolio__slide__img">
-                  <picture>
-                    <source srcset="img/desktop/portfolio/card-desktop-2@1x.webp 1x, img/desktop/portfolio/card-desktop-2@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-                    <source srcset="img/desktop/portfolio/card-desktop-2@1x.jpg 1x, img/desktop/portfolio/card-desktop-2@2x.jpg 2x" media="(min-width: 1440px)">
-                    <source srcset="img/tablet/portfolio/card-tablet-2@1x.webp 1x, img/tablet/portfolio/card-tablet-2@2x.webp 2x" media="(min-width: 800px)" type="image/webp">
-                    <source srcset="img/tablet/portfolio/card-tablet-2@1x.jpg 1x, img/tablet/portfolio/card-tablet-2@2x.jpg 2x" media="(min-width: 800px)">
-                    <source srcset="img/mobile/portfolio/card-mobile-2@1x.webp 1x, img/mobile/portfolio/card-mobile-2@2x.webp 2x" type="image/webp"><img src="img/mobile/portfolio/card-mobile-2@1x.jpg" alt="Проект сайта Todobox" srcset="img/mobile/portfolio/card-mobile-2@1x.jpg 2x" width="426" height="326">
-                  </picture>
-                </div>
-                <div class="portfolio__slide-bottom">
-                  <div class="portfolio__slide-content">
-                    <h3 class="portfolio__slide__title">Todobox</h3>
-                    <p class="portfolio__slide__text">Срок выполнения:  30 дней</p>
-                  </div>
-                  <button class="portfolio__slide-btn"></button>
-                </div>
-              </div>
-              <div class="portfolio__slide">
-                <div class="portfolio__slide__img">
-                  <picture>
-                    <source srcset="img/desktop/portfolio/card-desktop-3@1x.webp 1x, img/desktop/portfolio/card-desktop-3@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">
-                    <source srcset="img/desktop/portfolio/card-desktop-3@1x.jpg 1x, img/desktop/portfolio/card-desktop-3@2x.jpg 2x" media="(min-width: 1440px)">
-                    <source srcset="img/tablet/portfolio/card-tablet-3@1x.webp 1x, img/tablet/portfolio/card-tablet-3@2x.webp 2x" media="(min-width: 800px)" type="image/webp">
-                    <source srcset="img/tablet/portfolio/card-tablet-3@1x.jpg 1x, img/tablet/portfolio/card-tablet-3@2x.jpg 2x" media="(min-width: 800px)">
-                    <source srcset="img/mobile/portfolio/card-mobile-3@1x.webp 1x, img/mobile/portfolio/card-mobile-3@2x.webp 2x" type="image/webp"><img src="img/mobile/portfolio/card-mobile-3@1x.jpg" alt="Проект сайта медицинских услуг" srcset="img/mobile/portfolio/card-mobile-3@1x.jpg 2x" width="426" height="326">
-                  </picture>
-                </div>
-                <div class="portfolio__slide-bottom">
-                  <div class="portfolio__slide-content">
-                    <h3 class="portfolio__slide__title">Михаил Требин: лечение...</h3>
-                    <p class="portfolio__slide__text">Срок выполнения: 5 дней</p>
-                  </div>
-                  <button class="portfolio__slide-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-form__wrap">
-        <div class="section-form">
-          <div class="form-rightcol">
-            <form class="form" id="form-rightcol" action="" method="post">
-              <div class="form-content">
-                <h3 class="form__pretitle">Наши сайты <span class="form__pretitle--yellow">продают</span></h3>
-                <h2 class="form__title">Мы свяжемся с вами и ответим на все вопросы</h2>
-              </div>
-              <fieldset>
-                <legend></legend>
-                <div class="inputs-wrap">
-                  <input type="text" name="username" placeholder="Имя*">
-                  <input type="email" name="email" placeholder="E-mail*">
-                  <input type="tel" name="phone" placeholder="Телефон*">
-                  <input class="btn form__submit" type="submit" name="submit" value="Подать заявку">
-                </div>
-              </fieldset>
-            </form>
-            <p class="policy-text">Нажимая кнопку вы автоматически соглашаетесь с <span class="policy-text--blue">политикой конфиденциальности</span></p>
-            <h2 class="form__subtitle">О вашем продукте <span class="form__subtitle--yellow">будут помнить!</span></h2>
-          </div>
-          <button class="brief-btn">Заполнить
-            <svg class="arrow-white__icon" width="34" height="20">
-              <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
-            </svg>
-          </button>
-          <div class="form-brief-wrap"></div>
-        </div>
-      </section>
-      <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-        <div class="footer-inner-wrap">
-          <div class="column-first">
-            <div class="footer-logo" itemscope itemtype="http://schema.org/Organization">
-              <h2 class="footer-logo__text--yellow" itemprop="name">BLACKCODE<span class="footer-logo__text">.agency</span></h2>
-            </div>
-            <p class="column-first__text" itemprop="description">Создание, запоминающейся упаковки, для бизнеса</p>
-          </div>
-          <div class="column-second">
-            <p class="column-second__text">Политика конфиденциальности</p>
-            <meta itemprop="copyrightYear" content="2020">
-            <meta itemprop="copyrightHolder" content="BLACKCODE.agency">
-            <p class="column-second__copyright">© 2020 Все права защищены</p>
-          </div>
-          <div class="column-third">
-            <ul class="contacts-list">
-              <li class="contacts__item" itemscope itemtype="http://schema.org/Organization"><a class="footer-phone" href="tel:88005553535" itemprop="telephone">8 (800) 555 - 35 -35</a></li>
-              <li class="contacts__item"><a class="footer-email" href="mailto:blackcode@mail.ru" itemprop="email">BLACKCODE@mail.ru</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <ul class="footer-social-list">
-              <li class="footer-social__item"><a class="social__link" href="#" aria-label="Инстаграм">
-                  <svg class="footer-social__icon" width="30" height="30">
-                    <use xlink:href="img/sprite.svg#instagram-icon"></use>
-                  </svg></a></li>
-              <li class="footer-social__item"><a class="social__link" href="#" aria-label="Вконтакте">
-                  <svg class="footer-social__icon" width="30" height="30">
-                    <use xlink:href="img/sprite.svg#vk-icon"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      <div class="main-modal">
-        <div class="main-modal__inner"> 
-          <div class="main-modal__top">
-            <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
-            <div class="close"></div>
-          </div>
-          <div class="woman">
-            <picture>
-              <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
-            </picture>
-          </div>
-          <form class="main-modal__form" id="form-header" action="" method="post">
-            <div class="main-modal__form-content">
-              <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
-            </div>
-            <fieldset class="main-modal__form-fieldset">
-              <legend class="main-modal__form-subtitle">Для этого заполните форму ниже  своими контактными данными</legend>
-              <div class="main-modal__form__inputs-wrap">
-                <div class="input-wrap">
-                  <label for="modal__username">
-                    <svg class="main-modal__icon-user" width="24" height="26">
-                      <use xlink:href="img/sprite.svg#user-icon"></use>
-                    </svg>
-                  </label>
-                  <input id="modal__username" type="text" name="modal__username" placeholder="Имя*">
-                </div>
-                <div class="input-wrap">
-                  <label for="modal__phone">
-                    <svg class="main-modal__icon-phone" width="23" height="32">
-                      <use xlink:href="img/sprite.svg#phone-icon"></use>
-                    </svg>
-                  </label>
-                  <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*">
-                </div>
-                <p>Когда вам перезвонить ?</p>
-                <select class="main-modal-select" name="call-time">Выберите время звонка
-                  <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
-                  <option class="select__option" value="С 12 до 6">С 12 до 6</option>
-                  <option class="select__option" value="С 6 до 9">С 6 до 9</option>
-                  <option class="select__option" value="Свой вариант">Свой вариант</option>
-                </select>
-                <div class="input-wrap">
-                  <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
-                </div>
-                <input class="btn main-modal__form-submit" type="submit" name="submit" value="Заказать">
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      <div class="quiz-final">
-        <div class="main-modal__inner main-modal__inner--quiz">
-          <div class="main-modal__top">
-            <div class="logo logo--modal" itemscope itemtype="http://schema.org/Organization"> <a class="logo__link logo__link--modal" itemprop="name" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
-            <div class="close" id="close--quiz"></div>
-          </div>
-          <form class="main-modal__form main-modal__form--quiz" action="" method="post">
-            <div class="main-modal__form-content">
-              <h3 class="main-modal__form-title">Спасибо за ответы!</h3>
-            </div>
-            <fieldset class="main-modal__form-fieldset">
-              <legend class="main-modal__form-subtitle main-modal__form-subtitle--quiz">Как вы хотите узнать стоимость? 
-                <p class="main-modal__form-subtitle--blue">Позвонить <span class="main-modal__form-subtitle">или </span><span class="main-modal__form-subtitle--blue">отправить на почту </span><span class="main-modal__form-subtitle">?</span></p>
-              </legend>
-              <div class="main-modal__form__inputs-wrap main-modal__form__inputs-wrap--quiz">
-                <div class="input-wrap">
-                  <label for="quiz__username">
-                    <svg class="main-modal__icon-user main-modal__icon-user--quiz" width="24" height="26">
-                      <use xlink:href="img/sprite.svg#user-icon"></use>
-                    </svg>
-                  </label>
-                  <input class="quiz__phone" id="quiz__username" type="tel" name="quiz__username" placeholder="Телефон*">
-                  <p class="feedback-form__or--quiz">или</p>
-                </div>
-                <div class="input-wrap">
-                  <label for="quiz__email">
-                    <svg class="main-modal__icon-phone main-modal__icon-phone--quiz" width="23" height="32">
-                      <use xlink:href="img/sprite.svg#phone-icon"></use>
-                    </svg>
-                  </label>
-                  <input class="quiz__email" id="quiz__email" type="email" name="quiz__email" placeholder="E-mail*">
-                </div>
-                <input class="btn main-modal__form-submit main-modal__form-submit--quiz" type="submit" name="submit" value="Получить рассчет">
-                <input class="input--hidden" id="form-first-answer" type="text" name="form-first-answer" value="">
-                <input class="input--hidden" id="form-second-answer" type="text" name="form-second-answer" value="">
-                <input class="input--hidden" id="form-third-answer" type="text" name="form-third-answer" value="">
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
     </div>
   </body>
 </html>
-<script src="js/jquery-1.3.4.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.min.js"></script>
