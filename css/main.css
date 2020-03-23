@@ -44,46 +44,8 @@ body {
   padding-right: 15px;
 }
 
-.container--no-padding {
-  padding: 0 !important;
-}
-
 .container--services {
   height: 100%;
-}
-
-.container--header {
-  min-height: 100vh;
-}
-
-.container--services-line {
-  height: 100%;
-}
-
-@-webkit-keyframes block-animate-blue {
-  0% {
-    height: 0;
-    background: #161616;
-  }
-
-  100% {
-    height: 3.0625rem;
-    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-    background: #2e2dff;
-  }
-}
-
-@keyframes block-animate-blue {
-  0% {
-    height: 0;
-    background: #161616;
-  }
-
-  100% {
-    height: 3.0625rem;
-    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-    background: #2e2dff;
-  }
 }
 
 .hidden {
@@ -687,6 +649,7 @@ template {
 /* SECTIONS */
 
 .header {
+  position: relative;
   min-height: 100vh;
   background-position: 0px 50px;
   background-repeat: no-repeat;
@@ -702,10 +665,227 @@ template {
   background-image: url(../img/mobile/header/header-bg@1x.webp);
 }
 
-.section-services {
+.ki-advantages {
+  background-color: #161616;
+  margin: 0 auto;
+}
+
+.ki-wraper {
+  max-width: 1414px;
+  margin: 0 auto;
+}
+
+.ki-advantages__box {
+  display: flex;
+  display: -ms-flexbox;
+  padding-top: 39px;
+  position: relative;
+}
+
+.ki-advantages__item {
+  width: 617px;
+  height: 400px;
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+.ki-advantages__item:first-child {
+  background-image: url(../img/desktop/advantages/slide1.png);
+}
+
+.ki-advantages__item:nth-child(2) {
+  background-image: url(../img/desktop/advantages/card2.png);
+}
+
+.ki-advantages__item:nth-child(3) {
+  background-image: url(../img/desktop/advantages/card2.png);
+}
+
+.ki-advantages__item:nth-child(4) {
+  background-image: url(../img/desktop/advantages/card2.png);
+}
+
+.ki-advantages__item__content {
+  padding-top: 50px;
+}
+
+.ki-advantages__before1 p::before {
+  content: "1";
+  font-size: 110px;
+  font-family: "RollestonTitle";
+  color: #eaa627;
+  font-style: italic;
+  line-height: 0.2;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 26px;
+}
+
+.ki-advantages__before2 p::before {
+  content: "2";
+  font-size: 110px;
+  font-family: "RollestonTitle";
+  color: #eaa627;
+  font-style: italic;
+  line-height: 0.2;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 26px;
+}
+
+.ki-advantages__before3 p::before {
+  content: "3";
+  font-size: 110px;
+  font-family: "RollestonTitle";
+  color: #eaa627;
+  font-style: italic;
+  line-height: 0.2;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 26px;
+}
+
+.ki-advantages__before4 p::before {
+  content: "4";
+  font-size: 110px;
+  font-family: "RollestonTitle";
+  color: #eaa627;
+  font-style: italic;
+  line-height: 0.2;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 26px;
+}
+
+.ki-advantages__item__content h4 {
+  font-size: 20px;
+  font-family: "Myriad Pro";
+  color: #5b5af8;
+  line-height: 1.1;
+  padding-left: 88px;
+}
+
+.ki-advantages__item__content p {
+  margin-top: 20px;
+  font-size: 28px;
+  font-family: "Myriad Pro";
+  color: #151515;
+  line-height: 1.071;
+  padding-left: 88px;
+}
+
+.ki-advantages__item__content p span {
+  color: #2e2dff;
+}
+
+.ki-advantages__right {
+  width: 798px;
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
+
+.ki-advantages__blockImg {
   height: 100vh;
+  width: 100%;
+  background: url(../img/desktop/advantages/mouse.png), url(../img/desktop/advantages/laptop.png), url(../img/desktop/advantages/backgroundofcard1.png);
+  background-position: 50px 817px, 36px 370px, 0 0;
+  background-repeat: no-repeat;
+}
+
+.ki-advantages__blockImg h3 {
+  font-size: 24px;
+  color: #dadaff;
+  line-height: 1;
+  font-family: "Myriad Pro";
+  padding-top: 130px;
+  margin-bottom: 38px;
+  padding-left: 40px;
+}
+
+.ki-advantages__blockImg h3 span {
+  color: #e79b2a;
+}
+
+.ki-advantages__blockImg h2 {
+  font-size: 54px;
+  font-family: "Qanelas";
+  color: white;
+  font-weight: bold;
+  line-height: 0.833;
+  padding-left: 40px;
+}
+
+.ki-advantages__blockImg h2 span {
+  color: #e79b2a;
+}
+
+.section-feedback {
+  position: relative;
+  height: 100%;
+  background: #5756fb;
+  background-image: url(../img/mobile/feedback/feedback-bg-2@1x.png);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-services {
+  position: relative;
   padding: 1.25rem 0;
   background-color: #000;
+}
+
+.section-services__inner {
+  position: relative;
+  width: 100%;
+}
+
+.section-price-calc {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 6.25rem 0;
+  background-color: #eaa627;
+  overflow: hidden;
+}
+
+.section-price-calc__inner {
+  position: relative;
+  width: 100%;
+}
+
+.left-wave,
+.right-wave {
+  position: absolute;
+  width: 54.5rem;
+  height: 37.0625rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-wave {
+  top: -6.625rem;
+  left: -15.5rem;
+  background-image: url(../img/mobile/price-calc/wave-left1@x.png);
+}
+
+.right-wave {
+  bottom: -14.0625rem;
+  right: -20.375rem;
+  background-image: url(../img/mobile/price-calc/wave-right1@x.png);
 }
 
 /* BLOCKS */
@@ -1241,7 +1421,7 @@ template {
   transform: translateY(-50%);
   width: 1.5625rem;
   height: 0.625rem;
-  background: url(../img/feedback/arrow.png);
+  background: url(../img/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1435,6 +1615,177 @@ template {
   left: 0.375rem;
   width: 2.5rem;
   height: 2.1875rem;
+}
+
+.feedback-form-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.feedback-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 18.75rem;
+  margin: 6.25rem 0;
+  padding: 0.625rem 0.625rem 0.9375rem 0.625rem;
+  box-shadow: 0 0 2.75rem 0.4375rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.3125rem;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.feedback-form::after {
+  position: absolute;
+  content: "";
+  top: 9.5625rem;
+  right: -0.5rem;
+  width: 8.75rem;
+  height: 11.25rem;
+  background-image: url(../img/mobile/feedback/hand-mobile@1x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback-form-left {
+  max-width: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.feedback-form-right {
+  max-width: 13.75rem;
+  margin-bottom: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-left__title {
+  position: relative;
+  font-family: "Gilroy-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.125rem;
+  color: #2a2a2a;
+}
+
+.form-left__title::after {
+  position: absolute;
+  content: "";
+  width: 88%;
+  bottom: -0.875rem;
+  left: 0.1875rem;
+  height: 0.5625rem;
+  border-radius: 0.3125rem;
+  background-color: #ffa600;
+}
+
+.form-left__text--blue {
+  margin-top: 2.1875rem;
+  margin-bottom: 0.625rem;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #2e2dff;
+}
+
+.form-left__text {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  color: #171717;
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+
+.inner-wrap {
+  width: 27.75rem;
+  max-width: 27.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-left-socials {
+  display: flex;
+  flex-wrap: wrap;
+  width: 9.375rem;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0 0.9375rem -0.0625rem;
+  border-radius: 0.3125rem;
+  background-color: #eeeeee;
+}
+
+.form-left__social__link {
+  display: block;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whatsapp {
+  background-image: url(../img/whatsapp-icon.svg);
+}
+
+.telegram {
+  background-image: url(../img/telegram-icon.svg);
+  transform: rotate(20deg);
+}
+
+.vkontakte {
+  background-image: url(../img/vkontakte-icon.svg);
+}
+
+.feedback-form__or {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #a7a7a7;
+  font-size: 1.75rem;
+  line-height: 3.375rem;
+}
+
+.feedback-form__or--quiz {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #a7a7a7;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.form-right__text--blue {
+  margin-bottom: 1.25rem;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #2e2dff;
+}
+
+.form-right__text {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  color: #171717;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
 
 .services-wrap {
@@ -1666,8 +2017,7 @@ template {
 
 .services-card--sm__first .card-options {
   width: 14.5rem;
-  padding: 0 0.3125rem 0 2rem;
-  margin-bottom: 1.0625rem;
+  padding: 0 0.3125rem 0 0.625rem;
 }
 
 .services-card--sm__second {
@@ -1697,7 +2047,7 @@ template {
 }
 
 .card-options {
-  padding: 0 0 0 0.375rem;
+  padding: 0 0.625rem 0 1.5625rem;
 }
 
 .card__title {
@@ -1758,6 +2108,98 @@ template {
   transition: all 0.5s ease-out;
 }
 
+.price-calc-card-wrap {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-calc-card {
+  position: relative;
+  max-width: 18.75rem;
+  padding: 1.25rem 1.25rem 1.9375rem 1.25rem;
+  box-shadow: 0 0 2.75rem 0.4375rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.3125rem;
+  background-color: #fefefe;
+}
+
+.price-calc-card::before {
+  position: absolute;
+  content: "";
+  z-index: 3;
+  bottom: -1.625rem;
+  right: 50%;
+  transform: translateX(50%);
+  width: 15.625rem;
+  max-width: 15.625rem;
+  height: 17.25rem;
+  max-height: 17.25rem;
+  background-image: url(../img/mobile/price-calc/notebook-mobile-xs@1x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calc-card__card-content {
+  position: relative;
+  text-align: center;
+}
+
+.calc-card__card-content::after {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  bottom: -2.3125rem;
+  left: 1.5625rem;
+  width: 15.75rem;
+  max-width: 15.75rem;
+  height: 12.5625rem;
+  background-image: url(../img/mobile/price-calc/coins-xs1@x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-content__title {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #2a2a2a;
+  margin: 0 auto 0.9375rem auto;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.card-content__title--lg {
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+}
+
+.card-content__title--blue {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #2e2dff;
+}
+
+.card-content__subtitle {
+  margin: 0 auto 9.375rem auto;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  color: #1d1d1d;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
 @media (min-width: 23.4375rem) {
   .dialog {
     left: 35%;
@@ -1778,6 +2220,22 @@ template {
 
   .section-services {
     padding-top: 3.1875rem;
+  }
+
+  .section-price-calc {
+    padding: 4.375rem 0;
+  }
+
+  .left-wave {
+    top: -6.25rem;
+    left: -15.125rem;
+    background-image: url(../img/mobile/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -10.4375rem;
+    right: -14.5625rem;
+    background-image: url(../img/mobile/price-calc/wave-right1@x.png);
   }
 
   .header-top {
@@ -1964,6 +2422,71 @@ template {
     left: 0.0625rem;
   }
 
+  .feedback-form::after {
+    top: 12.4375rem;
+    right: 0;
+    width: 9.5625rem;
+    height: 12.5rem;
+  }
+
+  .feedback-form {
+    max-width: 22.625rem;
+    padding: 1.875rem 1.875rem 2.1875rem 1.875rem;
+  }
+
+  .feedback-form-left {
+    max-width: 17.0625rem;
+    margin-right: 1.25rem;
+  }
+
+  .feedback-form-right {
+    max-width: 22.1875rem;
+  }
+
+  .form-left__title {
+    max-width: 17.1875rem;
+    font-size: 2.625rem;
+    line-height: 2.875rem;
+  }
+
+  .form-left__text--blue {
+    max-width: 17.1875rem;
+    margin-top: 2.375rem;
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
+  .form-left__text {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
+  .form-left-socials {
+    width: 10.375rem;
+    margin: 0 0 1.875rem -0.0625rem;
+  }
+
+  .form-left__social__link {
+    width: 1.9375rem;
+    height: 1.9375rem;
+  }
+
+  .feedback-form__or--quiz {
+    margin-top: 1.25rem;
+  }
+
+  .form-right__text--blue {
+    max-width: 16.25rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
+  .form-right__text {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
   .leftcol-content {
     padding: 0 0 3.125rem 3.125rem;
   }
@@ -2054,6 +2577,7 @@ template {
 
   .services-card--sm__first .card-options {
     margin-bottom: 0;
+    padding: 0 0.3125rem 0 2rem;
   }
 
   .services-card--sm__second {
@@ -2064,6 +2588,51 @@ template {
   .services-card--sm__second .card__title {
     margin-top: 10.9375rem;
     line-height: 1.3125rem;
+  }
+
+  .price-calc-card {
+    max-width: 22.5rem;
+    padding: 1.4375rem 1.25rem 3.0625rem 1.25rem;
+  }
+
+  .price-calc-card::before {
+    bottom: -1.625rem;
+    width: 22.3125rem;
+    max-width: 22.3125rem;
+    height: 24.625rem;
+    max-height: 24.625rem;
+    background-image: url(../img/mobile/price-calc/notebook-mobile@1x.png);
+  }
+
+  .calc-card__card-content::after {
+    bottom: -2.6875rem;
+    left: 0.8125rem;
+    width: 22.4375rem;
+    max-width: 22.4375rem;
+    height: 17.9375rem;
+    background-image: url(../img/mobile/price-calc/coins1@x.png);
+  }
+
+  .card-content__title {
+    margin: 0 auto 1.5625rem auto;
+    font-size: 1.625rem;
+    line-height: 1.625rem;
+  }
+
+  .card-content__title--lg {
+    font-size: 2.125rem;
+    line-height: 1.625rem;
+  }
+
+  .card-content__title--blue {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
+
+  .card-content__subtitle {
+    margin-bottom: 11.25rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -2130,6 +2699,26 @@ template {
 
   .webp .header {
     background-image: url(../img/tablet/header/header-bg@1x.webp);
+  }
+
+  .section-feedback {
+    background: #5756fb;
+    background-image: url(../img/tablet/feedback/feedback-bg-2@1x.png);
+    background-position: 44% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .left-wave {
+    top: -13.375rem;
+    left: -12.25rem;
+    background-image: url(../img/tablet/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -10.4375rem;
+    right: -15.25rem;
+    background-image: url(../img/tablet/price-calc/wave-right1@x.png);
   }
 
   .header-top {
@@ -2346,6 +2935,74 @@ template {
     transform: translateX(-50%);
   }
 
+  .feedback-form::after {
+    top: 18.375rem;
+    right: -0.125rem;
+    width: 14.1875rem;
+    height: 18.5625rem;
+    background-image: url(../img/tablet/feedback/hand@1x.png);
+  }
+
+  .feedback-form {
+    max-width: 33.625rem;
+    padding: 3.75rem 2.5rem;
+  }
+
+  .feedback-form-left {
+    max-width: 21.9375rem;
+    margin-right: 3.125rem;
+  }
+
+  .feedback-form-right {
+    max-width: 22.8125rem;
+  }
+
+  .form-left__title {
+    max-width: 22.1875rem;
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
+  .form-left__text--blue {
+    max-width: 22.8125rem;
+    margin-top: 3.75rem;
+    margin-bottom: 0.8125rem;
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+
+  .form-left__text {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+
+  .form-left-socials {
+    width: 15.625rem;
+    padding: 0.75rem 0.9375rem;
+  }
+
+  .form-left__social__link {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .feedback-form__or {
+    margin-bottom: 1.875rem;
+    font-size: 2.125rem;
+    line-height: 4.25rem;
+  }
+
+  .form-right__text--blue {
+    max-width: 22.1875rem;
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+
+  .form-right__text {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+
   .services-leftcol {
     min-height: 62.5rem;
     height: 62.5rem;
@@ -2402,6 +3059,52 @@ template {
   .webp .services-rightcol {
     background-image: url(../img/tablet/services/services-stars-tablet@1x.webp);
   }
+
+  .price-calc-card {
+    max-width: 37.5rem;
+    padding: 4.0625rem 2.8125rem 4.75rem 2.8125rem;
+  }
+
+  .price-calc-card::before {
+    bottom: -0.1875rem;
+    width: 33.25rem;
+    max-width: 33.25rem;
+    height: 37.5625rem;
+    max-height: 37.5625rem;
+    background-image: url(../img/tablet/price-calc/notebook-tablet@1x.png);
+  }
+
+  .calc-card__card-content::after {
+    top: 18.4375rem;
+    left: 1.125rem;
+    width: 32.375rem;
+    max-width: 32.375rem;
+    height: 25.4375rem;
+    background-image: url(../img/tablet/price-calc/coins1@x.png);
+  }
+
+  .card-content__title {
+    max-width: 31.875rem;
+    font-size: 2.375rem;
+    line-height: 1.234;
+  }
+
+  .card-content__title--lg {
+    font-size: 3rem;
+    line-height: 2.9375rem;
+  }
+
+  .card-content__title--blue {
+    font-size: 2rem;
+    line-height: 1.234;
+  }
+
+  .card-content__subtitle {
+    max-width: 27.8125rem;
+    margin-bottom: 21.25rem;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
 }
 
 @media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
@@ -2422,51 +3125,6 @@ template {
 
   .dialog {
     top: 26.25rem;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 1024px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-}
-
-@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 800px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 1365px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 320px) {
-  .nav {
-    margin-left: -1.5px;
-    margin-right: -1.5px;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 480px) {
-  .nav {
-    margin-left: -1.5px;
-    margin-right: -1.5px;
   }
 }
 
@@ -2659,6 +3317,8 @@ template {
   .card-content__btn {
     min-width: 18.6875rem;
     min-height: 4.9375rem;
+    padding-right: 4.0625rem;
+    letter-spacing: 0.05em;
   }
 
   .card-content__btn::before {
@@ -2745,6 +3405,59 @@ template {
     transform: translateX(-50%);
   }
 
+  .feedback-form::after {
+    top: -4.1875rem;
+    right: -0.125rem;
+    width: 20.625rem;
+    height: 27.25rem;
+    background-image: url(../img/feedback/hand_with_iphone.png);
+  }
+
+  .feedback-form {
+    max-width: 66.375rem;
+    padding: 2.5rem 5.125rem 2.5rem 4.375rem;
+    overflow: visible;
+  }
+
+  .form-left__text--blue {
+    margin-top: 5.4375rem;
+  }
+
+  .inner-wrap {
+    max-width: 21.9375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .form-left-socials {
+    width: 15.375rem;
+    margin: 0 0 0.875rem 0.9375rem;
+  }
+
+  .feedback-form__or {
+    margin-bottom: 1.125rem;
+  }
+
+  .feedback-form__or--quiz {
+    margin-top: 0.625rem;
+  }
+
+  .form-right__gears {
+    width: 16.4375rem;
+    height: 12.8125rem;
+    margin-bottom: 0.375rem;
+    background-image: url(../img/feedback/gears.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-right__text--blue {
+    margin-bottom: 2rem;
+  }
+
   .small-cards-wrap {
     display: flex;
     flex-direction: row;
@@ -2763,6 +3476,110 @@ template {
 
   .services-card--sm__first {
     height: 22.9375rem;
+  }
+
+  .price-calc-card {
+    max-width: 56.75rem;
+    padding: 1.25rem 5.0625rem 7.5625rem 5.0625rem;
+  }
+
+  .price-calc-card::after {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    bottom: -8.75rem;
+    left: -5rem;
+    width: 27.125rem;
+    max-width: 27.125rem;
+    height: 29.75rem;
+    max-height: 29.75rem;
+    background-image: url(../img/price-calc/calculator.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .price-calc-card::before {
+    bottom: -3.9375rem;
+    right: 7.3125rem;
+    width: 23.5625rem;
+    max-width: 23.5625rem;
+    height: 25.6875rem;
+    max-height: 25.6875rem;
+    background-image: url(../img/desktop/price-calc/notebook-desktop@1x.png);
+  }
+
+  .calc-card__card-content::after {
+    top: 15.9375rem;
+    left: -6.6875rem;
+    width: 56.25rem;
+    max-width: 56.25rem;
+    height: 17.8125rem;
+    background-image: url(../img/price-calc/coins-md.png);
+  }
+
+  .card-content__title {
+    max-width: 43.75rem;
+    margin: 0 auto 1.25rem auto;
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__title--blue {
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__subtitle {
+    max-width: 32.25rem;
+    margin-bottom: 6.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 1024px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 800px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 1365px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 320px) {
+  .nav {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 480px) {
+  .nav {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
   }
 }
 
@@ -2812,7 +3629,7 @@ template {
 }
 
 @media (min-width: 85.3125rem) {
-  .container--header::before {
+  .header::before {
     position: absolute;
     content: "";
     z-index: 2;
@@ -2825,14 +3642,13 @@ template {
     opacity: 0.53;
   }
 
-  .container--services-line::before {
+  .section-feedback::before {
     position: absolute;
-    content: "Наши услуги";
+    content: "Обратная связь";
     z-index: 2;
     top: 50%;
     left: -2.5rem;
-    transform: translateY(-42%);
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateY(-50%);
     font-family: "Qanelas-Medium";
     font-weight: normal;
     font-style: normal;
@@ -2841,47 +3657,15 @@ template {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  .container--services-line::after {
+  .section-feedback::after {
     position: absolute;
     content: "";
-    z-index: 5;
+    z-index: 2;
     width: 0.0625rem;
     height: 100%;
     top: 0;
-    left: 40px;
+    left: 2.5rem;
     background: rgba(255, 255, 255, 0.2);
-  }
-
-  .block-animate--blue::before {
-    position: absolute;
-    content: "";
-    z-index: 100;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0.375rem;
-    height: 3.0625rem;
-    border-radius: 0.1875rem;
-    background: #161616;
-  }
-
-  .block-animate--blue--md-one::before {
-    left: -3.4375rem;
-  }
-
-  .block-animate--blue--md-two::before {
-    top: 51.7%;
-    left: 2.3125rem;
-  }
-
-  .block-animate--blue--md-three::before {
-    left: 2.9375rem;
-  }
-
-  .block-animate--blue.active::before {
-    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
-    background: #2e2dff;
-    -webkit-animation: block-animate-blue 2s linear;
-    animation: block-animate-blue 2s linear;
   }
 
   .section-services {
@@ -2889,6 +3673,45 @@ template {
     padding: 0;
     background-position: left 100%;
     background-size: 119%;
+  }
+
+  .section-services::before {
+    position: absolute;
+    content: "Наши услуги";
+    z-index: 2;
+    top: 50%;
+    left: -1.6875rem;
+    transform: rotate(-90deg) translateY(-50%);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-services::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .section-services__inner::before {
+    position: absolute;
+    content: "";
+    z-index: 100;
+    top: 57%;
+    left: 2.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    border-radius: 0.1875rem;
+    background: #161616;
   }
 
   .no-webp .section-services {
@@ -2901,6 +3724,45 @@ template {
     background-image: url(../img/desktop/services/services-bg@1x.webp);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .section-price-calc::before {
+    position: absolute;
+    content: "Рассчитать стоимость";
+    z-index: 2;
+    top: 49%;
+    left: -4.375rem;
+    transform: rotate(-90deg) translateY(-50%);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .section-price-calc::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 2.5rem;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .section-price-calc__inner::before {
+    position: absolute;
+    content: "";
+    z-index: 100;
+    top: 50%;
+    left: 2.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    border-radius: 0.1875rem;
+    background: #161616;
   }
 
   .header-top {
@@ -2937,6 +3799,23 @@ template {
   .advantages-list {
     justify-content: space-between;
     padding: 0 1rem 0 0;
+  }
+
+  .feedback-form-wrap::before {
+    position: absolute;
+    content: "";
+    z-index: 100;
+    top: 50%;
+    left: 2.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    border-radius: 0.1875rem;
+    background: #161616;
+  }
+
+  .form-left__text--blue {
+    margin-top: 3.125rem;
   }
 
   .services-wrap {
@@ -3027,6 +3906,22 @@ template {
 }
 
 @media (min-width: 90rem) {
+  .section-price-calc {
+    padding: 1.875rem 0;
+  }
+
+  .left-wave {
+    top: -1.125rem;
+    left: -1.25rem;
+    background-image: url(../img/desktop/price-calc/wave-left1@x.png);
+  }
+
+  .right-wave {
+    bottom: -1.125rem;
+    right: -1.25rem;
+    background-image: url(../img/desktop/price-calc/wave-right1@x.png);
+  }
+
   .nav {
     justify-content: space-between;
   }
@@ -3095,6 +3990,32 @@ template {
   .dialog-block {
     left: 25rem;
   }
+
+  .price-calc-card {
+    max-width: 68.5rem;
+    padding-top: 4.0625rem;
+  }
+
+  .price-calc-card::after {
+    left: -7.5rem;
+  }
+
+  .calc-card__card-content::after {
+    top: 5.5rem;
+    width: 73.125rem;
+    max-width: 73.125rem;
+    height: 23.1875rem;
+    background-image: url(../img/price-calc/coins.png);
+  }
+
+  .card-content__title {
+    max-width: 58.4375rem;
+    margin: 0 auto 3.5rem auto;
+  }
+
+  .card-content__subtitle {
+    margin-bottom: 1.5625rem;
+  }
 }
 
 @media (min-width: 96.875rem) {
@@ -3109,15 +4030,92 @@ template {
   }
 }
 
+@media (min-width: 100rem) {
+  .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg-2@1x.png);
+  }
+
+  .feedback-form-left {
+    max-width: 29.375rem;
+    margin-right: 5.625rem;
+  }
+
+  .form-left__title {
+    max-width: 29.375rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .form-left__text--blue {
+    max-width: 28.125rem;
+    margin-top: 3.3125rem;
+    margin-bottom: 3.75rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .inner-wrap {
+    max-width: 26.875rem;
+  }
+
+  .form-left-socials {
+    margin: 0 0 1rem 0.9375rem;
+    padding: 1.0625rem 1.375rem;
+  }
+
+  .form-left__social__link {
+    width: 2.875rem;
+    height: 2.875rem;
+  }
+
+  .feedback-form__or {
+    margin-bottom: 1.875rem;
+    font-size: 1.75rem;
+    line-height: 3.375rem;
+  }
+
+  .form-right__gears {
+    margin-bottom: 2.6875rem;
+  }
+
+  .form-right__text--blue {
+    max-width: 21.875rem;
+    margin-bottom: 3.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .form-right__text {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+}
+
 @media (min-width: 101.25rem) {
   .brief-btn {
     right: 11%;
   }
 }
 
-@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
-  .header__title {
-    max-width: 80%;
+@media screen and (min-width: 120rem) and (min-width: 1365px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 }
 
@@ -3143,45 +4141,78 @@ template {
   }
 }
 
+@media screen and (min-width: 120rem) and (min-width: 1627px) {
+  .services-leftcol {
+    width: calc(50% - 5px);
+  }
+
+  .services-rightcol {
+    width: calc(50% - 5px);
+  }
+
+  .small-cards-wrap {
+    width: calc(91.66667% - 5px);
+  }
+}
+
 @media (min-width: 120rem) {
-  .container--header::before {
-    left: 0.5625rem;
-  }
-
-  .container--services-line {
-    height: 100%;
-  }
-
-  .container--services-line::before {
-    top: 50%;
-    left: -4.6875rem;
-  }
-
-  .container--services-line::after {
-    left: 0.5625rem;
-  }
-
-  .block-animate--blue--md-one::before {
-    left: 7.3125rem;
-  }
-
-  .block-animate--blue--md-two::before {
-    top: 51.5%;
-    left: 0.375rem;
-  }
-
-  .block-animate--blue--md-three::before {
-    left: 7.3125rem;
-  }
-
   .header {
     background-position: 100% 100%;
+  }
+
+  .header::before {
+    left: 9.6875rem;
+  }
+
+  .section-feedback::before {
+    left: 3.75rem;
+  }
+
+  .section-feedback::after {
+    left: 9.6875rem;
   }
 
   .section-services {
     padding-top: 0;
     height: 100vh;
     background-size: 100%;
+  }
+
+  .section-services::before {
+    left: 4.6875rem;
+  }
+
+  .section-services::after {
+    left: 9.6875rem;
+  }
+
+  .section-services__inner::before {
+    top: 51%;
+    left: 9.5rem;
+  }
+
+  .section-price-calc::before {
+    left: 1.875rem;
+  }
+
+  .section-price-calc::after {
+    left: 9.6875rem;
+  }
+
+  .section-price-calc__inner::before {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9.5rem;
+  }
+
+  .left-wave {
+    top: 0;
+    left: -1.875rem;
+  }
+
+  .right-wave {
+    bottom: -1.25rem;
+    right: -0.9375rem;
   }
 
   .header-top {
@@ -3373,6 +4404,11 @@ template {
     height: 2.25rem;
   }
 
+  .feedback-form-wrap::before {
+    top: 52%;
+    left: 9.5rem;
+  }
+
   .services-leftcol {
     box-sizing: border-box;
     word-wrap: break-word;
@@ -3549,20 +4585,6 @@ template {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1627px) {
-  .services-leftcol {
-    width: calc(50% - 5px);
-  }
-
-  .services-rightcol {
-    width: calc(50% - 5px);
-  }
-
-  .small-cards-wrap {
-    width: calc(91.66667% - 5px);
-  }
-}
-
 @media screen and (min-width: 120rem) and (min-width: 480px) {
   .services-leftcol {
     margin-left: 1.5px;
@@ -3585,25 +4607,9 @@ template {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1365px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
+  .header__title {
+    max-width: 80%;
   }
 }
 
@@ -4201,5 +5207,11 @@ template {
 
   .services-wrap {
     width: calc(100% - 5px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .ki-advantages {
+    display: none;
   }
 }
