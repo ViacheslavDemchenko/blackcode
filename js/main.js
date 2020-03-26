@@ -158,6 +158,56 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 }(window, document);
 "use strict";
 
+$(document).ready(function () {
+  // let screenWidth = window.screen.availWidth;
+  var advantagesSlider = document.querySelector('.advantages__slider'); // const portfolioSlider = document.querySelector('.portfolio__slider');
+
+  if ($(window).width() < 1024) {
+    advantagesSlider.classList.add('owl-carousel'); // portfolioSlider.classList.add('owl-carousel');
+
+    $('.owl-carousel').owlCarousel({
+      stagePadding: 50,
+      center: true,
+      loop: true,
+      autoWidth: true,
+      autoHeight: true,
+      margin: 10,
+      dots: false,
+      // autoplay: true,
+      // autoplayTimeout: 3000,
+      // autoplayHoverPause: true,
+      items: 1
+    });
+  } else if ($(window).width() >= 1024) {
+    $('.owl-carousel').trigger('destroy.owl.carousel');
+    advantagesSlider.classList.remove('owl-carousel'); // portfolioSlider.classList.remove('owl-carousel');
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() < 1024) {
+      advantagesSlider.classList.add('owl-carousel'); // portfolioSlider.classList.add('owl-carousel');
+
+      $('.owl-carousel').owlCarousel({
+        stagePadding: 50,
+        center: true,
+        loop: true,
+        autoWidth: true,
+        autoHeight: true,
+        margin: 10,
+        dots: false,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause: true,
+        items: 1
+      });
+    } else if ($(window).width() >= 1024) {
+      $('.owl-carousel').trigger('destroy.owl.carousel');
+      advantagesSlider.classList.remove('owl-carousel'); // portfolioSlider.classList.remove('owl-carousel');
+    }
+  });
+});
+"use strict";
+
 /*!
  * @copyright Copyright (c) 2017 IcoMoon.io
  * @license   Licensed under MIT license

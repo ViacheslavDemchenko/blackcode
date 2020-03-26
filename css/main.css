@@ -665,166 +665,6 @@ template {
   background-image: url(../img/mobile/header/header-bg@1x.webp);
 }
 
-.ki-advantages {
-  display: none;
-}
-
-.ki-wraper {
-  max-width: 1414px;
-  margin: 0 auto;
-}
-
-.ki-advantages__box {
-  display: flex;
-  display: -ms-flexbox;
-  padding-top: 39px;
-  position: relative;
-}
-
-.ki-advantages__item {
-  width: 617px;
-  height: 400px;
-  background-color: white;
-  margin-bottom: 3px;
-}
-
-.ki-advantages__item:first-child {
-  background-image: url(../img/desktop/advantages/slide1.png);
-}
-
-.ki-advantages__item:nth-child(2) {
-  background-image: url(../img/desktop/advantages/card2.png);
-}
-
-.ki-advantages__item:nth-child(3) {
-  background-image: url(../img/desktop/advantages/card2.png);
-}
-
-.ki-advantages__item:nth-child(4) {
-  background-image: url(../img/desktop/advantages/card2.png);
-}
-
-.ki-advantages__item__content {
-  padding-top: 50px;
-}
-
-.ki-advantages__before1 p::before {
-  content: "1";
-  font-size: 110px;
-  font-family: "RollestonTitle";
-  color: #eaa627;
-  font-style: italic;
-  line-height: 0.2;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 26px;
-}
-
-.ki-advantages__before2 p::before {
-  content: "2";
-  font-size: 110px;
-  font-family: "RollestonTitle";
-  color: #eaa627;
-  font-style: italic;
-  line-height: 0.2;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 26px;
-}
-
-.ki-advantages__before3 p::before {
-  content: "3";
-  font-size: 110px;
-  font-family: "RollestonTitle";
-  color: #eaa627;
-  font-style: italic;
-  line-height: 0.2;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 26px;
-}
-
-.ki-advantages__before4 p::before {
-  content: "4";
-  font-size: 110px;
-  font-family: "RollestonTitle";
-  color: #eaa627;
-  font-style: italic;
-  line-height: 0.2;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 26px;
-}
-
-.ki-advantages__item__content h4 {
-  font-size: 20px;
-  font-family: "Myriad Pro";
-  color: #5b5af8;
-  line-height: 1.1;
-  padding-left: 88px;
-}
-
-.ki-advantages__item__content p {
-  margin-top: 20px;
-  font-size: 28px;
-  font-family: "Myriad Pro";
-  color: #151515;
-  line-height: 1.071;
-  padding-left: 88px;
-}
-
-.ki-advantages__item__content p span {
-  color: #2e2dff;
-}
-
-.ki-advantages__right {
-  width: 798px;
-  height: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #000000;
-}
-
-.ki-advantages__blockImg {
-  height: 100vh;
-  width: 100%;
-  background: url(../img/desktop/advantages/mouse.png), url(../img/desktop/advantages/laptop.png), url(../img/desktop/advantages/backgroundofcard1.png);
-  background-position: 50px 817px, 36px 370px, 0 0;
-  background-repeat: no-repeat;
-}
-
-.ki-advantages__blockImg h3 {
-  font-size: 24px;
-  color: #dadaff;
-  line-height: 1;
-  font-family: "Myriad Pro";
-  padding-top: 130px;
-  margin-bottom: 38px;
-  padding-left: 40px;
-}
-
-.ki-advantages__blockImg h3 span {
-  color: #e79b2a;
-}
-
-.ki-advantages__blockImg h2 {
-  font-size: 54px;
-  font-family: "Qanelas";
-  color: white;
-  font-weight: bold;
-  line-height: 0.833;
-  padding-left: 40px;
-}
-
-.ki-advantages__blockImg h2 span {
-  color: #e79b2a;
-}
-
 .section-advantages {
   position: relative;
   display: flex;
@@ -1490,7 +1330,7 @@ template {
 .card-content__btn {
   position: relative;
   z-index: 5;
-  min-width: 13.75rem;
+  width: 13.75rem;
   height: 2.8125rem;
   padding: 0 1.875rem 0 0;
   font-family: "Qanelas-Medium";
@@ -1778,7 +1618,7 @@ template {
 }
 
 .advantages__slide_1 {
-  background: url(../img/xs/advantages/advantages-card-xs_1@1x.jpg), white;
+  background: url(../img/desktop/advantages/slide1.png), white;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1799,7 +1639,7 @@ template {
 }
 
 .advantages__slide_2 {
-  background: url(../img/xs/advantages/advantages-card-xs_2@1x.jpg), white;
+  background: url(../img/desktop/advantages/card2.png), white;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1820,7 +1660,7 @@ template {
 }
 
 .advantages__slide_3 {
-  background: url(../img/xs/advantages/advantages-card-xs_3@1x.jpg), white;
+  background: url(../img/desktop/advantages/card3.png), white;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1841,7 +1681,7 @@ template {
 }
 
 .advantages__slide_4 {
-  background: url(../img/xs/advantages/advantages-card-xs_4@1x.jpg), white;
+  background: url(../img/desktop/advantages/card4.png), white;
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1859,6 +1699,150 @@ template {
   font-weight: 400;
   font-size: 2.1875rem;
   line-height: 1.125rem;
+}
+
+.advantages__laptop {
+  position: relative;
+  flex-basis: 100%;
+  max-width: 100%;
+  order: -1;
+  border-radius: 0 0 0 0.1875rem;
+}
+
+.advantages__laptop::after,
+.advantages__laptop::before {
+  position: absolute;
+  content: "";
+  width: 0.0625rem;
+  height: 100%;
+  top: 0;
+}
+
+.advantages__laptop::after {
+  right: 0;
+  background: linear-gradient(to top, rgba(49, 67, 164, 0.5) 0%, rgba(74, 73, 205, 0.4) 100%);
+}
+
+.advantages__laptop::before {
+  right: 19.7%;
+  background: linear-gradient(to top, rgba(49, 67, 164, 0.4) 0%, rgba(74, 73, 205, 0.2) 100%);
+}
+
+.advantages__laptop-content {
+  padding: 1.25rem 0.9375rem 2.5rem 0.9375rem;
+}
+
+.advantages__laptop__img {
+  position: relative;
+  left: -0.3125rem;
+  bottom: 3.75rem;
+  width: 15.625rem;
+  height: 10.25rem;
+}
+
+.advantages__laptop__pretitle {
+  margin-bottom: 0.625rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #d0eafe;
+}
+
+.advantages__laptop__pretitle--brown {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+}
+
+.advantages__laptop__title {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.advantages__laptop__title--brown {
+  max-width: 93%;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+  font-size: 1.625rem;
+  line-height: 2rem;
+}
+
+.advantages__laptop__title--small {
+  margin: 0 0 2.625rem 0;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 1.625rem;
+  line-height: 2rem;
+}
+
+.advantages__player {
+  margin-left: 7.5rem;
+  transform: translateY(-2rem);
+}
+
+.player__title {
+  position: relative;
+  margin-bottom: 0.5625rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 0.875rem;
+  color: #ffffff;
+}
+
+.player__title::before {
+  position: absolute;
+  content: "";
+  z-index: 1000;
+  top: 1.8125rem;
+  right: 3.5625rem;
+  width: 2.5rem;
+  height: 2.0625rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.player__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Qanelas-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #ffffff;
+  border-bottom: 0.125rem dashed #e79526;
+}
+
+.player__link::before {
+  position: absolute;
+  content: "";
+  z-index: 20;
+  bottom: 0.3125rem;
+  left: -5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__laptop__img {
+  background: url(../img/desktop/advantages/backgroundofcard1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .feedback-form-wrap {
@@ -2971,8 +2955,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .card-content__btn {
-    min-width: 14.75rem;
-    min-height: 4.3125rem;
+    width: 14.75rem;
+    height: 4.3125rem;
     font-size: 1.125rem;
   }
 
@@ -3153,6 +3137,63 @@ fieldset input::-ms-input-placeholder {
     left: 0.875rem;
     font-size: 3.9375rem;
     line-height: 0.8125rem;
+  }
+
+  .advantages__laptop-content {
+    padding: 5.0625rem 0.9375rem 2.5rem 2.5rem;
+  }
+
+  .advantages__laptop__img {
+    left: -0.125rem;
+    width: 25rem;
+    height: 16.375rem;
+  }
+
+  .advantages__laptop__img img {
+    width: 25rem;
+    height: 16.375rem;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .advantages__laptop__title--brown {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__laptop__title--small {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__player {
+    margin-left: 9.6875rem;
+    transform: translateY(-3.4375rem);
+  }
+
+  .player__title {
+    font-size: 1.5rem;
+    line-height: 1.375rem;
+  }
+
+  .player__title::before {
+    top: 4.375rem;
+  }
+
+  .player__link {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .player__link::before {
+    bottom: 0.3125rem;
+    left: -6.25rem;
+    width: 3.75rem;
+    height: 3.75rem;
   }
 
   .feedback-form::after {
@@ -3445,6 +3486,12 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media screen and (-ms-high-contrast: active) and (min-width: 30rem), (-ms-high-contrast: none) and (min-width: 30rem) {
+  .header-arrow__icon {
+    bottom: 100px;
+  }
+}
+
 @media only screen and (min-width: 30rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
   .no-webp .left-wave {
     background-image: url(../img/mobile/price-calc/wave-left@2x.png);
@@ -3476,12 +3523,6 @@ fieldset input::-ms-input-placeholder {
 
   .webp .calc-card__card-content::after {
     background-image: url(../img/mobile/price-calc/coins@2x.webp);
-  }
-}
-
-@media screen and (-ms-high-contrast: active) and (min-width: 30rem), (-ms-high-contrast: none) and (min-width: 30rem) {
-  .header-arrow__icon {
-    bottom: 100px;
   }
 }
 
@@ -3528,6 +3569,72 @@ fieldset input::-ms-input-placeholder {
   .dialog__text {
     font-size: 1.125rem;
     line-height: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .header {
+    background-image: url(../img/tablet/header/header-bg@2x.jpg);
+  }
+
+  .webp .header {
+    background-image: url(../img/tablet/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/tablet/feedback/feedback-bg@2x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/tablet/feedback/feedback-bg@2x.webp);
+  }
+
+  .no-webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/tablet/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/tablet/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .section-form {
+    background-image: url(../img/tablet/form/form-bg@2x.jpg);
+  }
+
+  .webp .section-form {
+    background-image: url(../img/tablet/form/form-bg@2x.webp);
+  }
+
+  .no-webp .feedback-form::after {
+    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.png);
+  }
+
+  .webp .feedback-form::after {
+    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.webp);
+  }
+
+  .no-webp .price-calc-card::before {
+    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.png);
+  }
+
+  .webp .price-calc-card::before {
+    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.webp);
+  }
+
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins@2x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins@2x.webp);
   }
 }
 
@@ -3715,8 +3822,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .card-content__btn {
-    min-width: 20.5rem;
-    min-height: 5.0625rem;
+    width: 20.5rem;
+    height: 5.0625rem;
     line-height: 3.3125rem;
   }
 
@@ -3910,6 +4017,56 @@ fieldset input::-ms-input-placeholder {
     left: 1.3125rem;
     font-size: 5.25rem;
     line-height: 1.0625rem;
+  }
+
+  .advantages__laptop {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .advantages__laptop__img {
+    left: -5.3125rem;
+    bottom: 3.875rem;
+    width: 51.375rem;
+    height: 29.5625rem;
+  }
+
+  .advantages__laptop__img img {
+    width: 51.375rem;
+    height: 29.5625rem;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 1.875rem;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__laptop__title--brown {
+    max-width: 82%;
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
+  .advantages__laptop__title--small {
+    font-size: 3.375rem;
+    line-height: 3.75rem;
+  }
+
+  .advantages__player {
+    margin-left: 15.625rem;
+    transform: translateY(-4.8125rem);
+  }
+
+  .player__title::before {
+    top: 5.625rem;
+  }
+
+  .player__link::before {
+    bottom: -0.9375rem;
+    left: -9.375rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   .feedback-form::after {
@@ -4188,10 +4345,6 @@ fieldset input::-ms-input-placeholder {
     align-items: flex-end;
   }
 
-  .footer-social__item:nth-child(1) {
-    margin-bottom: 0;
-  }
-
   .time {
     max-height: 25rem;
   }
@@ -4208,72 +4361,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .header {
-    background-image: url(../img/tablet/header/header-bg@2x.jpg);
-  }
-
-  .webp .header {
-    background-image: url(../img/tablet/header/header-bg@2x.webp);
-  }
-
-  .no-webp .section-feedback {
-    background-image: url(../img/tablet/feedback/feedback-bg@2x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/tablet/feedback/feedback-bg@2x.webp);
-  }
-
-  .no-webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/tablet/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/tablet/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .section-form {
-    background-image: url(../img/tablet/form/form-bg@2x.jpg);
-  }
-
-  .webp .section-form {
-    background-image: url(../img/tablet/form/form-bg@2x.webp);
-  }
-
-  .no-webp .feedback-form::after {
-    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.png);
-  }
-
-  .webp .feedback-form::after {
-    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.webp);
-  }
-
-  .no-webp .price-calc-card::before {
-    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.png);
-  }
-
-  .webp .price-calc-card::before {
-    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.webp);
-  }
-
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins@2x.webp);
-  }
-}
-
 @media (min-width: 56.25rem) {
   .services-leftcol {
     min-height: 68.75rem;
@@ -4282,13 +4369,6 @@ fieldset input::-ms-input-placeholder {
 
   .dialog {
     top: 26.25rem;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 1024px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
   }
 }
 
@@ -4342,10 +4422,23 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media screen and (min-width: 64rem) and (min-width: 1024px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
 @media screen and (min-width: 64rem) and (min-width: 1365px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
+  }
+}
+
+@media (min-width: 64rem) and (min-width: 64rem) {
+  .price-calc-card::after {
+    bottom: -7.5rem;
   }
 }
 
@@ -4362,14 +4455,9 @@ fieldset input::-ms-input-placeholder {
     background-image: url(../img/desktop/header/header-bg@1x.webp);
   }
 
-  .ki-advantages {
-    display: block;
-    background-color: #161616;
-    margin: 0 auto;
-  }
-
-  .section-advantages {
-    display: none;
+  .advantages-wrap {
+    height: 78.75rem;
+    justify-content: center;
   }
 
   .section-form {
@@ -4567,11 +4655,18 @@ fieldset input::-ms-input-placeholder {
     display: none;
   }
 
+  .form-right__btn {
+    max-width: 16.875rem;
+    min-height: 4.375rem;
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
+
   .card-content__btn {
-    min-width: 18.6875rem;
-    min-height: 4.9375rem;
-    padding-right: 4.0625rem;
-    letter-spacing: 0.05em;
+    width: 15.625rem;
+    height: 4.0625rem;
+    font-size: 1rem;
+    line-height: 1.6875rem;
   }
 
   .card-content__btn::before {
@@ -4637,9 +4732,30 @@ fieldset input::-ms-input-placeholder {
     transform: translateX(-50%);
   }
 
+  .advantages__slider__wrap {
+    max-height: auto;
+    flex-basis: 43.46%;
+    width: 43.46%;
+    max-width: 38.4375rem;
+  }
+
+  .advantages__slider {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 43.46%;
+    max-width: 38.4375rem;
+    height: 1600px;
+    margin: 0;
+  }
+
   .advantages__slide-content--second {
     padding: 1.5625rem 0 0 5.3125rem;
     max-width: 25rem;
+  }
+
+  .advantages__slide-content--third {
+    padding: 1.5625rem 0 0 5.3125rem;
+    max-width: 20rem;
   }
 
   .advantages__slide-content--fourth {
@@ -4647,21 +4763,125 @@ fieldset input::-ms-input-placeholder {
     max-width: 24.1875rem;
   }
 
+  .advantages__slide__title {
+    margin-bottom: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+
+  .advantages__slide {
+    width: 100%;
+    max-width: 30.25rem;
+    height: 19.6875rem;
+    margin-right: 0;
+    margin-bottom: 0.625rem;
+  }
+
+  .advantages__slide_1::before {
+    top: 4.125rem;
+  }
+
+  .advantages__slide_2::before {
+    top: 4.125rem;
+  }
+
+  .advantages__slide_3::before {
+    top: 4.125rem;
+  }
+
+  .advantages__slide_4 {
+    margin-bottom: 0;
+  }
+
+  .advantages__slide_4::before {
+    top: 4.125rem;
+  }
+
+  .advantages__laptop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-basis: 56.54%;
+    width: 56.54%;
+    max-width: 50rem;
+    height: 100vh;
+    order: 1;
+  }
+
+  .advantages__laptop-content {
+    padding: 4.375rem 0.9375rem 2.5rem 2.5rem;
+  }
+
+  .advantages__laptop__img {
+    left: -3.375rem;
+    bottom: 4.625rem;
+    width: 37.5rem;
+    height: 21.5625rem;
+  }
+
+  .advantages__laptop__img img {
+    width: 37.5rem;
+    height: 21.5625rem;
+  }
+
+  .advantages__laptop__pretitle {
+    font-size: 1.4375rem;
+    line-height: 1.4375rem;
+  }
+
+  .advantages__laptop__title--brown {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__laptop__title--small {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .advantages__player {
+    margin-left: 16.25rem;
+    transform: translateY(-4.6875rem);
+  }
+
+  .player__title::before {
+    display: none;
+  }
+
+  .player__link::before {
+    bottom: 1.25rem;
+    left: -9.375rem;
+  }
+
   .feedback-form::after {
-    top: -6.25rem;
+    top: -1.75rem;
     right: -0.125rem;
-    width: 20.625rem;
-    height: 27.25rem;
+    width: 13.75rem;
+    height: 18.125rem;
   }
 
   .feedback-form {
     max-width: 66.375rem;
-    padding: 2.5rem 5.125rem 2.5rem 4.375rem;
+    padding: 1.875rem 1.875rem;
     overflow: visible;
   }
 
+  .form-left__title {
+    max-width: 18.75rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
   .form-left__text--blue {
-    margin-top: 5.4375rem;
+    margin-top: 3.75rem;
+    margin-bottom: 2.0625rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .form-left__text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 
   .inner-wrap {
@@ -4674,11 +4894,28 @@ fieldset input::-ms-input-placeholder {
 
   .form-left-socials {
     width: 15.375rem;
-    margin: 0 0 0.875rem 0.9375rem;
+    margin: 0 0 0.875rem 0;
+  }
+
+  .whatsapp {
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+
+  .telegram {
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+
+  .vkontakte {
+    width: 2.1875rem;
+    height: 2.1875rem;
   }
 
   .feedback-form__or {
     margin-bottom: 1.125rem;
+    font-size: 1.75rem;
+    line-height: 3.375rem;
   }
 
   .feedback-form__or--quiz {
@@ -4686,8 +4923,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-right__gears {
-    width: 16.4375rem;
-    height: 12.8125rem;
+    width: 13.9375rem;
+    height: 10.3125rem;
     margin-bottom: 0.375rem;
     background-position: center;
     background-repeat: no-repeat;
@@ -4703,7 +4940,16 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-right__text--blue {
-    margin-bottom: 1.8125rem;
+    max-width: 18.75rem;
+    margin-bottom: 1.25rem;
+    margin-top: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .form-right__text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 
   .small-cards-wrap {
@@ -4728,7 +4974,7 @@ fieldset input::-ms-input-placeholder {
 
   .price-calc-card {
     max-width: 56.75rem;
-    padding: 1.25rem 5.0625rem 7.5625rem 5.0625rem;
+    padding: 3.75rem 0.625rem 3.75rem 0.625rem;
   }
 
   .price-calc-card::after {
@@ -4737,29 +4983,29 @@ fieldset input::-ms-input-placeholder {
     z-index: 5;
     bottom: -8.75rem;
     left: -5rem;
-    width: 27.125rem;
-    max-width: 27.125rem;
-    height: 29.75rem;
-    max-height: 29.75rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .price-calc-card::before {
-    bottom: -3.9375rem;
-    right: 7.3125rem;
-    width: 23.5625rem;
-    max-width: 23.5625rem;
-    height: 25.6875rem;
-    max-height: 25.6875rem;
+    bottom: -4.0625rem;
+    right: 5.625rem;
+    width: 18.75rem;
+    max-width: 18.75rem;
+    height: 18.75rem;
+    max-height: 18.75rem;
   }
 
   .no-webp .price-calc-card::after {
+    width: 18.75rem;
+    height: 21.875rem;
     background-image: url(../img/desktop/price-calc/calculator@1x.png);
   }
 
   .webp .price-calc-card::after {
+    width: 18.75rem;
+    height: 21.875rem;
     background-image: url(../img/desktop/price-calc/calculator@1x.webp);
   }
 
@@ -4772,38 +5018,46 @@ fieldset input::-ms-input-placeholder {
   }
 
   .calc-card__card-content::after {
-    top: 15.9375rem;
-    left: -6.6875rem;
-    width: 56.25rem;
-    max-width: 56.25rem;
+    top: 5.6875rem;
+    left: -1.3125rem;
+    max-width: 46.875rem;
     height: 17.8125rem;
   }
 
   .no-webp .calc-card__card-content::after {
+    width: 46.875rem;
+    height: 17.8125rem;
     background-image: url(../img/tablet/price-calc/coins-md@1x.png);
   }
 
   .webp .calc-card__card-content::after {
+    width: 46.875rem;
+    height: 17.8125rem;
     background-image: url(../img/tablet/price-calc/coins-md@1x.webp);
   }
 
   .card-content__title {
     max-width: 43.75rem;
     margin: 0 auto 1.25rem auto;
-    font-size: 3.375rem;
-    line-height: 3.375rem;
+    font-size: 2.1875rem;
+    line-height: 2.125rem;
+  }
+
+  .card-content__title--lg {
+    font-size: 2.1875rem;
+    line-height: 2.125rem;
   }
 
   .card-content__title--blue {
-    font-size: 3.375rem;
-    line-height: 3.375rem;
+    font-size: 2.1875rem;
+    line-height: 2.125rem;
   }
 
   .card-content__subtitle {
     max-width: 32.25rem;
-    margin-bottom: 6.5625rem;
-    font-size: 1.5rem;
-    line-height: 1.5625rem;
+    margin-bottom: 5.3125rem;
+    font-size: 1.25rem;
+    line-height: 1.3125rem;
   }
 
   .form-rightcol {
@@ -4935,6 +5189,27 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 69.375rem) {
+  .advantages__slider__wrap {
+    flex-basis: 40%;
+    width: 40%;
+  }
+
+  .advantages__laptop {
+    flex-basis: 60%;
+    width: 60%;
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%);
+  }
+}
+
+@media (min-width: 75.625rem) {
+  .advantages__slide {
+    width: 100%;
+    max-width: 38.4375rem;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 77.5rem) {
   .social__icon {
     width: 2rem;
@@ -4964,24 +5239,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-
-  .no-webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
-  }
-
-  .webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
-  }
-}
-
 @media (min-width: 85.3125rem) {
   .header::before {
     position: absolute;
@@ -4994,6 +5251,37 @@ fieldset input::-ms-input-placeholder {
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.2) 20%);
     opacity: 0.53;
+  }
+
+  .section-advantages-wrap::before {
+    position: absolute;
+    content: "Преимущества";
+    z-index: 2;
+    top: 49%;
+    left: -2.6875rem;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-advantages-wrap::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 3.125rem;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .advantages-main-wrap {
+    width: 85%;
   }
 
   .section-feedback::before {
@@ -5181,7 +5469,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .header__btn {
-    margin-top: -4.375rem;
+    margin-top: -1.25rem;
   }
 
   .advantages {
@@ -5192,6 +5480,31 @@ fieldset input::-ms-input-placeholder {
   .advantages-list {
     justify-content: space-between;
     padding: 0 1rem 0 0;
+  }
+
+  .advantages__slide-content--first {
+    max-width: 31.875rem;
+  }
+
+  .advantages__slide-content--second {
+    max-width: 27.8125rem;
+  }
+
+  .advantages__slide-content--third {
+    max-width: 20.625rem;
+  }
+
+  .advantages__slide-content--fourth {
+    max-width: 25rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1.3125rem;
+    line-height: 1.4375rem;
+  }
+
+  .advantages__slide {
+    height: 25rem;
   }
 
   .feedback-form-wrap::before {
@@ -5246,8 +5559,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .dialog {
-    top: 15.9375rem;
-    left: 21.9375rem;
+    top: 17.1875rem;
+    left: 21.25rem;
   }
 
   .services-rightcol {
@@ -5297,6 +5610,24 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
+  }
+
+  .webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
+  }
+}
+
 @media (min-width: 89.9375rem) {
   .nav__link {
     font-size: 1.25rem;
@@ -5317,7 +5648,38 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.png);
+  }
+
+  .webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.webp);
+  }
+}
+
 @media (min-width: 90rem) {
+  .advantages-wrap {
+    height: 100rem;
+    justify-content: center;
+  }
+
   .section-price-calc {
     padding: 1.875rem 0;
   }
@@ -5366,10 +5728,6 @@ fieldset input::-ms-input-placeholder {
   .header__title {
     font-size: 5.3125rem;
     line-height: 4.375rem;
-  }
-
-  .header__btn {
-    margin-top: -1.25rem;
   }
 
   .brief-btn {
@@ -5437,41 +5795,120 @@ fieldset input::-ms-input-placeholder {
     top: -2.3125rem;
   }
 
+  .advantages__slide__title {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_1 {
+    background: url(../img/desktop/advantages/advantages-card_1.jpg), white;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .advantages__slide_1::before {
+    top: 4.6875rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_2 {
+    background: url(../img/desktop/advantages/advantages-card_2.jpg), white;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
+
+  .advantages__slide_2::before {
+    top: 4.6875rem;
+    left: 0.8125rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_3 {
+    background: url(../img/desktop/advantages/advantages-card_3.jpg), white;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
+
+  .advantages__slide_3::before {
+    top: 4.6875rem;
+    left: 0.8125rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__slide_4 {
+    background: url(../img/desktop/advantages/advantages-card_4.jpg), white;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
+
+  .advantages__slide_4::before {
+    top: 4.6875rem;
+    left: 0.8125rem;
+    font-size: 6.875rem;
+    line-height: 1.375rem;
+  }
+
+  .advantages__laptop-content {
+    padding: 8.125rem 0.9375rem 2.5rem 2.5rem;
+  }
+
+  .advantages__laptop__img {
+    left: -3.0625rem;
+    bottom: 3.75rem;
+    width: 51.375rem;
+    height: 29.5625rem;
+  }
+
+  .advantages__laptop__pretitle {
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .advantages__laptop__title--brown {
+    max-width: auto;
+    font-size: 3.375rem;
+    line-height: 2.8125rem;
+  }
+
+  .advantages__laptop__title--small {
+    margin: 0.3125rem 0 2.625rem 0;
+    font-size: 3.375rem;
+    line-height: 3.125rem;
+  }
+
+  .player__link::before {
+    bottom: 0;
+    left: -9.375rem;
+    width: 8.3125rem;
+    height: 8.3125rem;
+  }
+
   .dialog-block {
     left: 25rem;
   }
 
-  .price-calc-card {
-    max-width: 68.5rem;
-    padding-top: 4.0625rem;
+  .no-webp .price-calc-card::after {
+    bottom: -6.875rem;
   }
 
-  .price-calc-card::after {
-    left: -7.5rem;
+  .webp .price-calc-card::after {
+    bottom: -6.875rem;
   }
 
-  .calc-card__card-content::after {
-    top: 5.5rem;
-    width: 73.125rem;
-    max-width: 73.125rem;
-    height: 23.1875rem;
+  .no-webp .price-calc-card::before {
+    bottom: -3.0625rem;
   }
 
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@1x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@1x.webp);
-  }
-
-  .card-content__title {
-    max-width: 58.4375rem;
-    margin: 0 auto 3.5rem auto;
+  .webp .price-calc-card::before {
+    bottom: -3.0625rem;
   }
 
   .card-content__subtitle {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 6.125rem;
   }
 
   .form-lefttcol {
@@ -5604,41 +6041,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.webp);
-  }
-
-  .no-webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.png);
-  }
-
-  .webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.webp);
-  }
-}
-
 @media (min-width: 93.75rem) {
+  .advantages__slide-content--fourth {
+    max-width: 26.75rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1.4375rem;
+    line-height: 1.5625rem;
+  }
+
   .form-lefttcol {
     flex-basis: 45%;
     max-width: 45%;
@@ -5689,8 +6101,7 @@ fieldset input::-ms-input-placeholder {
 
   .form-left__text--blue {
     max-width: 28.125rem;
-    margin-top: 2.5rem;
-    margin-bottom: 3.75rem;
+    margin: 3.75rem 0 2rem 0;
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -5700,7 +6111,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-left-socials {
-    margin: 0 0 1rem 0.9375rem;
+    margin: 0 0 1rem 0;
     padding: 1.0625rem 1.375rem;
   }
 
@@ -5716,12 +6127,13 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-right__gears {
+    width: 16.4375rem;
+    height: 12.8125rem;
     margin-bottom: 2.6875rem;
   }
 
   .form-right__text--blue {
     max-width: 21.875rem;
-    margin-bottom: 3.5625rem;
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
@@ -5752,40 +6164,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1024px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-}
-
-@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
-  .header__title {
-    max-width: 80%;
-  }
-}
-
-@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .time {
-    background-image: url(../img/desktop/modals/clock@2x.jpg);
-  }
-}
-
 @media screen and (min-width: 120rem) and (min-width: 800px) {
   .services-leftcol {
     margin-left: 2.5px;
@@ -5808,17 +6186,31 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1627px) {
+@media screen and (min-width: 120rem) and (min-width: 1024px) {
   .services-leftcol {
-    width: calc(50% - 5px);
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 
   .services-rightcol {
-    width: calc(50% - 5px);
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 
   .small-cards-wrap {
-    width: calc(91.66667% - 5px);
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+}
+
+@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .time {
+    background-image: url(../img/desktop/modals/clock@2x.jpg);
   }
 }
 
@@ -5829,6 +6221,22 @@ fieldset input::-ms-input-placeholder {
 
   .header::before {
     left: 9.6875rem;
+  }
+
+  .section-advantages-wrap::before {
+    left: 1.25rem;
+  }
+
+  .section-advantages-wrap::after {
+    left: 7.5rem;
+  }
+
+  .advantages-main-wrap {
+    width: 100%;
+  }
+
+  .advantages-wrap {
+    height: 100%;
   }
 
   .section-feedback::before {
@@ -6014,6 +6422,15 @@ fieldset input::-ms-input-placeholder {
     margin-top: -1.25rem;
   }
 
+  .card-content__btn {
+    width: 18.6875rem;
+    height: 4.9375rem;
+    padding-right: 4.0625rem;
+    font-size: 1.125rem;
+    line-height: 1.8125rem;
+    letter-spacing: 0.05em;
+  }
+
   .portfolio__slide-btn {
     width: 4.125rem;
     height: 4.125rem;
@@ -6095,6 +6512,47 @@ fieldset input::-ms-input-placeholder {
     height: 2.25rem;
   }
 
+  .advantages__slider__wrap {
+    height: 100rem;
+  }
+
+  .advantages__slide-content--first {
+    max-width: 100%;
+    padding: 1.5625rem 0 0 5.3125rem;
+  }
+
+  .advantages__slide-content--second {
+    max-width: 31.875rem;
+    padding: 1.5625rem 0 0 5.3125rem;
+  }
+
+  .advantages__slide-content--third {
+    padding: 1.5625rem 0 0 5.3125rem;
+    max-width: 25rem;
+  }
+
+  .advantages__slide-content--fourth {
+    max-width: 31.875rem;
+    padding: 1.5625rem 0 0 5.3125rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+
+  .advantages__slide_2::before {
+    left: 0.5rem;
+  }
+
+  .advantages__slide_3::before {
+    left: 0.5rem;
+  }
+
+  .advantages__slide_4::before {
+    left: 0.5rem;
+  }
+
   .feedback-form-wrap::before {
     top: 52%;
     left: 9.5rem;
@@ -6102,6 +6560,37 @@ fieldset input::-ms-input-placeholder {
 
   .feedback-form::after {
     top: -4.1875rem;
+    width: 20.625rem;
+    height: 27.25rem;
+  }
+
+  .feedback-form {
+    padding: 2.5rem 5.125rem 2.5rem 4.375rem;
+  }
+
+  .form-left__text--blue {
+    max-width: 27.5rem;
+    margin: 3.75rem 0 0.9375rem 0;
+  }
+
+  .form-left__text {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+
+  .whatsapp {
+    width: 2.875rem;
+    height: 2.875rem;
+  }
+
+  .telegram {
+    width: 2.875rem;
+    height: 2.875rem;
+  }
+
+  .vkontakte {
+    width: 2.875rem;
+    height: 2.875rem;
   }
 
   .services-leftcol {
@@ -6279,6 +6768,83 @@ fieldset input::-ms-input-placeholder {
     right: 1.0625rem;
   }
 
+  .price-calc-card {
+    max-width: 68.5rem;
+    padding-top: 4.0625rem;
+    padding: 4.0625rem 5.0625rem 7.5625rem 5.0625rem;
+  }
+
+  .price-calc-card::after {
+    left: -7.5rem;
+  }
+
+  .price-calc-card::before {
+    bottom: -4.4375rem;
+    right: 7.3125rem;
+    width: 23.5625rem;
+    max-width: 23.5625rem;
+    height: 25.6875rem;
+    max-height: 25.6875rem;
+  }
+
+  .no-webp .price-calc-card::after {
+    bottom: -8.75rem;
+    width: 27.125rem;
+    height: 29.75rem;
+  }
+
+  .webp .price-calc-card::after {
+    bottom: -8.75rem;
+    width: 27.125rem;
+    height: 29.75rem;
+  }
+
+  .no-webp .price-calc-card::before {
+    bottom: -4.4375rem;
+  }
+
+  .webp .price-calc-card::before {
+    bottom: -4.4375rem;
+  }
+
+  .calc-card__card-content::after {
+    top: 5.9375rem;
+    left: -6.875rem;
+    width: 73.125rem;
+    max-width: 73.125rem;
+    height: 23.1875rem;
+  }
+
+  .no-webp .calc-card__card-content::after {
+    width: 73.125rem;
+    height: 23.1875rem;
+    background-image: url(../img/desktop/price-calc/coins@1x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    width: 73.125rem;
+    height: 23.1875rem;
+    background-image: url(../img/desktop/price-calc/coins@1x.webp);
+  }
+
+  .card-content__title {
+    max-width: 58.4375rem;
+    margin: 0 auto 3.5rem auto;
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__title--blue {
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .card-content__subtitle {
+    margin-bottom: 1.5625rem;
+    font-size: 1.5rem;
+    line-height: 1.5625rem;
+  }
+
   .form-rightcol {
     padding: 9.375rem 0.3125rem 0.3125rem 0.3125rem;
   }
@@ -6296,25 +6862,33 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1365px) {
+@media screen and (min-width: 120rem) and (min-width: 1627px) {
   .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+    width: calc(50% - 5px);
   }
 
   .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+    width: calc(50% - 5px);
   }
 
   .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
+    width: calc(91.66667% - 5px);
+  }
+}
+
+@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
+  .header__title {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.png);
   }
 
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.webp);
   }
 }
 
@@ -6362,6 +6936,28 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media screen and (min-width: 120rem) and (min-width: 1365px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+}
+
 @media (min-width: 137.5rem) {
   .portfolio__slide-btn {
     width: 2.875rem;
@@ -6374,6 +6970,57 @@ fieldset input::-ms-input-placeholder {
     left: calc(50% - 16px);
     width: 1.5625rem;
     height: 0.625rem;
+  }
+}
+
+@media (min-width: 160rem) {
+  .advantages-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 2000px;
+  }
+
+  .advantages__slider__wrap {
+    max-width: 700px;
+  }
+
+  .advantages__slider {
+    flex-basis: 100%;
+    height: 100vh;
+  }
+
+  .advantages__slide-content--first {
+    padding: 0.625rem 0 0 6.25rem;
+  }
+
+  .advantages__slide__title {
+    margin-bottom: 0;
+    font-size: 0.938rem;
+  }
+
+  .advantages__slide__text {
+    font-size: 1.46rem;
+  }
+
+  .advantages__slide {
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+  }
+
+  .advantages__laptop {
+    max-width: 75rem;
+    height: 100rem;
+  }
+
+  .advantages__laptop__img {
+    bottom: -1.25rem;
+  }
+
+  .advantages__player {
+    margin-bottom: 1.875rem;
+    transform: translateY(-5rem);
   }
 }
 
