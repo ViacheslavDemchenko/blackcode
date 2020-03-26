@@ -781,6 +781,26 @@ template {
   background-image: url(../img/mobile/price-calc/wave-right@1x.webp);
 }
 
+.section-portfolio {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.portfolio-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 94.875rem;
+  margin: 0;
+}
+
 .section-form {
   position: relative;
   display: flex;
@@ -2446,6 +2466,135 @@ template {
   line-height: 1.25rem;
 }
 
+.portfolio__laptop {
+  background: linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%);
+  padding-left: 38.75rem;
+}
+
+.portfolio__laptop-content {
+  width: 50%;
+  padding: 1.25rem 0.3125rem 2.5rem 0.3125rem;
+}
+
+.portfolio__laptop__wrap {
+  display: none;
+}
+
+.portfolio__laptop__pretitle {
+  margin-bottom: 0.625rem;
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 3.375rem;
+  color: #d0eafe;
+}
+
+.portfolio__laptop__pretitle--brown {
+  font-family: "Rollestontitlelightitalic";
+  font-weight: normal;
+  font-style: normal;
+  color: #e89a2a;
+}
+
+.portfolio__laptop__title {
+  position: relative;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #ffffff;
+}
+
+.portfolio__laptop__title::before {
+  position: absolute;
+  content: "";
+  z-index: 1000;
+  top: 6.25rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.0625rem;
+  background-image: url(../img/finger-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio__laptop-inner {
+  width: 100%;
+}
+
+.portfolio__slider__wrap {
+  flex-basis: 100%;
+  max-width: 100%;
+  height: 15.625rem;
+}
+
+.portfolio__slider__wrap .owl-height,
+.portfolio__slider__wrap .owl-item,
+.portfolio__slider__wrap .owl-carousel {
+  height: 15.625rem !important;
+}
+
+.portfolio__slider {
+  position: relative;
+  flex-basis: 100%;
+  max-width: 100%;
+  height: 15.625rem;
+  height: 100%;
+}
+
+.portfolio__slide-content {
+  padding: 0.625rem 0 0 0.625rem;
+}
+
+.portfolio__slide__title {
+  margin-bottom: 0.625rem;
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 0.8125rem;
+  color: #000000;
+}
+
+.portfolio__slide__text {
+  font-family: "Qanelas-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.09em;
+  color: #161616;
+}
+
+.portfolio__slide__text--blue {
+  font-family: "Qanelas-Bold";
+  font-weight: normal;
+  font-style: normal;
+  color: #2e2dff;
+  letter-spacing: -0.04em;
+}
+
+.portfolio__slide {
+  position: relative;
+  width: 100%;
+  max-width: 15.625rem;
+  min-height: 15.625rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+}
+
+.portfolio__slide-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
 .form-lefttcol {
   position: relative;
   display: flex;
@@ -3424,6 +3573,77 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.375rem;
   }
 
+  .portfolio__laptop {
+    padding-left: 35rem;
+  }
+
+  .portfolio__laptop-content {
+    width: 60%;
+    padding: 2.5rem 0.3125rem 2.5rem 0.3125rem;
+  }
+
+  .portfolio__laptop__pretitle {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 3.375rem;
+  }
+
+  .portfolio__laptop__title {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 4.3125rem;
+    right: -0.4375rem;
+  }
+
+  .portfolio__slider__wrap {
+    height: 21.375rem;
+  }
+
+  .portfolio__slider__wrap .owl-height,
+  .portfolio__slider__wrap .owl-item,
+  .portfolio__slider__wrap .owl-carousel {
+    height: 21.375rem !important;
+  }
+
+  .portfolio__slider__wrap .owl-item {
+    width: 20.125rem !important;
+    height: 21.375rem !important;
+  }
+
+  .portfolio__slider {
+    height: 21.25rem;
+  }
+
+  .portfolio__slide-content {
+    max-width: 20.3125rem;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 0.625rem;
+    font-size: 1.25rem;
+    line-height: 1.0625rem;
+  }
+
+  .portfolio__slide__text {
+    font-size: 1.0625rem;
+    line-height: 1.0625rem;
+    letter-spacing: -0.04em;
+  }
+
+  .portfolio__slide {
+    width: 100%;
+    max-width: 20.125rem;
+    min-height: 21.375rem;
+  }
+
+  .portfolio__slide__img {
+    width: 20.75rem;
+    height: auto;
+  }
+
   .form-rightcol {
     margin: auto;
     margin-top: 3.75rem;
@@ -3539,6 +3759,19 @@ fieldset input::-ms-input-placeholder {
     top: 15.625rem;
     width: 21.875rem;
   }
+
+  .portfolio__laptop {
+    padding-left: 31.25rem;
+  }
+
+  .portfolio__laptop-content {
+    width: 80%;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 4.3125rem;
+    right: -0.4375rem;
+  }
 }
 
 @media (min-width: 40.625rem) {
@@ -3570,6 +3803,22 @@ fieldset input::-ms-input-placeholder {
   .dialog__text {
     font-size: 1.125rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .portfolio__laptop {
+    width: 100%;
+    padding-left: 25rem;
+  }
+
+  .portfolio__laptop-content {
+    width: 100%;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 2.5625rem;
+    right: 25rem;
   }
 }
 
@@ -3688,6 +3937,10 @@ fieldset input::-ms-input-placeholder {
     bottom: -10.4375rem;
     right: -15.25rem;
     background-image: url(../img/tablet/price-calc/wave-right@1x.webp);
+  }
+
+  .portfolio-wrap {
+    width: 100%;
   }
 
   .section-form {
@@ -4267,6 +4520,90 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.875rem;
   }
 
+  .portfolio__laptop {
+    padding-left: 0;
+  }
+
+  .portfolio__laptop-content {
+    padding: 3.125rem 0.9375rem 6.25rem 5rem;
+  }
+
+  .portfolio__laptop__pretitle {
+    margin-bottom: 1.25rem;
+    font-size: 1.375rem;
+    line-height: 3.375rem;
+  }
+
+  .portfolio__laptop__title {
+    max-width: 31.25rem;
+    font-size: 2.75rem;
+    line-height: 3.125rem;
+  }
+
+  .portfolio__laptop__title::before {
+    top: 8.125rem;
+    right: -6.25rem;
+  }
+
+  .portfolio__laptop-inner {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .portfolio__slider__wrap {
+    height: 32.3125rem;
+  }
+
+  .portfolio__slider__wrap .owl-height,
+  .portfolio__slider__wrap .owl-item,
+  .portfolio__slider__wrap .owl-carousel {
+    height: 32.3125rem !important;
+  }
+
+  .portfolio__slider__wrap .owl-item {
+    width: 32rem !important;
+    height: 32.3125rem !important;
+  }
+
+  .portfolio__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .portfolio__slide-content {
+    max-width: 26.875rem;
+    padding: 2.5rem 0 0 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .portfolio__slide__title {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+
+  .portfolio__slide__text {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+
+  .portfolio__slide {
+    width: 100%;
+    max-width: 32rem;
+    min-height: 32.3125rem;
+    border-radius: 0;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+
+  .portfolio__slide__img {
+    width: 32rem;
+    height: auto;
+  }
+
   .form-rightcol {
     margin: auto;
     margin-top: 3.75rem;
@@ -4378,74 +4715,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 64rem) and (min-width: 64rem) {
-  .price-calc-card::after {
-    bottom: -7.5rem;
-  }
-}
-
 @media screen and (min-width: 64rem) and (min-width: 800px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
-  }
-}
-
-@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-
-  .no-webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
-  }
-
-  .no-webp .section-form {
-    background-image: url(../img/desktop/form/form-bg@2x.jpg);
-  }
-
-  .webp .section-form {
-    background-image: url(../img/desktop/form/form-bg@2x.webp);
-  }
-
-  .no-webp .form-right__gears {
-    background-image: url(../img/desktop/feedback/gears@2x.png);
-  }
-
-  .webp .form-right__gears {
-    background-image: url(../img/desktop/feedback/gears@2x.webp);
-  }
-
-  .no-webp .price-calc-card::after {
-    background-image: url(../img/desktop/price-calc/calculator@2x.png);
-  }
-
-  .webp .price-calc-card::after {
-    background-image: url(../img/desktop/price-calc/calculator@2x.webp);
-  }
-
-  .no-webp .price-calc-card::before {
-    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.png);
-  }
-
-  .webp .price-calc-card::before {
-    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.webp);
-  }
-
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins-md@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins-md@2x.webp);
   }
 }
 
@@ -4474,6 +4747,15 @@ fieldset input::-ms-input-placeholder {
 
   .webp .section-feedback {
     background-image: url(../img/desktop/feedback/feedback-bg@1x.webp);
+  }
+
+  .section-portfolio {
+    overflow-x: visible;
+  }
+
+  .portfolio-wrap {
+    height: 56.25rem;
+    justify-content: center;
   }
 
   .section-form {
@@ -5086,6 +5368,107 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.3125rem;
   }
 
+  .portfolio__laptop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-basis: 71%;
+    max-width: 71%;
+    height: 100%;
+    order: -1;
+  }
+
+  .portfolio__laptop-content {
+    margin-left: 0;
+    max-width: 39.375rem;
+    padding: 5rem 0.9375rem 2.5rem 5rem;
+  }
+
+  .portfolio__laptop__wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    left: -3.375rem;
+    bottom: 100%;
+    width: 61.875rem;
+    height: 71.8125rem;
+  }
+
+  .portfolio__laptop__wrap img {
+    width: 61.875rem;
+    height: 71.8125rem;
+  }
+
+  .portfolio__laptop__pretitle {
+    margin-bottom: 1.875rem;
+    font-size: 1.4375rem;
+    line-height: 1.4375rem;
+  }
+
+  .portfolio__laptop__title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .portfolio__laptop__title::before {
+    display: none;
+  }
+
+  .portfolio__laptop-inner {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 1000px;
+    background: url(../img/tablet/portfolio/laptop-flower-tablet-4@1x.png), url(../img/tablet/portfolio/smoke-tablet@1x.png);
+    background-position: -165px 56%, -57px 20%;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio__slider__wrap {
+    height: 100%;
+    flex-basis: 28%;
+    width: 28%;
+    max-width: 26.625rem;
+  }
+
+  .portfolio__slider {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 43.46%;
+    max-width: 38.4375rem;
+    height: 56.25rem;
+    margin: 0;
+  }
+
+  .portfolio__slide-content {
+    max-width: 92%;
+    padding: 0.3125rem 0 0.625rem 0.3125rem;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 0.9375rem;
+    font-size: 1.125rem;
+    line-height: 0.875rem;
+  }
+
+  .portfolio__slide__text {
+    font-size: 1rem;
+    line-height: 1.125rem;
+  }
+
+  .portfolio__slide {
+    width: 100%;
+    max-width: 26.625rem;
+    min-height: 18.75rem;
+    margin-right: 0;
+    border-radius: 0;
+  }
+
+  .portfolio__slide__img {
+    width: 100%;
+    max-width: 32rem;
+  }
+
   .form-rightcol {
     position: absolute;
     z-index: 8500;
@@ -5188,6 +5571,77 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 64rem) and (min-width: 64rem) {
+  .price-calc-card::after {
+    bottom: -7.5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 1365px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
+@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
+  }
+
+  .no-webp .section-form {
+    background-image: url(../img/desktop/form/form-bg@2x.jpg);
+  }
+
+  .webp .section-form {
+    background-image: url(../img/desktop/form/form-bg@2x.webp);
+  }
+
+  .no-webp .form-right__gears {
+    background-image: url(../img/desktop/feedback/gears@2x.png);
+  }
+
+  .webp .form-right__gears {
+    background-image: url(../img/desktop/feedback/gears@2x.webp);
+  }
+
+  .no-webp .price-calc-card::after {
+    background-image: url(../img/desktop/price-calc/calculator@2x.png);
+  }
+
+  .webp .price-calc-card::after {
+    background-image: url(../img/desktop/price-calc/calculator@2x.webp);
+  }
+
+  .no-webp .price-calc-card::before {
+    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.png);
+  }
+
+  .webp .price-calc-card::before {
+    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.webp);
+  }
+
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins-md@2x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins-md@2x.webp);
+  }
+}
+
 @media screen and (min-width: 64rem) and (min-width: 320px) {
   .nav {
     margin-left: -1.5px;
@@ -5202,13 +5656,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 1365px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-}
-
 @media screen and (min-width: 64rem) and (min-width: 1024px) {
   .nav {
     margin-left: -2.5px;
@@ -5217,8 +5664,24 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 68.75rem) {
+  .portfolio-wrap {
+    height: 65.625rem;
+  }
+
   .portfolio__slide-btn {
     margin: 1.25rem 0.9375rem 0 auto;
+  }
+
+  .portfolio__slider {
+    height: 65.625rem;
+  }
+
+  .portfolio__slide-content {
+    padding: 1.5625rem 0 0.625rem 0.9375rem;
+  }
+
+  .portfolio__slide {
+    min-height: 65.625rem;
   }
 }
 
@@ -5233,12 +5696,31 @@ fieldset input::-ms-input-placeholder {
     width: 60%;
     background: linear-gradient(to top, rgba(22, 22, 22, 0.8) 10%, rgba(87, 86, 251, 0.8) 104%, rgba(22, 22, 22, 0.8) 111%);
   }
+
+  .portfolio__laptop {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 75.625rem) {
   .advantages__slide {
     width: 100%;
     max-width: 38.4375rem;
+  }
+}
+
+@media (min-width: 76.25rem) {
+  .portfolio-wrap {
+    height: 71.25rem;
+  }
+
+  .portfolio__slider {
+    height: 71.25rem;
+  }
+
+  .portfolio__slide {
+    min-height: 23.75rem;
   }
 }
 
@@ -5268,6 +5750,38 @@ fieldset input::-ms-input-placeholder {
     left: 0.125rem;
     width: 3.125rem;
     height: 1.75rem;
+  }
+}
+
+@media (min-width: 84.375rem) {
+  .portfolio-wrap {
+    height: 75rem;
+  }
+
+  .portfolio__slider {
+    height: 75rem;
+  }
+
+  .portfolio__slide {
+    min-height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
+  }
+
+  .webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
   }
 }
 
@@ -5450,6 +5964,33 @@ fieldset input::-ms-input-placeholder {
     height: 3.0625rem;
     border-radius: 0.1875rem;
     background: #161616;
+  }
+
+  .section-portfolio::before {
+    position: absolute;
+    content: "Преимущества";
+    z-index: 2;
+    top: 49%;
+    left: -2.9375rem;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-family: "Qanelas-Medium";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .section-portfolio::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 0.0625rem;
+    height: 100%;
+    top: 0;
+    left: 3.125rem;
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .section-form::before {
@@ -5651,24 +6192,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-
-  .no-webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
-  }
-
-  .webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
-  }
-}
-
 @media (min-width: 89.0625rem) {
   .header__title__dollar::before {
     top: -0.25rem;
@@ -5686,6 +6209,32 @@ fieldset input::-ms-input-placeholder {
   .header__title__dollar::before {
     top: 0rem;
     left: -0.3125rem;
+  }
+}
+
+@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.png);
+  }
+
+  .webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.webp);
   }
 }
 
@@ -5721,6 +6270,10 @@ fieldset input::-ms-input-placeholder {
     bottom: -1.125rem;
     right: -1.25rem;
     background-image: url(../img/desktop/price-calc/wave-right@1x.webp);
+  }
+
+  .portfolio-wrap {
+    height: 84.5625rem;
   }
 
   .section-form {
@@ -5934,6 +6487,63 @@ fieldset input::-ms-input-placeholder {
     margin-bottom: 6.125rem;
   }
 
+  .portfolio__laptop-content {
+    max-width: 43.4375rem;
+    padding: 3.75rem 0.9375rem 2.5rem 5rem;
+  }
+
+  .portfolio__laptop__pretitle {
+    margin-bottom: 1.5625rem;
+    font-size: 1.375rem;
+    line-height: 3.25rem;
+  }
+
+  .portfolio__laptop__title {
+    font-size: 2.8125rem;
+    line-height: 2.8125rem;
+  }
+
+  .portfolio__laptop-inner {
+    background: url(../img/tablet/portfolio/laptop-flower-tablet-3@1x.png), url(../img/tablet/portfolio/smoke-tablet-2@1x.png);
+    background-position: -190px 37%, -98px 14%;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio__slider {
+    height: 1600px;
+  }
+
+  .portfolio__slide-content {
+    padding: 1.25rem 0 0 0.9375rem;
+  }
+
+  .portfolio__slide-content--sm {
+    max-width: 23.75rem;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 1.875rem;
+    font-size: 1.375rem;
+    line-height: 1.125rem;
+  }
+
+  .portfolio__slide__text {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+
+  .portfolio__slide {
+    width: 100%;
+    max-width: 26.625rem;
+    min-height: 28.1875rem;
+    margin-right: 0;
+  }
+
+  .portfolio__slide__img {
+    width: 100%;
+    max-width: 26.625rem;
+  }
+
   .form-lefttcol {
     flex-basis: 33%;
     max-width: 33%;
@@ -6064,32 +6674,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.png);
-  }
-
-  .webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.webp);
-  }
-}
-
 @media (min-width: 93.75rem) {
   .advantages__slide-content--fourth {
     max-width: 26.75rem;
@@ -6195,39 +6779,19 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 1627px) {
-  .services-leftcol {
-    width: calc(50% - 5px);
-  }
-
-  .services-rightcol {
-    width: calc(50% - 5px);
-  }
-
-  .small-cards-wrap {
-    width: calc(91.66667% - 5px);
+@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .time {
+    background-image: url(../img/desktop/modals/clock@2x.jpg);
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 800px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+@media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.png);
   }
 
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.webp);
   }
 }
 
@@ -6321,6 +6885,33 @@ fieldset input::-ms-input-placeholder {
   .webp .right-wave {
     bottom: -1.25rem;
     right: -0.9375rem;
+  }
+
+  .section-portfolio::before {
+    left: 1.25rem;
+  }
+
+  .section-portfolio::after {
+    left: 7.5rem;
+  }
+
+  .portfolio-wrap {
+    height: 84.5625rem;
+    margin-right: 1.25rem;
+  }
+
+  .portfolio-wrap::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    top: 50%;
+    left: 7.3125rem;
+    transform: translateY(-50%);
+    width: 0.375rem;
+    height: 3.0625rem;
+    box-shadow: 0 0 0.9375rem 0.1875rem rgba(86, 85, 251, 0.51);
+    border-radius: 0.1875rem;
+    background: #e89a2a;
   }
 
   .section-form::before {
@@ -6879,6 +7470,67 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.5625rem;
   }
 
+  .portfolio__laptop {
+    flex-basis: 64.6%;
+    max-width: 64.6%;
+  }
+
+  .portfolio__laptop-content {
+    max-width: 100%;
+    padding: 3.75rem 0.9375rem 2.5rem 13.125rem;
+  }
+
+  .portfolio__laptop__pretitle {
+    margin-bottom: 2.1875rem;
+    font-size: 1.5rem;
+    line-height: 3.375rem;
+  }
+
+  .portfolio__laptop__title {
+    max-width: 37.5rem;
+    font-size: 3.375rem;
+    line-height: 3.375rem;
+  }
+
+  .portfolio__laptop-inner {
+    background: url(../img/desktop/portfolio/laptop-flower-desktop-8@1x.png), url(../img/desktop/portfolio/smoke-desktop@1x.png);
+    background-position: 70% 32%;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio__slider__wrap {
+    max-width: 26.625rem;
+  }
+
+  .portfolio__slider {
+    max-width: 426px;
+  }
+
+  .portfolio__slide-content {
+    padding: 1.875rem 0.625rem 0.625rem 0.9375rem;
+  }
+
+  .portfolio__slide-content--sm {
+    max-width: 23.75rem;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.625rem;
+    line-height: 1.375rem;
+  }
+
+  .portfolio__slide__text {
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+  }
+
+  .portfolio__slide {
+    width: 100%;
+    max-width: 26.625rem;
+    min-height: 28.1875rem;
+  }
+
   .form-rightcol {
     padding: 9.375rem 0.3125rem 0.3125rem 0.3125rem;
   }
@@ -6893,38 +7545,6 @@ fieldset input::-ms-input-placeholder {
     max-height: 29.25rem;
     padding: 2.4375rem;
     background-image: url(../img/desktop/modals/clock@1x.jpg);
-  }
-}
-
-@media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.webp);
-  }
-}
-
-@media screen and (min-width: 120rem) and (min-width: 480px) {
-  .services-leftcol {
-    margin-left: 1.5px;
-    margin-right: 1.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 1.5px;
-    margin-right: 1.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -1.5px;
-    margin-right: -1.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 1.5px;
-    margin-right: 1.5px;
   }
 }
 
@@ -6950,37 +7570,52 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 120.3125rem) {
+  .portfolio__slide-content {
+    max-width: 70%;
+    padding: 0.3125rem;
+  }
+}
+
+@media (min-width: 120.0625rem) {
+  .portfolio__slider {
+    flex-basis: 100%;
+    min-height: 100%;
+  }
+
+  .portfolio__slide__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+
+  .portfolio__slide__text {
+    font-size: 20px;
+  }
+
+  .portfolio__slide {
+    max-width: 26.625rem;
+    height: 31.25rem;
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
   .header__title {
     max-width: 80%;
   }
 }
 
-@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .time {
-    background-image: url(../img/desktop/modals/clock@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 120rem) and (min-width: 1024px) {
+@media screen and (min-width: 120rem) and (min-width: 1627px) {
   .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+    width: calc(50% - 5px);
   }
 
   .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+    width: calc(50% - 5px);
   }
 
   .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
+    width: calc(91.66667% - 5px);
   }
 }
 
@@ -7006,10 +7641,86 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media screen and (min-width: 120rem) and (min-width: 480px) {
+  .services-leftcol {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+  }
+}
+
+@media screen and (min-width: 120rem) and (min-width: 800px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+}
+
+@media screen and (min-width: 120rem) and (min-width: 1024px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+}
+
+@media (min-width: 121.875rem) {
+  .portfolio__laptop {
+    max-width: 97.125rem;
+  }
+}
+
 @media (min-width: 125rem) {
   .advantages__laptop-inner {
     height: 1200px;
     background-position: 35% 37%, 2px 100%;
+  }
+
+  .portfolio__slider {
+    height: 71.25rem;
   }
 }
 
@@ -7026,9 +7737,20 @@ fieldset input::-ms-input-placeholder {
     width: 1.5625rem;
     height: 0.625rem;
   }
+
+  .portfolio__slide-bottom {
+    margin-top: 5%;
+  }
 }
 
 @media (min-width: 160rem) {
+  .portfolio-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 1600px;
+  }
+
   .advantages__slider {
     flex-basis: 100%;
   }
@@ -7058,6 +7780,15 @@ fieldset input::-ms-input-placeholder {
   .advantages__player {
     margin-bottom: 1.875rem;
     transform: translateY(6.25rem);
+  }
+
+  .portfolio__laptop-inner {
+    height: 1900px;
+    background-position: 35% 37%, 2px 100%;
+  }
+
+  .portfolio__slide-bottom {
+    margin-top: 10%;
   }
 }
 
