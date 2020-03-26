@@ -4372,6 +4372,19 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 64rem) and (min-width: 64rem) {
+  .price-calc-card::after {
+    bottom: -7.5rem;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 800px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+}
+
 @media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
   .no-webp .header {
     background-image: url(../img/desktop/header/header-bg@2x.jpg);
@@ -4379,6 +4392,14 @@ fieldset input::-ms-input-placeholder {
 
   .webp .header {
     background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
   }
 
   .no-webp .section-form {
@@ -4422,23 +4443,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 1024px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-}
-
 @media screen and (min-width: 64rem) and (min-width: 1365px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
-  }
-}
-
-@media (min-width: 64rem) and (min-width: 64rem) {
-  .price-calc-card::after {
-    bottom: -7.5rem;
   }
 }
 
@@ -4458,6 +4466,14 @@ fieldset input::-ms-input-placeholder {
   .advantages-wrap {
     height: 78.75rem;
     justify-content: center;
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@1x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@1x.webp);
   }
 
   .section-form {
@@ -5176,7 +5192,7 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 800px) {
+@media screen and (min-width: 64rem) and (min-width: 1024px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
@@ -5628,17 +5644,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.9375rem) {
-  .nav__link {
-    font-size: 1.25rem;
-  }
-
-  .header__title__dollar::before {
-    top: 0rem;
-    left: -0.3125rem;
-  }
-}
-
 @media (min-width: 89.0625rem) {
   .header__title__dollar::before {
     top: -0.25rem;
@@ -5648,29 +5653,14 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
+@media (min-width: 89.9375rem) {
+  .nav__link {
+    font-size: 1.25rem;
   }
 
-  .webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.png);
-  }
-
-  .webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.webp);
+  .header__title__dollar::before {
+    top: 0rem;
+    left: -0.3125rem;
   }
 }
 
@@ -6041,6 +6031,32 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.png);
+  }
+
+  .webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.webp);
+  }
+}
+
 @media (min-width: 93.75rem) {
   .advantages__slide-content--fourth {
     max-width: 26.75rem;
@@ -6069,25 +6085,7 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 100rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
-  }
-}
-
 @media (min-width: 100rem) {
-  .no-webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@1x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@1x.webp);
-  }
-
   .feedback-form-left {
     max-width: 29.375rem;
     margin-right: 5.625rem;
@@ -6164,53 +6162,9 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (min-width: 800px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-}
-
-@media screen and (min-width: 120rem) and (min-width: 1024px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-}
-
-@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .time {
-    background-image: url(../img/desktop/modals/clock@2x.jpg);
+@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
+  .header__title {
+    max-width: 80%;
   }
 }
 
@@ -6862,6 +6816,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/desktop/price-calc/coins@2x.webp);
+  }
+}
+
 @media screen and (min-width: 120rem) and (min-width: 1627px) {
   .services-leftcol {
     width: calc(50% - 5px);
@@ -6876,19 +6840,75 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 120rem) and (-ms-high-contrast: active), (min-width: 120rem) and (-ms-high-contrast: none) {
-  .header__title {
-    max-width: 80%;
+@media screen and (min-width: 120rem) and (min-width: 1024px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 }
 
-@media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.png);
+@media screen and (min-width: 120rem) and (min-width: 1365px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/desktop/price-calc/coins@2x.webp);
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+}
+
+@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .time {
+    background-image: url(../img/desktop/modals/clock@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 120rem) and (min-width: 800px) {
+  .services-leftcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .services-rightcol {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+  }
+
+  .small-cards-wrap {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
 }
 
@@ -6933,28 +6953,6 @@ fieldset input::-ms-input-placeholder {
   .small-cards-wrap {
     margin-left: 1.5px;
     margin-right: 1.5px;
-  }
-}
-
-@media screen and (min-width: 120rem) and (min-width: 1365px) {
-  .services-leftcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .services-rightcol {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
-  }
-
-  .small-cards-wrap {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
   }
 }
 
