@@ -1666,7 +1666,7 @@ template {
 
 .advantages__slide_3::before {
   position: absolute;
-  content: "4";
+  content: "3";
   top: 1.5625rem;
   left: 0.5rem;
   font-family: "Rollestontitlelightitalic";
@@ -1684,7 +1684,7 @@ template {
 
 .advantages__slide_4::before {
   position: absolute;
-  content: "3";
+  content: "4";
   top: 1.5625rem;
   left: 0.5rem;
   font-family: "Rollestontitlelightitalic";
@@ -4801,12 +4801,12 @@ fieldset input::-ms-input-placeholder {
     top: 4.125rem;
   }
 
-  .advantages__slide_3 {
-    margin-bottom: 0;
-  }
-
   .advantages__slide_3::before {
     top: 4.125rem;
+  }
+
+  .advantages__slide_4 {
+    margin-bottom: 0;
   }
 
   .advantages__slide_4::before {
