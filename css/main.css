@@ -5113,8 +5113,8 @@ fieldset input::-ms-input-placeholder {
   .advantages__laptop__img {
     left: -3.375rem;
     bottom: 4.625rem;
-    width: 37.5rem;
-    height: 21.5625rem;
+    width: 33.3125rem;
+    height: 19.125rem;
   }
 
   .advantages__laptop__img img {
@@ -5128,6 +5128,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__laptop__title--brown {
+    max-width: 28.125rem;
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
@@ -6090,6 +6091,13 @@ fieldset input::-ms-input-placeholder {
     line-height: 1.4375rem;
   }
 
+  .advantages__laptop__img {
+    left: -3.375rem;
+    bottom: 4.625rem;
+    width: 33.3125rem;
+    height: 19.125rem;
+  }
+
   .feedback-form-wrap::before {
     position: absolute;
     content: "";
@@ -6442,6 +6450,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__laptop__title--brown {
+    max-width: 37.5rem;
     font-size: 3.375rem;
     line-height: 2.8125rem;
   }
