@@ -5569,8 +5569,8 @@ fieldset input::-ms-input-placeholder {
 
   .footer-social {
     order: 1;
-    flex-basis: 11%;
-    max-width: 11%;
+    flex-basis: 10%;
+    max-width: 10%;
     margin: 0;
     align-self: center;
     height: 4.125rem;
@@ -6672,11 +6672,6 @@ fieldset input::-ms-input-placeholder {
     left: -2.5rem;
     width: 1.5625rem;
     height: 1.3125rem;
-  }
-
-  .footer-social {
-    flex-basis: 10%;
-    max-width: 10%;
   }
 
   .footer-social-list {
