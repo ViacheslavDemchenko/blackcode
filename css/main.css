@@ -5141,7 +5141,6 @@ fieldset input::-ms-input-placeholder {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 1000px;
     background: url(../img/desktop/advantages/advantages-bg-desktop@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 30%, rgba(22, 22, 22, 0.8) 100%);
     background-position: 80% 9%, 2px 100%;
     background-repeat: no-repeat;
