@@ -5104,6 +5104,7 @@ fieldset input::-ms-input-placeholder {
     max-width: 50rem;
     height: 100vh;
     order: 1;
+    padding-bottom: 3.125rem;
   }
 
   .advantages__laptop-content {
@@ -5141,6 +5142,7 @@ fieldset input::-ms-input-placeholder {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    height: 100%;
     background: url(../img/desktop/advantages/advantages-bg-desktop@1x.png), linear-gradient(to top, rgba(22, 22, 22, 0.8) 0%, rgba(87, 86, 251, 0.8) 30%, rgba(22, 22, 22, 0.8) 100%);
     background-position: 80% 9%, 2px 100%;
     background-repeat: no-repeat;
@@ -6440,7 +6442,6 @@ fieldset input::-ms-input-placeholder {
   }
 
   .advantages__laptop__title--brown {
-    max-width: auto;
     font-size: 3.375rem;
     line-height: 2.8125rem;
   }
@@ -7713,8 +7714,12 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-width: 125rem) {
+  .advantages__laptop__title--brown {
+    max-width: 37.5rem;
+  }
+
   .advantages__laptop-inner {
-    height: 1200px;
+    height: 100%;
     background-position: 35% 37%, 2px 100%;
   }
 
@@ -7769,7 +7774,6 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__laptop {
     max-width: 75rem;
-    height: 100rem;
   }
 
   .advantages__laptop__img {
@@ -7778,7 +7782,7 @@ fieldset input::-ms-input-placeholder {
 
   .advantages__player {
     margin-bottom: 1.875rem;
-    transform: translateY(6.25rem);
+    transform: translateY(-1.25rem);
   }
 
   .portfolio__laptop-inner {
