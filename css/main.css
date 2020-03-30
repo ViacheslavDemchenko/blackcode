@@ -2994,12 +2994,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (-ms-high-contrast: active) and (min-width: 30rem), (-ms-high-contrast: none) and (min-width: 30rem) {
-  .header-arrow__icon {
-    bottom: 100px;
-  }
-}
-
 @media (min-width: 30rem) {
   .header {
     background-position: 0px -2px;
@@ -3747,6 +3741,12 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media screen and (-ms-high-contrast: active) and (min-width: 30rem), (-ms-high-contrast: none) and (min-width: 30rem) {
+  .header-arrow__icon {
+    bottom: 100px;
+  }
+}
+
 @media (min-width: 34.375rem) {
   .services-leftcol {
     height: 40.625rem;
@@ -3820,6 +3820,12 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 48.75rem) {
+  .services-leftcol {
+    height: 59.375rem;
+  }
+}
+
 @media (min-width: 48rem) {
   .portfolio__laptop {
     width: 100%;
@@ -3833,78 +3839,6 @@ fieldset input::-ms-input-placeholder {
   .portfolio__laptop__title::before {
     top: 2.5625rem;
     right: 25rem;
-  }
-}
-
-@media (min-width: 48.75rem) {
-  .services-leftcol {
-    height: 59.375rem;
-  }
-}
-
-@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .header {
-    background-image: url(../img/tablet/header/header-bg@2x.jpg);
-  }
-
-  .webp .header {
-    background-image: url(../img/tablet/header/header-bg@2x.webp);
-  }
-
-  .no-webp .section-feedback {
-    background-image: url(../img/tablet/feedback/feedback-bg@2x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/tablet/feedback/feedback-bg@2x.webp);
-  }
-
-  .no-webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/tablet/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/tablet/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .section-form {
-    background-image: url(../img/tablet/form/form-bg@2x.jpg);
-  }
-
-  .webp .section-form {
-    background-image: url(../img/tablet/form/form-bg@2x.webp);
-  }
-
-  .no-webp .feedback-form::after {
-    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.png);
-  }
-
-  .webp .feedback-form::after {
-    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.webp);
-  }
-
-  .no-webp .price-calc-card::before {
-    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.png);
-  }
-
-  .webp .price-calc-card::before {
-    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.webp);
-  }
-
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins@2x.webp);
   }
 }
 
@@ -4703,6 +4637,72 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .header {
+    background-image: url(../img/tablet/header/header-bg@2x.jpg);
+  }
+
+  .webp .header {
+    background-image: url(../img/tablet/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/tablet/feedback/feedback-bg@2x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/tablet/feedback/feedback-bg@2x.webp);
+  }
+
+  .no-webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/tablet/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/tablet/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .section-form {
+    background-image: url(../img/tablet/form/form-bg@2x.jpg);
+  }
+
+  .webp .section-form {
+    background-image: url(../img/tablet/form/form-bg@2x.webp);
+  }
+
+  .no-webp .feedback-form::after {
+    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.png);
+  }
+
+  .webp .feedback-form::after {
+    background-image: url(../img/tablet/feedback/hand_with_iphone@2x.webp);
+  }
+
+  .no-webp .price-calc-card::before {
+    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.png);
+  }
+
+  .webp .price-calc-card::before {
+    background-image: url(../img/tablet/price-calc/notebook-tablet@2x.webp);
+  }
+
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins@2x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins@2x.webp);
+  }
+}
+
 @media (min-width: 53.125rem) {
   .services-leftcol {
     height: 65.625rem;
@@ -4731,73 +4731,14 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .header {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-
-  .no-webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
-  }
-
-  .webp .section-feedback {
-    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
-  }
-
-  .no-webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.jpg);
-  }
-
-  .webp .section-services {
-    background-image: url(../img/desktop/header/header-bg@2x.webp);
-  }
-
-  .no-webp .section-form {
-    background-image: url(../img/desktop/form/form-bg@2x.jpg);
-  }
-
-  .webp .section-form {
-    background-image: url(../img/desktop/form/form-bg@2x.webp);
-  }
-
-  .no-webp .form-right__gears {
-    background-image: url(../img/desktop/feedback/gears@2x.png);
-  }
-
-  .webp .form-right__gears {
-    background-image: url(../img/desktop/feedback/gears@2x.webp);
-  }
-
-  .no-webp .price-calc-card::after {
-    background-image: url(../img/desktop/price-calc/calculator@2x.png);
-  }
-
-  .webp .price-calc-card::after {
-    background-image: url(../img/desktop/price-calc/calculator@2x.webp);
-  }
-
-  .no-webp .price-calc-card::before {
-    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.png);
-  }
-
-  .webp .price-calc-card::before {
-    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.webp);
-  }
-
-  .no-webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins-md@2x.png);
-  }
-
-  .webp .calc-card__card-content::after {
-    background-image: url(../img/tablet/price-calc/coins-md@2x.webp);
+@media screen and (min-width: 64rem) and (min-width: 800px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 1365px) {
+@media screen and (min-width: 64rem) and (min-width: 1024px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
@@ -5824,14 +5765,80 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 1024px) {
-  .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
+@media only screen and (min-width: 64rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .header {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.png);
+  }
+
+  .webp .section-feedback {
+    background-image: url(../img/desktop/feedback/feedback-bg@2x.webp);
+  }
+
+  .no-webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.jpg);
+  }
+
+  .webp .section-services {
+    background-image: url(../img/desktop/header/header-bg@2x.webp);
+  }
+
+  .no-webp .section-form {
+    background-image: url(../img/desktop/form/form-bg@2x.jpg);
+  }
+
+  .webp .section-form {
+    background-image: url(../img/desktop/form/form-bg@2x.webp);
+  }
+
+  .no-webp .form-right__gears {
+    background-image: url(../img/desktop/feedback/gears@2x.png);
+  }
+
+  .webp .form-right__gears {
+    background-image: url(../img/desktop/feedback/gears@2x.webp);
+  }
+
+  .no-webp .price-calc-card::after {
+    background-image: url(../img/desktop/price-calc/calculator@2x.png);
+  }
+
+  .webp .price-calc-card::after {
+    background-image: url(../img/desktop/price-calc/calculator@2x.webp);
+  }
+
+  .no-webp .price-calc-card::before {
+    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.png);
+  }
+
+  .webp .price-calc-card::before {
+    background-image: url(../img/desktop/price-calc/notebook-desktop@2x.webp);
+  }
+
+  .no-webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins-md@2x.png);
+  }
+
+  .webp .calc-card__card-content::after {
+    background-image: url(../img/tablet/price-calc/coins-md@2x.webp);
   }
 }
 
 @media screen and (min-width: 64rem) and (min-width: 320px) {
+  .nav {
+    margin-left: -1.5px;
+    margin-right: -1.5px;
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 480px) {
   .nav {
     margin-left: -1.5px;
     margin-right: -1.5px;
@@ -5844,14 +5851,7 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 480px) {
-  .nav {
-    margin-left: -1.5px;
-    margin-right: -1.5px;
-  }
-}
-
-@media screen and (min-width: 64rem) and (min-width: 800px) {
+@media screen and (min-width: 64rem) and (min-width: 1365px) {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
@@ -5881,13 +5881,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 75.625rem) {
-  .advantages__slide {
-    width: 100%;
-    max-width: 38.4375rem;
-  }
-}
-
 @media (min-width: 75rem) {
   .dialog {
     right: 8%;
@@ -5897,6 +5890,13 @@ fieldset input::-ms-input-placeholder {
     flex-basis: 90%;
     max-width: 90%;
     width: 31.25rem;
+  }
+}
+
+@media (min-width: 75.625rem) {
+  .advantages__slide {
+    width: 100%;
+    max-width: 38.4375rem;
   }
 }
 
@@ -5944,6 +5944,16 @@ fieldset input::-ms-input-placeholder {
 @media (min-width: 84.375rem) {
   .portfolio__slide {
     min-height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
+  }
+
+  .webp .feedback-form::after {
+    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
   }
 }
 
@@ -6402,16 +6412,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 85.3125rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.png);
-  }
-
-  .webp .feedback-form::after {
-    background-image: url(../img/desktop/feedback/hand_with_iphone@2x.webp);
-  }
-}
-
 @media (min-width: 89.0625rem) {
   .header__title__dollar::before {
     top: -0.25rem;
@@ -6429,32 +6429,6 @@ fieldset input::-ms-input-placeholder {
   .header__title__dollar::before {
     top: 0rem;
     left: -0.3125rem;
-  }
-}
-
-@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
-  }
-
-  .no-webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
-  }
-
-  .webp .right-wave {
-    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
-  }
-
-  .no-webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.png);
-  }
-
-  .webp .form-brief-wrap {
-    background-image: url(../img/desktop/form/brief@2x.webp);
   }
 }
 
@@ -6913,7 +6887,41 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 90rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/desktop/price-calc/wave-left@2x.webp);
+  }
+
+  .no-webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.png);
+  }
+
+  .webp .right-wave {
+    background-image: url(../img/desktop/price-calc/wave-right@2x.webp);
+  }
+
+  .no-webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.png);
+  }
+
+  .webp .form-brief-wrap {
+    background-image: url(../img/desktop/form/brief@2x.webp);
+  }
+}
+
 @media (min-width: 93.75rem) {
+  .no-webp .section-services {
+    background-image: url(../img/desktop/services/services-bg@1x.jpg);
+  }
+
+  .webp .section-services {
+    background-image: url(../img/desktop/services/services-bg@1x.webp);
+  }
+
   .advantages__slide-content--fourth {
     max-width: 26.75rem;
   }
@@ -7051,6 +7059,23 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 120.0625rem) {
+  .portfolio__slider {
+    flex-basis: 100%;
+    min-height: 100%;
+  }
+
+  .portfolio__slide__text {
+    font-size: 20px;
+  }
+
+  .portfolio__slide {
+    max-width: 26.625rem;
+    height: 31.25rem;
+    background-size: cover;
+  }
+}
+
 @media only screen and (min-width: 120rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
   .no-webp .calc-card__card-content::after {
     background-image: url(../img/desktop/price-calc/coins@2x.png);
@@ -7070,12 +7095,6 @@ fieldset input::-ms-input-placeholder {
 @media screen and (min-width: 120rem) and (min-width: 1627px) {
   .small-cards-wrap {
     width: calc(91.66667% - 5px);
-  }
-}
-
-@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .time {
-    background-image: url(../img/desktop/modals/clock@2x.jpg);
   }
 }
 
@@ -7900,20 +7919,9 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 120.0625rem) {
-  .portfolio__slider {
-    flex-basis: 100%;
-    min-height: 100%;
-  }
-
-  .portfolio__slide__text {
-    font-size: 20px;
-  }
-
-  .portfolio__slide {
-    max-width: 26.625rem;
-    height: 31.25rem;
-    background-size: cover;
+@media only screen and (min-width: 120rem) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .time {
+    background-image: url(../img/desktop/modals/clock@2x.jpg);
   }
 }
 
