@@ -2252,7 +2252,7 @@ template {
 .services-card--sm {
   position: relative;
   width: 19.0625rem;
-  min-height: 22.3125rem;
+  height: 22.3125rem;
   padding: 0.3125rem;
 }
 
@@ -4832,8 +4832,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .section-services {
-    min-height: 48rem;
-    padding-bottom: 0;
+    height: 43.75rem;
+    padding: 0.625rem 0 0 0;
   }
 
   .section-services__inner {
@@ -5428,13 +5428,18 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--lg {
     width: 16.125rem;
-    height: 18.75rem;
+    height: 19.375rem;
     padding: 0.3125rem 0.3125rem 1.0625rem 0.3125rem;
+    background-size: 100% 45%;
+  }
+
+  .services-card--lg .card__btn {
+    transform: translateY(-0.3125rem);
   }
 
   .services-card--sm {
     width: 14.0625rem;
-    min-height: 19.375rem;
+    height: 19.375rem;
     padding: 0.3125rem 0.3125rem 0.9375rem 0.3125rem;
   }
 
@@ -5452,6 +5457,10 @@ fieldset input::-ms-input-placeholder {
     padding-left: 1.0625rem;
     font-size: 1rem;
     line-height: 1.25rem;
+  }
+
+  .services-card--sm__first .card__btn--small {
+    transform: translateY(7);
   }
 
   .services-card--sm__second {
@@ -6312,30 +6321,40 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--lg {
     width: 17.8125rem;
-    height: 21.0625rem;
+    height: 19.375rem;
     padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
   }
 
   .services-card--sm {
     width: 16.875rem;
-    height: 21.6875rem;
+    height: 18.75rem;
     padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
   }
 
+  .services-card--sm__first {
+    background-size: 100% 38%;
+  }
+
   .services-card--sm__first .card__title {
-    margin-top: 9.0625rem;
+    margin-top: 6.6875rem;
   }
 
   .services-card--sm__first .card-options {
     padding-left: 1.875rem;
   }
 
+  .services-card--sm__first .card__btn--small {
+    transform: translateY(0);
+  }
+
   .services-card--sm__second {
-    height: 21.6875rem;
+    height: 18.75rem;
+    background-size: 74% 40%;
+    background-position: 50% 0%;
   }
 
   .services-card--sm__second .card__title {
-    margin-top: 9.0625rem;
+    margin-top: 6.6875rem;
   }
 
   .services-card--sm__second .card-options {
@@ -6344,7 +6363,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .services-card--sm__second .card__btn--small {
-    transform: translateY(0.4375rem);
+    transform: translateY(0);
   }
 
   .card-options {
@@ -6352,7 +6371,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .card__title {
-    margin-top: 7.5rem;
+    margin-top: 5.75rem;
   }
 
   .column-first {
@@ -7580,7 +7599,7 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--lg {
     width: 22.25rem;
-    min-height: 26rem;
+    height: 26rem;
     padding: 0.3125rem 0.3125rem 1.0625rem 0.3125rem;
   }
 
@@ -7600,7 +7619,7 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--sm__first {
     width: 18.8125rem;
-    min-height: 24.0625rem;
+    height: 24.0625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7622,7 +7641,7 @@ fieldset input::-ms-input-placeholder {
 
   .services-card--sm__second {
     width: 18.8125rem;
-    min-height: 24.0625rem;
+    height: 24.0625rem;
   }
 
   .services-card--sm__second .card__title {
