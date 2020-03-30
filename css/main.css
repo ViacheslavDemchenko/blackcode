@@ -6079,7 +6079,7 @@ fieldset input::-ms-input-placeholder {
     position: absolute;
     content: "";
     z-index: 100;
-    top: 49%;
+    top: 48%;
     left: 2.3125rem;
     transform: translateY(-50%);
     width: 0.375rem;
