@@ -158,6 +158,454 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 }(window, document);
 "use strict";
 
+;
+
+(function () {
+  var blueBlocks = document.querySelectorAll('.block-animate--blue');
+  var yellowBlocks = document.querySelectorAll('.block-animate--yellow');
+
+  function checkDialogVisible(target) {
+    // Все позиции элемента
+    var targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top,
+      left: window.pageXOffset + target.getBoundingClientRect().left,
+      right: window.pageXOffset + target.getBoundingClientRect().right,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    },
+        // Получаем позиции окна
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+    if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+    targetPosition.top < windowPosition.bottom + 100 && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+    targetPosition.left < windowPosition.right) {
+      // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+      // Если элемент полностью видно, то запускаем следующий код
+      return true;
+    }
+  }
+
+  ;
+
+  function blocksAnimateCheck() {
+    blueBlocks.forEach(function (element) {
+      if (checkDialogVisible(element)) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+    yellowBlocks.forEach(function (element) {
+      if (checkDialogVisible(element)) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+  }
+
+  blocksAnimateCheck();
+  window.addEventListener('scroll', function () {
+    blueBlocks.forEach(function (element) {
+      if (checkDialogVisible(element)) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+    yellowBlocks.forEach(function (element) {
+      if (checkDialogVisible(element)) {
+        element.classList.add('active');
+      } else {
+        element.classList.remove('active');
+      }
+    });
+  });
+})();
+"use strict";
+
+;
+
+(function () {
+  var cardLg = document.querySelector('.services-card--lg');
+  var cardLgIcon = document.querySelector('.services-card--lg__icon');
+  var cardSm = document.querySelectorAll('.services-card--sm');
+  var cardSmIcon = document.querySelectorAll('.services-card--sm__icon');
+  cardLg.addEventListener('mouseover', cardsCircleBlue);
+  cardLg.addEventListener('mouseout', cardsCircleGrey);
+
+  function cardsCircleBlue() {
+    cardLg.classList.add('services-card--lg--active');
+    cardLgIcon.classList.add('services-card--lg__icon--active');
+  }
+
+  function cardsCircleGrey() {
+    cardLg.classList.remove('services-card--lg--active');
+    cardLgIcon.classList.remove('services-card--lg__icon--active');
+  }
+
+  function cardsSmCircleBlue() {
+    var _loop = function _loop(i) {
+      cardSm[i].addEventListener('mouseover', function () {
+        cardSm[i].classList.add('services-card--sm--active');
+        cardSmIcon[i].classList.add('services-card--sm__icon--active');
+      });
+    };
+
+    for (var i = 0; i < cardSm.length; i++) {
+      _loop(i);
+    }
+  }
+
+  cardsSmCircleBlue();
+
+  function cardsSmCircleGrey() {
+    var _loop2 = function _loop2(i) {
+      cardSm[i].addEventListener('mouseout', function () {
+        cardSm[i].classList.remove('services-card--sm--active');
+        cardSmIcon[i].classList.remove('services-card--sm__icon--active');
+      });
+    };
+
+    for (var i = 0; i < cardSm.length; i++) {
+      _loop2(i);
+    }
+  }
+
+  cardsSmCircleGrey();
+})();
+"use strict";
+
+;
+
+(function () {
+  function getInternetExplorerVersion() {
+    var rv = -1;
+
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+      var ua = navigator.userAgent;
+      var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+      if (re.exec(ua) != null) rv = parseFloat(RegExp.$1);
+    } else if (navigator.appName == 'Netscape') {
+      var _ua = navigator.userAgent;
+
+      var _re = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+
+      if (_re.exec(_ua) != null) rv = parseFloat(RegExp.$1);
+    }
+
+    return rv;
+  }
+
+  function hideSite() {
+    var site = document.querySelector('.container-fluid');
+    var body = document.getElementsByTagName('body')[0];
+    var siteOverlay = document.createElement('div');
+    var message = document.createElement('p');
+    message.classList.add('ie-text-warning');
+    message.innerHTML = 'Пожалуйста, зайдите с нормального браузера!';
+
+    if (getInternetExplorerVersion() !== -1) {
+      siteOverlay.classList.add('container-fluid--overlay');
+      site.appendChild(message);
+      site.appendChild(siteOverlay);
+      body.classList.add('no-scroll');
+      console.log('Это IE');
+    } else {
+      console.log('Это не IE');
+    }
+  }
+
+  hideSite();
+})();
+"use strict";
+
+;
+
+(function () {
+  // Main modal
+  var headerBtn = document.querySelector('.header__btn');
+  var headerModal = document.querySelector('.main-modal');
+  var modalClose = document.querySelector('.close');
+  var container = document.querySelector('.container-fluid');
+  var body = document.getElementsByTagName('body')[0];
+  var userSelectTime = document.querySelector('.main-modal__user-time');
+  var userTime = document.querySelector('.main-modal-select');
+  var cardBtns = document.querySelectorAll('.card__btn');
+  var questionBtn = document.querySelector('.form-right__btn');
+  var mobileBtn = document.querySelector('.mobile-menu__btn');
+  headerBtn.addEventListener('click', showHeaderModal);
+  mobileBtn.addEventListener('click', showHeaderModal);
+  questionBtn.addEventListener('click', showHeaderModal);
+  modalClose.addEventListener('click', hideHeaderModal);
+  document.addEventListener('keydown', eschideHeaderModal);
+  document.addEventListener('click', clickhideHeaderModal);
+  userTime.addEventListener('change', userSelect);
+
+  function showHeaderModal() {
+    if (headerModal.style.display !== 'block') {
+      headerModal.style.display = 'block';
+      container.classList.add('container-fluid--modal-overlay');
+      body.classList.add('no-scroll');
+    }
+  }
+
+  function hideHeaderModal() {
+    headerModal.style.display = 'none';
+    container.classList.remove('container-fluid--modal-overlay');
+    body.classList.remove('no-scroll');
+  }
+
+  function eschideHeaderModal(e) {
+    if (e.keyCode === 27) {
+      hideHeaderModal();
+    }
+  }
+
+  function clickhideHeaderModal(e) {
+    var target = e.target;
+
+    if (target == container) {
+      hideHeaderModal();
+    }
+  }
+
+  function userSelect() {
+    if (userTime.selectedIndex == 3) {
+      userTime.style.display = 'none';
+      userSelectTime.style.display = 'block';
+    }
+  }
+
+  function cardBtnModalShow() {
+    for (var i = 0; i < cardBtns.length; i++) {
+      cardBtns[i].addEventListener('click', function () {
+        showHeaderModal();
+      });
+    }
+  }
+
+  cardBtnModalShow();
+})();
+"use strict";
+
+;
+
+(function () {
+  var el = document.querySelector('.section-advantages');
+  var menuSticky = document.querySelector('.header-top--sticky');
+  var screenWidth = window.screen.availWidth;
+
+  function menuStickyCheck() {
+    var offsetTop = el.getBoundingClientRect().top + document.body.scrollTop;
+
+    if (offsetTop <= 0) {
+      if (screenWidth >= 1024) {
+        menuSticky.classList.add('active');
+      }
+    } else {
+      menuSticky.classList.remove('active');
+    }
+  }
+
+  menuStickyCheck();
+  window.addEventListener('scroll', function () {
+    screenWidth = window.screen.availWidth;
+
+    if (screenWidth >= 1024) {
+      menuStickyCheck();
+    } else {
+      menuSticky.classList.remove('active');
+    }
+  });
+  window.addEventListener('resize', function () {
+    screenWidth = window.screen.availWidth;
+
+    if (screenWidth >= 1024) {
+      menuStickyCheck();
+    } else {
+      menuSticky.classList.remove('active');
+    }
+  });
+})();
+"use strict";
+
+;
+
+(function () {
+  var hamburger = document.getElementById('menu__button');
+  var menu = document.querySelector('.nav-list');
+  var menuLinks = document.querySelectorAll('.nav__link');
+  var body = document.getElementsByTagName('body')[0];
+  var logoText = document.querySelector('.logo__link');
+  var social = document.querySelector('.social-list');
+  var mobileBtn = document.querySelector('.mobile-menu__btn'); // let screenWidth = window.screen.availWidth;
+
+  var timerShow;
+  hamburger.addEventListener('click', mobileMenu);
+
+  function mobileMenu() {
+    // window.addEventListener('resize', () => {
+    //     screenWidth = window.screen.availWidth;
+    //     if (screenWidth > 1024) {
+    //         menuLinksShow();
+    //         hamburger.classList.remove('active');
+    //         menu.classList.remove('nav-list--open');
+    //         body.classList.remove('no-scroll');
+    //     } else {
+    //         // menuLinksHide();
+    //     }
+    // });
+    if (!hamburger.classList.contains('active')) {
+      timerShow = setTimeout(menuLinksShow, 500);
+      hamburger.classList.add('active');
+      menu.classList.add('nav-list--open');
+      body.classList.add('no-scroll');
+      logoText.classList.add('logo__link--mobile-open');
+      mobileBtn.classList.add('mobile-menu__btn--animate');
+      social.classList.add('social-list--animate');
+    } else {
+      setTimeout(menuLinksHide, 250);
+      hamburger.classList.remove('active');
+      menu.classList.remove('nav-list--open');
+      body.classList.remove('no-scroll');
+      logoText.classList.remove('logo__link--mobile-open');
+      mobileBtn.classList.remove('mobile-menu__btn--animate');
+      social.classList.remove('social-list--animate');
+    }
+  }
+
+  function menuLinksShow() {
+    menuLinks.forEach(function (link) {
+      link.style.opacity = '1';
+    });
+  }
+
+  function menuLinksHide() {
+    menuLinks.forEach(function (link) {
+      link.style.opacity = '0';
+    });
+  }
+})();
+"use strict";
+
+;
+
+(function () {
+  // Quiz modal
+  var quizBtn = document.querySelector('.card-content__btn');
+  var quizModal = document.querySelector('.quiz');
+  var quizClose = document.querySelector('.close--quiz');
+  var quizFinalClose = document.getElementById('close--quiz');
+  var container = document.querySelector('.container-fluid');
+  var body = document.getElementsByTagName('body')[0];
+  var questionBtnPrev = document.querySelector('.quiz__btn--left');
+  var questionsBtnNext = document.querySelector('.quiz__btn--right');
+  var quizFinal = document.querySelector('.quiz-final');
+  var briefBtn = document.querySelector('.brief-btn');
+  quizBtn.addEventListener('click', showQuizModal);
+  briefBtn.addEventListener('click', showQuizModal);
+  quizClose.addEventListener('click', hideQuizModal);
+  quizFinalClose.addEventListener('click', hideQuizFinalModal);
+  document.addEventListener('keydown', eschideQuizModal);
+  document.addEventListener('click', clickhideQuizModal);
+  questionsBtnNext.addEventListener('click', nextQuestion);
+  questionBtnPrev.addEventListener('click', prevQuestion);
+
+  function showQuizModal() {
+    quizModal.style.display = 'block';
+    container.classList.add('container-fluid--modal-overlay');
+    body.classList.add('no-scroll');
+  }
+
+  function hideQuizModal() {
+    quizModal.style.display = 'none';
+    container.classList.remove('container-fluid--modal-overlay');
+    body.classList.remove('no-scroll');
+  }
+
+  function showQuizFinalModal() {
+    quizFinal.classList.add('quiz-final--active');
+    container.classList.add('container-fluid--modal-overlay');
+    body.classList.add('no-scroll');
+  }
+
+  function hideQuizFinalModal() {
+    quizFinal.classList.remove('quiz-final--active');
+    container.classList.remove('container-fluid--modal-overlay');
+    body.classList.remove('no-scroll');
+  }
+
+  function eschideQuizModal(e) {
+    if (e.keyCode === 27) {
+      hideQuizModal();
+      hideQuizFinalModal();
+    }
+  }
+
+  function clickhideQuizModal(e) {
+    var target = e.target;
+
+    if (target == container) {
+      hideQuizModal();
+      hideQuizFinalModal();
+    }
+  }
+
+  var slideIndex = 1;
+  showQuestions(slideIndex);
+  /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+
+  function nextQuestion() {
+    showQuestions(slideIndex += 1);
+  }
+  /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+
+
+  function prevQuestion() {
+    showQuestions(slideIndex -= 1);
+  }
+  /* Устанавливает текущий слайд */
+
+
+  function currentQuestion(n) {
+    showQuestions(slideIndex = n);
+  }
+  /* Основная функция слайдера */
+
+
+  function showQuestions(n) {
+    var i;
+    var questions = document.querySelectorAll('.question__item');
+    var questionsNum = document.querySelectorAll('.question');
+
+    if (n > questions.length) {
+      slideIndex = 1;
+      hideQuizModal();
+      showQuizFinalModal();
+    }
+
+    if (n < 1) {
+      slideIndex = questions.length;
+    }
+
+    for (var _i = 0; _i < questions.length; _i++) {
+      questions[_i].classList.remove('question__item--active');
+
+      questionsNum[_i].classList.remove('question--active');
+    }
+
+    questions[slideIndex - 1].classList.add('question__item--active');
+    questionsNum[slideIndex - 1].classList.add('question--active');
+  }
+})();
+"use strict";
+
 $(document).ready(function () {
   var screenWidth = window.screen.availWidth;
   var advantagesSlider = document.querySelector('.advantages__slider');
@@ -209,6 +657,103 @@ $(document).ready(function () {
     }
   });
 });
+"use strict";
+
+;
+
+(function () {
+  var text = ['Нам важно, ', 'чтобы ведение вашего\n', 'бизнеса протекало как можно\n', 'комфортнее и для этого выделили\n', 'отдельные услуги для небольших\n', 'задач'];
+
+  function typeText() {
+    var line = 0;
+    var count = 0;
+    var out = '';
+    var blackOut = '';
+    var textOut = document.querySelector('.dialog__text--blue');
+    var span = document.createElement('span');
+    span.classList.add('dialog__text');
+
+    function typeLine() {
+      var interval = setTimeout(function () {
+        if (line == 0) {
+          out += text[line][count];
+          textOut.innerHTML = "".concat(out, " |");
+        } else {
+          textOut.innerHTML = out;
+          blackOut += text[line][count];
+          span.innerHTML = "".concat(blackOut, " |");
+          textOut.appendChild(span);
+        }
+
+        count++;
+
+        if (count >= text[line].length) {
+          count = 0;
+          line++;
+
+          if (line == text.length) {
+            clearTimeout(interval);
+            span.innerHTML = blackOut;
+            return true;
+          }
+        }
+
+        typeLine();
+      }, getRandomNum(getRandomNum(150 * 2.5)));
+    }
+
+    typeLine();
+
+    function getRandomNum(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+  } // Запуск функции печати текста после появления соответствующего блока на экране через скролл
+
+
+  var element = document.querySelector('#target');
+
+  function checkDialogVisible(target) {
+    // Все позиции элемента
+    var targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top,
+      left: window.pageXOffset + target.getBoundingClientRect().left,
+      right: window.pageXOffset + target.getBoundingClientRect().right,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    },
+        // Получаем позиции окна
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+    if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+    targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+    targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+    targetPosition.left < windowPosition.right) {
+      // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+      // Если элемент полностью видно, то запускаем следующий код
+      return true;
+    }
+  }
+
+  ; // Снимаем обработчик события после совершения действия или выполнения условия
+
+  var handler = function handler(event) {
+    if (checkDialogVisible(element)) {
+      typeText();
+      window.removeEventListener('scroll', handler);
+    }
+  };
+
+  window.addEventListener('scroll', handler); // А также запустим функцию печати текста сразу. А то вдруг, элемент изначально видно
+
+  if (checkDialogVisible(element)) {
+    typeText();
+    window.removeEventListener('scroll', handler);
+  }
+})();
 "use strict";
 
 /*!

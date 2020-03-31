@@ -88,8 +88,8 @@
         </div>
       </header>
       <section class="section-advantages">
-        <div class="section-advantages-wrap">
-          <div class="advantages-main-wrap block-animate--blue block-animate--blue--md-three">
+        <div class="section-advantages-wrap block-animate--blue">
+          <div class="advantages-main-wrap">
             <div class="container container--no-padding">
               <div class="advantages-wrap">
                 <div class="advantages__slider__wrap">
@@ -165,18 +165,16 @@
         </div>
       </section>
       <section class="section-services">
-        <div class="section-services__inner">
+        <div class="section-services__inner block-animate--blue">
           <div class="container">
             <div class="services-wrap">
               <div class="services-leftcol">
                 <div class="leftcol-content">
                   <h4 class="leftcol__pretitle">Наши сайты <span class="leftcol__pretitle--yellow">привлекают клиентов</span></h4>
                   <h2 class="leftcol__title"> Мы позаботились о том, чтобы решить все задачи</h2>
-                  <div class="dialog-block">
-                    <div class="dialog">
-                      <p class="dialog__text--blue"> </p>
-                    </div>
-                  </div>
+                </div>
+                <div class="dialog" id="target">
+                  <p class="dialog__text--blue"></p>
                 </div>
               </div>
               <div class="services-rightcol">
@@ -232,7 +230,7 @@
       <section class="section-price-calc">
         <div class="left-wave"></div>
         <div class="right-wave"></div>
-        <div class="section-price-calc__inner">
+        <div class="section-price-calc__inner block-animate--blue">
           <div class="price-calc-card-wrap">
             <div class="price-calc-card">
               <div class="calc-card__card-content">
@@ -245,7 +243,7 @@
         </div>
       </section>
       <section class="section-portfolio">
-        <div class="portfolio-wrap block-animate--yellow block-animate--yellow--md-one">
+        <div class="portfolio-wrap block-animate--yellow">
           <div class="portfolio__laptop">
             <div class="portfolio__laptop-inner">
               <div class="portfolio__laptop-content">
@@ -315,7 +313,7 @@
           </div>
         </div>
       </section>
-      <section class="section-form__wrap block-animate--yellow block-animate--yellow--md-one">
+      <section class="section-form__wrap block-animate--yellow">
         <div class="section-form">
           <div class="form-rightcol">
             <form class="form" id="form-rightcol" action="" method="post">
@@ -379,6 +377,262 @@
           </div>
         </div>
       </footer>
+      <div class="header-top header-top--sticky">
+        <div class="logo logo--sticky"><a class="logo__link" href="#">BLACKCODE.<span class="logo--white">agency</span></a></div>
+        <nav class="nav nav--sticky" role="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="nav-list nav-list--sticky">
+            <li class="nav__item--sticky" role="menuitem"><a class="nav__link" itemprop="url" href="#">Почему мы?</a></li>
+            <li class="nav__item--sticky" role="menuitem"><a class="nav__link" itemprop="url" href="#">Услуги</a></li>
+            <li class="nav__item--sticky" role="menuitem"><a class="nav__link" itemprop="url" href="#">Все проекты</a></li>
+            <li class="nav__item--sticky nav__item--sticky-phone" role="menuitem"><a class="nav__link nav__link--sticky" href="tel:88005553535">8 (901)-568-92-70
+                <p class="phone-text">Позвонить</p></a></li>
+            <li class="nav__item--sticky" role="menuitem"><a class="nav__link" itemprop="url" href="#">Контакты</a></li>
+            <div class="social--sticky">
+              <ul class="social-list social-list--sticky">
+                <li class="social__item"><a class="social__link" href="#" aria-label="Инстаграм">
+                    <svg class="social__icon" width="32" height="32">
+                      <use xlink:href="img/icons/sprite.svg#instagram-icon"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="https://vk.com/blackcodeagency" target="_blank" rel="nofollow noopener" aria-label="Вконтакте">
+                    <svg class="social__icon" width="28" height="28">
+                      <use xlink:href="img/icons/sprite.svg#vk-icon"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-modal">
+        <div class="main-modal__inner"> 
+          <div class="main-modal__top">
+            <div class="logo logo--modal"><a class="logo__link logo__link--modal" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
+            <div class="close"></div>
+          </div>
+          <div class="woman">
+            <picture>
+              <source srcset="img/desktop/modals/woman-desktop@1x.webp 1x, img/desktop/modals/woman-desktop@1x.webp 2x" media="(min-width: 1440px)" type="image/webp"><img src="img/desktop/modals/woman-desktop@1x.png" alt="Проект сайта услуг лифтинга" srcset="img/desktop/modals/woman-desktop@1x.png 2x" width="465" height="609">
+            </picture>
+          </div>
+          <form class="main-modal__form" id="form-header" action="" method="post">
+            <div class="main-modal__form-content">
+              <h3 class="main-modal__form-title">Мы свяжемся с вами</h3>
+            </div>
+            <fieldset class="main-modal__form-fieldset">
+              <legend class="main-modal__form-subtitle">Для этого заполните форму ниже  своими контактными данными</legend>
+              <div class="main-modal__form__inputs-wrap">
+                <div class="input-wrap">
+                  <label for="modal__username">
+                    <svg class="main-modal__icon-user" width="24" height="26">
+                      <use xlink:href="img/icons/sprite.svg#user-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="modal__username" type="text" name="modal__username" placeholder="Имя*" required>
+                </div>
+                <div class="input-wrap">
+                  <label for="modal__phone">
+                    <svg class="main-modal__icon-phone" width="23" height="32">
+                      <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                    </svg>
+                  </label>
+                  <input id="modal__phone" type="tel" name="modal__phone" placeholder="Телефон*" required>
+                </div>
+                <p class="main-modal-qoestion">Когда вам перезвонить ?</p>
+                <select class="main-modal-select" name="call-time">Выберите время звонка
+                  <option class="select__option" value="Выберите время звонка">Выберите время звонка</option>
+                  <option class="select__option" value="С 12 до 6">С 12 до 6</option>
+                  <option class="select__option" value="С 6 до 9">С 6 до 9</option>
+                  <option class="select__option" value="Свой вариант">Свой вариант</option>
+                </select>
+                <div class="input-wrap">
+                  <textarea class="main-modal__user-time" name="main-modal__user-time" placeholder="Введите свой вариант"></textarea>
+                </div>
+                <input class="btn main-modal__form-submit" type="submit" name="submit" value="Заказать">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="quiz-final">
+        <div class="main-modal__inner main-modal__inner--quiz">
+          <div class="main-modal__top">
+            <div class="logo logo--modal"><a class="logo__link logo__link--modal" href="#">BLACKCODE.<span class="logo--black">agency</span></a></div>
+            <div class="close" id="close--quiz"></div>
+          </div>
+          <form class="main-modal__form main-modal__form--quiz" id="modal_form--quiz" action="" method="post">
+            <div class="main-modal__form-content">
+              <h3 class="main-modal__form-title">Спасибо за ответы!</h3>
+            </div>
+            <fieldset class="main-modal__form-fieldset">
+              <legend class="main-modal__form-subtitle main-modal__form-subtitle--quiz">Как вы хотите узнать стоимость? 
+                <p class="main-modal__form-subtitle--blue">Позвонить <span class="main-modal__form-subtitle">или </span><span class="main-modal__form-subtitle--blue">отправить на почту </span><span class="main-modal__form-subtitle">?</span></p>
+              </legend>
+              <div class="main-modal__form__inputs-wrap main-modal__form__inputs-wrap--quiz">
+                <div class="input-wrap">
+                  <label for="quiz__username">
+                    <svg class="main-modal__icon-user main-modal__icon-user--quiz" width="24" height="26">
+                      <use xlink:href="img/icons/sprite.svg#user-icon"></use>
+                    </svg>
+                  </label>
+                  <input class="quiz__phone" id="quiz__username" type="tel" name="quiz__username" placeholder="Телефон*" required>
+                  <p class="feedback-form__or--quiz">или</p>
+                </div>
+                <div class="input-wrap">
+                  <label for="quiz__email">
+                    <svg class="main-modal__icon-phone main-modal__icon-phone--quiz" width="23" height="32">
+                      <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                    </svg>
+                  </label>
+                  <input class="quiz__email" id="quiz__email" type="email" name="quiz__email" placeholder="E-mail*" required>
+                </div>
+                <input class="btn main-modal__form-submit main-modal__form-submit--quiz" type="submit" name="submit" value="Получить рассчет">
+                <input class="input--hidden" id="form-first-answer" type="text" name="form-first-answer" value="">
+                <input class="input--hidden" id="form-second-answer" type="text" name="form-second-answer" value="">
+                <input class="input--hidden" id="form-third-answer" type="text" name="form-third-answer" value="">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="quiz">
+        <div class="quiz__inner"> 
+          <div class="close close--quiz"></div>
+          <div class="quiz__inner-top">
+            <ul class="question-number">
+              <li class="question question--active">1 вопрос</li>
+              <li class="question">2 вопрос</li>
+              <li class="question">3 вопрос</li>
+            </ul>
+          </div>
+          <ul class="question-list">
+            <li class="question__item question__item--active">
+              <ul class="answer-list">
+                <li class="answer__item">
+                  <div class="progress-bar">
+                    <div class="progress-bar__inner progress-bar__inner--first"></div>
+                  </div>
+                  <h4 class="question__item-title">Какой тип сайта вам нужен?</h4>
+                  <div class="answer__item__inner">
+                    <div class="answer__item__top">
+                      <div class="input-block">
+                        <input id="landing" type="radio" name="site-name" value="Лендинг">
+                        <label for="landing">Лендинг</label>
+                      </div>
+                      <div class="input-block">
+                        <input id="multi-page" type="radio" name="site-name" value="Многостраничник">
+                        <label for="multi-page">Многостраничник</label>
+                      </div>
+                      <div class="input-block"> 
+                        <input id="longrid" type="radio" name="site-name" value="Лонгрид">
+                        <label for="longrid">Лонгрид</label>
+                      </div>
+                    </div>
+                    <div class="answer__item__center">
+                      <div class="input-block">
+                        <input id="business-site" type="radio" name="site-name" value="Визитка">
+                        <label for="business-site">Визитка</label>
+                      </div>
+                      <div class="input-block input-block--left"> 
+                        <input id="shop" type="radio" name="site-name" value="Интернет-магазин">
+                        <label class="translate-left" for="shop">Интернет-магазин</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="answer__item__bottom">
+                    <div class="user-answer-block">
+                      <label for="user-answer-site">Ваш вариант ответа</label>
+                      <input id="user-answer-site" type="text" name="user-answer-site">
+                    </div>
+                  </div>
+                  <input class="input--hidden" id="first-answer" type="text" name="first-answer" value="">
+                </li>
+              </ul>
+            </li>
+            <li class="question__item">
+              <ul class="answer-list">
+                <li class="answer__item">
+                  <div class="progress-bar">
+                    <div class="progress-bar__inner progress-bar__inner--second"></div>
+                  </div>
+                  <h4 class="question__item-title question__item-title--second">Какие сроки разработки?</h4>
+                  <div class="answer__item__inner answer__item__inner--second">
+                    <div class="answer__item__top answer__item__top--second">
+                      <div class="input-block">
+                        <input id="seven-days" type="radio" name="period" value="до 7 дней">
+                        <label for="seven-days">до 7 дней</label>
+                      </div>
+                      <div class="input-block">
+                        <input id="two-weeks" type="radio" name="period" value="до 2 недель">
+                        <label for="two-weeks">до 2 недель</label>
+                      </div>
+                      <div class="input-block"> 
+                        <input id="thirty-days" type="radio" name="period" value="до 30 дней">
+                        <label for="thirty-days">до 30 дней</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="answer__item__bottom">
+                    <div class="user-answer-block">
+                      <label for="user-answer-period">Ваш вариант ответа</label>
+                      <input id="user-answer-period" type="text" name="user-answer-period">
+                    </div>
+                  </div>
+                  <input class="input--hidden" id="second-answer" type="text" name="second-answer" value="">
+                </li>
+              </ul>
+            </li>
+            <li class="question__item">
+              <ul class="answer-list">
+                <li class="answer__item">
+                  <div class="progress-bar">
+                    <div class="progress-bar__inner progress-bar__inner--third"></div>
+                  </div>
+                  <h4 class="question__item-title">Что из перечисленного вы готовы предоставить? </h4>
+                  <div class="answer__item__inner answer__item__inner--center--third">
+                    <div class="answer__item__top answer__item__top--center answer__item__top--third">
+                      <div class="input-block">
+                        <input id="text" type="radio" name="material" value="Текст">
+                        <label for="text">Текст</label>
+                      </div>
+                      <div class="input-block">
+                        <input id="pictures" type="radio" name="material" value="Изображения">
+                        <label for="pictures">Изображения</label>
+                      </div>
+                    </div>
+                    <div class="answer__item__center answer__item__center--center answer__item__center--third">
+                      <div class="input-block"> 
+                        <input id="nothing" type="radio" name="material" value="Ничего">
+                        <label for="nothing">Ничего</label>
+                      </div>
+                      <div class="input-block input-block--left">
+                        <input id="technical-task" type="radio" name="material" value="Техническое задание">
+                        <label for="technical-task">Техническое задание</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="answer__item__bottom">
+                    <div class="user-answer-block">
+                      <label for="user-answer-material">Ваш вариант ответа</label>
+                      <input id="user-answer-material" type="text" name="user-answer-material">
+                    </div>
+                  </div>
+                  <input class="input--hidden" id="third-answer" type="text" name="third-answer" value="">
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="answer__item__btns">
+            <button class="quiz__btn--left"></button>
+            <button class="quiz__btn--right">  </button>
+          </div>
+        </div>
+      </div>
+      <div class="time">
+        <div class="close close--time"></div>
+        <div class="time-content">
+          <div class="time__title">Спасибо за заявку</div>
+          <div class="time__text">Мы уже увидели вашу заявку и скоро свяжемся с вами !</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
