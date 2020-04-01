@@ -2957,7 +2957,7 @@ template {
 
 .services-card-wrap {
   position: relative;
-  margin: 0 0 1.75rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .services-card-wrap::before {
@@ -4548,6 +4548,10 @@ fieldset input::-ms-input-placeholder {
     padding: 1.25rem 0 0 3.3125rem;
   }
 
+  .services-card-wrap {
+    margin-bottom: 1.75rem;
+  }
+
   .services-card-wrap::before {
     position: absolute;
     content: "1";
@@ -4595,6 +4599,10 @@ fieldset input::-ms-input-placeholder {
     top: 0.75rem;
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  .services-card--sm__first {
+    margin-bottom: 2.9375rem;
   }
 
   .services-card--sm__first .card__title {
