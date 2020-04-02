@@ -3581,6 +3581,7 @@ fieldset input::-ms-input-placeholder {
 }
 
 .column-first__text {
+  max-width: 14.375rem;
   margin-bottom: 1.875rem;
   font-family: "Qanelas-Medium";
   font-weight: normal;
@@ -3705,6 +3706,7 @@ fieldset input::-ms-input-placeholder {
   flex-direction: column;
   margin-top: -1.375rem;
   margin-left: auto;
+  transform: translateY(4.6875rem);
 }
 
 .footer-social__item:nth-child(1) {
@@ -4810,6 +4812,7 @@ fieldset input::-ms-input-placeholder {
 
   .footer-social {
     margin: 0 0 -2.5rem auto;
+    transform: translateY(2.8125rem);
   }
 }
 
@@ -5764,8 +5767,11 @@ fieldset input::-ms-input-placeholder {
     padding: 0;
     margin: 0;
     margin-left: auto;
-    flex-basis: 33%;
-    max-width: 33%;
+    margin-right: 3.125rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 45%;
+    max-width: 45%;
   }
 
   .contacts-list {
@@ -5781,11 +5787,12 @@ fieldset input::-ms-input-placeholder {
   }
 
   .footer-social {
-    flex-basis: 8%;
-    max-width: 8%;
+    flex-basis: 4%;
+    max-width: 4%;
     margin: 0;
     margin-bottom: 1.375rem;
     align-items: flex-end;
+    transform: translateY(0);
   }
 
   .time {
@@ -7182,8 +7189,6 @@ fieldset input::-ms-input-placeholder {
     padding-left: 1.5625rem;
     flex-basis: 33%;
     max-width: 33%;
-    display: flex;
-    justify-content: flex-end;
   }
 
   .contacts-list {
