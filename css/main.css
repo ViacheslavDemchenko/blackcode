@@ -1526,10 +1526,6 @@ template {
   top: 0.3125rem;
 }
 
-.translate-left {
-  transform: translateX(-1.8125rem);
-}
-
 .quiz-final {
   position: fixed;
   z-index: 11000;
@@ -1638,7 +1634,7 @@ template {
   display: block;
 }
 
-.nav__item:nth-child(4)::after {
+.nav__item:nth-child(7)::after {
   position: absolute;
   content: "";
   display: none;
@@ -1842,6 +1838,15 @@ template {
   line-height: 2.125rem;
   letter-spacing: 0.08em;
   color: #eaa627;
+}
+
+.logo__link--mobile-open {
+  position: fixed;
+  z-index: 9999;
+  margin: auto;
+  top: 1.75rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo--white {
@@ -2905,7 +2910,7 @@ template {
   z-index: 2;
   right: 6.5%;
   top: 23vh;
-  height: 16vh;
+  min-height: 6.5rem;
   width: 57vw;
   max-width: 15.625rem;
   padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
@@ -3933,16 +3938,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media only screen and (min-width: 30rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/mobile/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/mobile/price-calc/wave-left@2x.webp);
-  }
-}
-
 @media (min-width: 30rem) {
   .header {
     background-position: 0px -2px;
@@ -4818,6 +4813,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 30rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/mobile/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/mobile/price-calc/wave-left@2x.webp);
+  }
+}
+
 @media (min-width: 31.25rem) {
   .dialog {
     top: 27vh;
@@ -4916,6 +4921,12 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 48.75rem) {
+  .services-leftcol {
+    height: 59.375rem;
+  }
+}
+
 @media (min-width: 48rem) {
   .portfolio__laptop {
     width: 100%;
@@ -4929,22 +4940,6 @@ fieldset input::-ms-input-placeholder {
   .portfolio__laptop__title::before {
     top: 2.5625rem;
     right: 25rem;
-  }
-}
-
-@media (min-width: 48.75rem) {
-  .services-leftcol {
-    height: 59.375rem;
-  }
-}
-
-@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
-  .no-webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
-  }
-
-  .webp .left-wave {
-    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
   }
 }
 
@@ -5809,6 +5804,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media only screen and (min-width: 50rem) and (-Webkit-min-device-pixel-ratio: 1.5) {
+  .no-webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.png);
+  }
+
+  .webp .left-wave {
+    background-image: url(../img/tablet/price-calc/wave-left@2x.webp);
+  }
+}
+
 @media (min-width: 52.5rem) {
   .dialog {
     top: 62vh;
@@ -5866,10 +5871,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 1365px) {
+@media (min-width: 64rem) and (-webkit-min-device-pixel-ratio: 2), (min-width: 64rem) and (min-resolution: 192dpi) {
+  .webp .section-form {
+    background-image: url(../img/desktop/form/form-bg@2x.webp);
+  }
+}
+
+@media screen and (min-width: 64rem) and (min-width: 320px) {
   .nav {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
+    margin-left: -1.5px;
+    margin-right: -1.5px;
   }
 }
 
@@ -5887,10 +5898,9 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media screen and (min-width: 64rem) and (min-width: 320px) {
-  .nav {
-    margin-left: -1.5px;
-    margin-right: -1.5px;
+@media (min-width: 64rem) and (min-width: 64rem) {
+  .price-calc-card::after {
+    bottom: -7.5rem;
   }
 }
 
@@ -5976,8 +5986,8 @@ fieldset input::-ms-input-placeholder {
 
   .main-modal {
     width: 95%;
-    max-width: 64.25rem;
-    min-height: 44.625rem;
+    max-width: 50rem;
+    min-height: 31.25rem;
   }
 
   .main-modal__inner {
@@ -5987,6 +5997,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .main-modal__form {
+    width: 21.875rem;
     margin: 0 3.125rem 0 auto;
     padding: 0.625rem;
   }
@@ -5997,14 +6008,14 @@ fieldset input::-ms-input-placeholder {
 
   .main-modal__form-title {
     margin: 0;
-    font-size: 3.375rem;
-    line-height: 5.3125rem;
+    font-size: 2.0625rem;
+    line-height: 3.5rem;
   }
 
   .main-modal__form-subtitle {
     margin-bottom: 1.25rem;
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 
   .main-modal__form-subtitle--quiz {
@@ -6029,6 +6040,7 @@ fieldset input::-ms-input-placeholder {
 
   .main-modal__form__inputs-wrap input[name="modal__username"],
   .main-modal__form__inputs-wrap input[name="modal__phone"] {
+    max-width: 15.625rem;
     font-size: 1.125rem;
     line-height: 2.625rem;
   }
@@ -6040,6 +6052,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .main-modal-select {
+    max-width: 15.625rem;
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
@@ -6059,15 +6072,17 @@ fieldset input::-ms-input-placeholder {
 
   .woman {
     position: absolute;
-    bottom: -1.4375rem;
+    bottom: 1.375rem;
     left: -2.9375rem;
     display: block;
+    width: 25rem;
+    height: 31.25rem;
   }
 
   .quiz__inner {
     height: 100%;
     width: 100%;
-    padding: 6.25rem 6.25rem 5.625rem 6.25rem;
+    padding: 2.5rem 6.25rem 2.5rem 6.25rem;
   }
 
   .question {
@@ -6199,15 +6214,24 @@ fieldset input::-ms-input-placeholder {
   }
 
   .answer__item__btns {
-    bottom: 7.5rem;
+    bottom: 4.625rem;
     right: 10.625rem;
     margin: 0;
   }
 
+  .close--quiz {
+    right: 1.25rem;
+    top: 0.9375rem;
+  }
+
+  .translate-left {
+    transform: translateX(-1.375rem);
+  }
+
   .quiz-final {
     width: 90%;
-    max-width: 62.9375rem;
-    max-height: 38.5625rem;
+    max-width: 53.125rem;
+    max-height: 34.375rem;
   }
 
   .quiz-final input {
@@ -6217,14 +6241,14 @@ fieldset input::-ms-input-placeholder {
   .no-webp .quiz-final {
     background: url(../img/desktop/modals/woman-desktop-2@1x.png), linear-gradient(to left, #fafafa 59%, #ffffff 0%);
     background-repeat: no-repeat !important;
-    background-position: -136px -64%, center !important;
+    background-position: -136px -39%, center !important;
     background-size: cover !important;
   }
 
   .webp .quiz-final {
     background: url(../img/desktop/modals/woman-desktop-2@1x.webp), linear-gradient(to left, #fafafa 59%, #ffffff 0%);
     background-repeat: no-repeat !important;
-    background-position: -136px -64%, center !important;
+    background-position: -136px -39%, center !important;
     background-size: cover !important;
   }
 
@@ -6276,14 +6300,14 @@ fieldset input::-ms-input-placeholder {
     display: block;
   }
 
-  .nav__item:nth-child(1) {
+  .nav__item:nth-child(4) {
     border-bottom: 1px solid transparent;
     -o-border-image: linear-gradient(to right, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.53) 40%);
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.53) 40%);
     border-image-slice: 1;
   }
 
-  .nav__item:nth-child(2) {
+  .nav__item:nth-child(5) {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.53);
@@ -6292,7 +6316,7 @@ fieldset input::-ms-input-placeholder {
     border-image-slice: 1;
   }
 
-  .nav__item:nth-child(3) {
+  .nav__item:nth-child(6) {
     margin-right: auto;
     border-right: none;
     border-bottom: 1px solid transparent;
@@ -6301,7 +6325,7 @@ fieldset input::-ms-input-placeholder {
     border-image-slice: 1;
   }
 
-  .nav__item:nth-child(4) {
+  .nav__item:nth-child(7) {
     margin-right: 1.25rem;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
@@ -6311,12 +6335,13 @@ fieldset input::-ms-input-placeholder {
     border-image-slice: 1;
   }
 
-  .nav__item:nth-child(4)::after {
+  .nav__item:nth-child(7)::after {
     bottom: 0;
     display: block;
     width: 141%;
     left: -1.25rem;
-    height: 1px;
+    bottom: -0.0625rem;
+    height: 0.0625rem;
     background: rgba(255, 255, 255, 0.53);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.53) 10%, rgba(255, 255, 255, 0.53) 90%, rgba(0, 0, 0, 0.53) 100%);
   }
@@ -6434,6 +6459,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .main-modal__form-submit {
+    width: 180px;
     font-size: 1.25rem;
   }
 
@@ -6807,7 +6833,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .services-card--lg .card__btn {
-    transform: translateY(-0.3125rem);
+    transform: translateY(0.3125rem);
   }
 
   .services-card--sm {
@@ -6831,10 +6857,6 @@ fieldset input::-ms-input-placeholder {
     padding-left: 1.0625rem;
     font-size: 1rem;
     line-height: 1.25rem;
-  }
-
-  .services-card--sm__first .card__btn--small {
-    transform: translateY(7);
   }
 
   .services-card--sm__second {
@@ -7140,8 +7162,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .column-first {
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: 33%;
+    max-width: 33%;
   }
 
   .column-first__text {
@@ -7151,15 +7173,17 @@ fieldset input::-ms-input-placeholder {
   .column-second {
     order: 0;
     margin: 0;
-    flex-basis: 32%;
-    max-width: 32%;
+    flex-basis: 33%;
+    max-width: 33%;
   }
 
   .column-third {
-    flex-basis: 32%;
-    max-width: 32%;
     margin: 0;
     padding-left: 1.5625rem;
+    flex-basis: 33%;
+    max-width: 33%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .contacts-list {
@@ -7183,6 +7207,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .footer-social {
+    display: none;
     order: 1;
     flex-basis: 10%;
     max-width: 10%;
@@ -7214,9 +7239,10 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 64rem) and (min-width: 64rem) {
-  .price-calc-card::after {
-    bottom: -7.5rem;
+@media screen and (min-width: 64rem) and (min-width: 1365px) {
+  .nav {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
   }
 }
 
@@ -7224,6 +7250,12 @@ fieldset input::-ms-input-placeholder {
   .nav {
     margin-left: -2.5px;
     margin-right: -2.5px;
+  }
+}
+
+@media (min-width: 66.875rem) {
+  .translate-left {
+    transform: translateX(-1.875rem);
   }
 }
 
@@ -7463,7 +7495,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .no-webp .section-services {
-    background-image: url(../img/tablet/services/services-bg-md@1x.jpg);
+    background-position: center;
   }
 
   .webp .section-services {
@@ -7589,7 +7621,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .answer__item__btns {
-    bottom: 7.4375rem;
+    bottom: 4.75rem;
   }
 
   .header-top {
@@ -7597,7 +7629,7 @@ fieldset input::-ms-input-placeholder {
     justify-content: space-between;
   }
 
-  .nav__item:nth-child(4) {
+  .nav__item:nth-child(7) {
     margin-right: 3.125rem;
   }
 
@@ -7717,6 +7749,10 @@ fieldset input::-ms-input-placeholder {
     padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
   }
 
+  .services-card--lg .card__btn {
+    transform: translateY(-0.1875rem);
+  }
+
   .services-card--sm {
     width: 16.875rem;
     height: 18.75rem;
@@ -7766,22 +7802,6 @@ fieldset input::-ms-input-placeholder {
     margin-top: 5.75rem;
   }
 
-  .column-first {
-    flex-basis: 20%;
-    max-width: 20%;
-  }
-
-  .column-second {
-    flex-basis: 35%;
-    max-width: 35%;
-  }
-
-  .column-third {
-    padding-left: 5rem;
-    flex-basis: 35%;
-    max-width: 35%;
-  }
-
   .social--sticky {
     margin-right: -0.875rem;
   }
@@ -7798,9 +7818,24 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-width: 85.3125rem) and (-webkit-min-device-pixel-ratio: 2), (min-width: 85.3125rem) and (min-resolution: 192dpi) {
+  .webp .section-services {
+    background-image: url(../img/tablet/services/services-bg-md@2x.webp);
+  }
+}
+
 @media (min-width: 87.5rem) {
   .dialog {
     right: 7.5%;
+  }
+}
+
+@media (min-width: 89.0625rem) {
+  .header__title__dollar::before {
+    top: -0.25rem;
+    left: -0.5625rem;
+    width: 4.5625rem;
+    height: 3.125rem;
   }
 }
 
@@ -7815,15 +7850,6 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
-@media (min-width: 89.0625rem) {
-  .header__title__dollar::before {
-    top: -0.25rem;
-    left: -0.5625rem;
-    width: 4.5625rem;
-    height: 3.125rem;
-  }
-}
-
 @media (min-width: 90rem) {
   .header {
     height: 50rem;
@@ -7832,10 +7858,6 @@ fieldset input::-ms-input-placeholder {
   .advantages-wrap {
     height: 100.9375rem;
     justify-content: center;
-  }
-
-  .no-webp .section-services {
-    background-position: center;
   }
 
   .webp .section-services {
@@ -7880,7 +7902,7 @@ fieldset input::-ms-input-placeholder {
   }
 
   .answer__item__btns {
-    bottom: 5.5625rem;
+    bottom: 2.8125rem;
   }
 
   .nav {
@@ -7891,8 +7913,8 @@ fieldset input::-ms-input-placeholder {
     padding-left: 0;
   }
 
-  .nav__item:nth-child(4)::after {
-    left: -1.5625rem;
+  .nav__item:nth-child(7)::after {
+    left: -1.5rem;
   }
 
   .header__title {
@@ -8137,16 +8159,16 @@ fieldset input::-ms-input-placeholder {
     padding-bottom: 0.3125rem;
   }
 
+  .services-card--lg .card__btn {
+    transform: translateY(-0.1875rem);
+  }
+
   .services-card--sm__first {
     padding-bottom: 0.3125rem;
   }
 
   .services-card--sm__second {
     padding-bottom: 0.3125rem;
-  }
-
-  .services-card--sm__second .card__btn--small {
-    transform: translateY(0.4375rem);
   }
 
   .no-webp .price-calc-card::after {
@@ -8382,6 +8404,12 @@ fieldset input::-ms-input-placeholder {
   .form-lefttcol {
     flex-basis: 45%;
     max-width: 45%;
+  }
+}
+
+@media (min-width: 93.75rem) and (-webkit-min-device-pixel-ratio: 2), (min-width: 93.75rem) and (min-resolution: 192dpi) {
+  .webp .section-services {
+    background-image: url(../img/desktop/services/services-bg@2x.webp);
   }
 }
 
@@ -8649,6 +8677,57 @@ fieldset input::-ms-input-placeholder {
     left: 9.5rem;
   }
 
+  .main-modal {
+    width: 95%;
+    max-width: 64.25rem;
+    min-height: 44.625rem;
+  }
+
+  .main-modal__form {
+    width: 34.375rem;
+  }
+
+  .main-modal__form-title {
+    font-size: 3.375rem;
+    line-height: 5.3125rem;
+  }
+
+  .main-modal__form-subtitle {
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .main-modal__form__inputs-wrap input[name="modal__username"],
+  .main-modal__form__inputs-wrap input[name="modal__phone"] {
+    max-width: 20.4375rem;
+  }
+
+  .main-modal-select {
+    max-width: 20.625rem;
+  }
+
+  .woman {
+    bottom: -2.9375rem;
+    width: 29.0625rem;
+    height: 38.0625rem;
+  }
+
+  .quiz__inner {
+    height: 100%;
+    width: 100%;
+    padding: 6.25rem 6.25rem 5.625rem 6.25rem;
+  }
+
+  .answer__item__btns {
+    bottom: 5.9375rem;
+  }
+
+  .quiz-final {
+    max-width: 62.9375rem;
+    max-height: 38.5625rem;
+  }
+
   .header-top {
     padding: 3.5rem 0 0 1.125rem;
     align-items: center;
@@ -8676,12 +8755,12 @@ fieldset input::-ms-input-placeholder {
     padding: 0.625rem 2.5rem 1.25rem 2.1875rem;
   }
 
-  .nav__item:nth-child(4) {
+  .nav__item:nth-child(7) {
     margin-right: 1.0625rem;
   }
 
-  .nav__item:nth-child(4)::after {
-    left: -2.0625rem;
+  .nav__item:nth-child(7)::after {
+    left: -1.75rem;
   }
 
   .social-list {
@@ -8780,6 +8859,10 @@ fieldset input::-ms-input-placeholder {
     left: calc(50% - 19px);
     width: 2.375rem;
     height: 0.9375rem;
+  }
+
+  .main-modal__form-submit {
+    width: 13rem;
   }
 
   .advantages {
@@ -8994,7 +9077,7 @@ fieldset input::-ms-input-placeholder {
 
   .dialog {
     right: 2%;
-    top: 41vh;
+    top: 36vh;
     max-width: 34.125rem;
   }
 
@@ -9068,6 +9151,10 @@ fieldset input::-ms-input-placeholder {
     right: 0.875rem;
     width: 2.625rem;
     height: 2.625rem;
+  }
+
+  .services-card--lg .card__btn {
+    transform: translateY(0.625rem);
   }
 
   .services-card--sm__first {
@@ -9303,23 +9390,6 @@ fieldset input::-ms-input-placeholder {
     right: -23rem;
     width: 23.125rem;
     height: 22.875rem;
-  }
-
-  .column-first {
-    flex-basis: 33%;
-    max-width: 33%;
-  }
-
-  .column-second {
-    flex-basis: 33%;
-    max-width: 33%;
-  }
-
-  .column-third {
-    display: flex;
-    justify-content: flex-end;
-    flex-basis: 33%;
-    max-width: 33%;
   }
 
   .footer-phone {
