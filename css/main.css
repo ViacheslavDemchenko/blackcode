@@ -3439,7 +3439,7 @@ template {
 
 .arrow-right--white {
   position: relative;
-  top: 0.125rem;
+  top: 0;
   left: -0.125rem;
   width: 1.875rem;
   height: 0.1875rem;
