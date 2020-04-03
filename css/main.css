@@ -6735,9 +6735,8 @@ fieldset input::-ms-input-placeholder {
   }
 
   .form-left__title {
-    max-width: 18.75rem;
-    font-size: 2.5rem;
-    line-height: 2.75rem;
+    font-size: 3.375rem;
+    line-height: 3.125rem;
   }
 
   .form-left__text--blue {
