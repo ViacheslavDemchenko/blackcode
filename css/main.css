@@ -10827,7 +10827,7 @@ fieldset input::-ms-input-placeholder {
 }
 
 @media (min-height: 39.0625rem) {
-  .header__subtitle {
-    margin: 1.25rem 0 20.75rem 0;
+  .header__text {
+    transform: translateY(2rem);
   }
 }
