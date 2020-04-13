@@ -334,11 +334,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       siteOverlay.classList.add('container-fluid--overlay');
       site.appendChild(message);
       site.appendChild(siteOverlay);
-      body.classList.add('no-scroll');
-      console.log('Это IE');
-    } else {
-      console.log('Это не IE');
-    }
+      body.classList.add('no-scroll'); // console.log('Это IE');
+    } else {// console.log('Это не IE');
+      }
   }
 
   hideSite();
