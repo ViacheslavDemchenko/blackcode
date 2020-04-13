@@ -10825,3 +10825,9 @@ fieldset input::-ms-input-placeholder {
     background-image: url(../img/mobile/modals/clock@2x.jpg);
   }
 }
+
+@media (min-height: 39.0625rem) {
+  .header__subtitle {
+    margin: 1.25rem 0 20.75rem 0;
+  }
+}
