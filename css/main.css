@@ -10830,4 +10830,8 @@ fieldset input::-ms-input-placeholder {
   .header__text {
     transform: translateY(2.8125rem);
   }
+
+  .advantages {
+    transform: translateY(2.8125rem);
+  }
 }
