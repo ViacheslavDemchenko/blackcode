@@ -10644,6 +10644,16 @@ fieldset input::-ms-input-placeholder {
   }
 }
 
+@media (min-height: 39.0625rem) and (max-width: 50rem) {
+  .header__text {
+    transform: translateY(2.8125rem);
+  }
+
+  .advantages {
+    transform: translateY(2.8125rem);
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .webp .header {
     background-image: url(../img/mobile/header/header-bg@2x.webp);
@@ -10823,15 +10833,5 @@ fieldset input::-ms-input-placeholder {
 
   .time {
     background-image: url(../img/mobile/modals/clock@2x.jpg);
-  }
-}
-
-@media (min-height: 39.0625rem) {
-  .header__text {
-    transform: translateY(2.8125rem);
-  }
-
-  .advantages {
-    transform: translateY(2.8125rem);
   }
 }
